@@ -1,5 +1,5 @@
 ﻿/* ================================================================
-   MATEJ'S ANGELS KENNEL — Royal Design System
+  MATEJ'S ANGELS KENNEL. Royal Design System
    Palette: Deep Navy · Royal Gold · Ivory Cream
    ================================================================ */
 
@@ -1659,7 +1659,7 @@ em { font-style: italic; }
 /* ---- ANIMATED KENNEL BACKGROUND PATTERN ---- */
 /*
    Diagonal scrolling pattern with paw prints and bones.
-   Icons are the same gold accent at very low opacity — barely visible, elegant.
+  Icons are the same gold accent at very low opacity, barely visible and elegant.
    Tile size: 220px. Animation moves diagonally (right + up) for a seamless loop.
 */
 .bg-kennel-pattern {

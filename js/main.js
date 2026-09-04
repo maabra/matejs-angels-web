@@ -1,5 +1,5 @@
 /* ================================================================
-   MATEJ'S ANGELS KENNEL — Main JavaScript
+  MATEJ'S ANGELS KENNEL. Main JavaScript
    ================================================================ */
 
 /* ---- DIAGONAL BACKGROUND PATTERN ---- */
