@@ -646,7 +646,7 @@ em { font-style: italic; }
   transition: background 0.3s ease;
 }
 .breed-feature-title h3 {
-  color: var(--navy);
+  color: var(--gold);
   font-size: 1.85rem;
   line-height: 1.22;
   margin: 0;
@@ -656,7 +656,7 @@ em { font-style: italic; }
   background: linear-gradient(135deg, var(--gold), var(--gold-dark));
 }
 .breed-feature-title:hover h3 {
-  color: var(--gold);
+  color: var(--navy);
 }
 
 /* ---- DOG CARD ---- */
