@@ -641,8 +641,12 @@ em { font-style: italic; }
 .breed-feature-title {
   background: var(--navy-light);
   border-bottom: 2px solid var(--gold);
+  min-height: 136px;
   padding: 2rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: background 0.3s ease;
 }
 .breed-feature-title h3 {
