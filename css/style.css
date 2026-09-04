@@ -1590,8 +1590,8 @@ em { font-style: italic; }
   margin-bottom: 1rem;
   font-weight: 600;
 }
-.footer-col ul li { margin-bottom: 0.55rem; }
-.footer-col ul li a { font-size: 0.86rem; color: var(--text-muted); transition: color 0.2s; }
+.footer-col ul li { margin-bottom: 0.55rem; font-size: 0.86rem; line-height: 1.5; color: var(--text-muted); }
+.footer-col ul li a { color: inherit; transition: color 0.2s; }
 .footer-col ul li a:hover { color: var(--gold); }
 .footer-bottom {
   border-top: 1px solid rgba(212,175,55,0.12);
