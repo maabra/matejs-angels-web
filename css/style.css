@@ -638,6 +638,22 @@ em { font-style: italic; }
 .cards-grid-2  { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 1.75rem; }
 .cards-grid-4  { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem; }
 
+.breed-feature-title {
+  background: var(--navy-light);
+  border-bottom: 2px solid var(--gold);
+  padding: 2rem;
+  text-align: center;
+}
+.breed-feature-title h3 {
+  color: var(--navy);
+  font-size: 1.85rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+.breed-feature-title:hover h3 {
+  color: var(--gold);
+}
+
 /* ---- DOG CARD ---- */
 .dog-card {
   background: var(--navy-card);
