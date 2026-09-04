@@ -148,14 +148,11 @@ em { font-style: italic; }
   display: flex;
   align-items: center;
   padding: 0 1.75rem;
-  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 .navbar.scrolled {
   background: rgba(13, 27, 42, 0.97);
   box-shadow: var(--shadow-md);
-}
-.navbar.nav-hidden {
-  transform: translateY(-100%);
 }
 .navbar-inner {
   max-width: var(--max-width);
@@ -518,8 +515,8 @@ em { font-style: italic; }
 }
 .lang-popup .index-logo-wrap img,
 .lang-popup .logo-placeholder-large {
-  width: 140px;
-  height: 140px;
+  width: 280px;
+  height: 280px;
   margin-bottom: 1rem;
 }
 .lang-popup .index-kennel-name {
@@ -894,6 +891,15 @@ em { font-style: italic; }
   line-height: 1.6;
   margin: 0;
 }
+.chron-card-img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  display: block;
+}
 
 /* ---- BREED SECTION HEADER ---- */
 .breed-section {
@@ -1007,6 +1013,9 @@ em { font-style: italic; }
 .status-available { background: rgba(76,175,80,0.18); color: #81c784; border: 1px solid rgba(76,175,80,0.4); }
 .status-reserved  { background: rgba(255,152,0,0.18); color: #ffb74d; border: 1px solid rgba(255,152,0,0.4); }
 .status-sold      { background: rgba(120,120,120,0.18); color: #aaa; border: 1px solid rgba(120,120,120,0.4); }
+.color-orange     { background: rgba(255,140,0,0.15); color: #e8901a; border: 1px solid rgba(255,140,0,0.4); }
+.color-dark       { background: rgba(30,30,30,0.35); color: #bbb; border: 1px solid rgba(80,80,80,0.5); }
+.color-unknown    { background: rgba(120,120,120,0.12); color: #888; border: 1px solid rgba(120,120,120,0.3); font-style: italic; }
 
 /* ---- GALLERY GRID ---- */
 .gallery-grid {
@@ -1966,3 +1975,99 @@ em { font-style: italic; }
   transition: opacity 0.2s;
 }
 .wa-link:hover { opacity: 0.75; }
+
+/* ---- LITTER TABS: YOUTUBE GRID ---- */
+.yt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+.yt-embed {
+  position: relative;
+  padding-top: 56.25%;
+  background: var(--navy-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.yt-embed iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+.where-now-placeholder {
+  padding: 3rem 0;
+  text-align: center;
+}
+.where-now-placeholder p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+.where-now-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+.where-now-card {
+  background: var(--navy-light);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.where-now-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+.where-now-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: top;
+}
+.where-now-card-no-img {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy);
+  font-size: 3rem;
+  color: var(--gold);
+  opacity: 0.4;
+}
+.where-now-card-body {
+  padding: 0.75rem 1rem 1rem;
+}
+.where-now-card-name {
+  font-weight: 700;
+  color: var(--cream);
+  font-size: 0.95rem;
+  margin: 0 0 0.3rem;
+}
+.where-now-card-loc {
+  color: var(--gold);
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin: 0 0 0.15rem;
+}
+.where-now-card-date {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  margin: 0;
+}
+.where-now-stayed {
+  display: inline-block;
+  margin-top: 0.4rem;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

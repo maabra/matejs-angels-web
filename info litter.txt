@@ -1,0 +1,16 @@
+litter c all Blenheim
+litter g all Blenheim
+
+litter a adam, atila, axel Blenheim
+astra, aria, anemona, azalea tricolor
+
+litter b barry blenheim, bettany, bowie brinn tricolor
+
+litter d all blenheim
+
+litter e edo, elise, elton all tricolor, eros blenheim (remove matej's angels last name in the card)
+
+litter f freddy filotea blenheim, finn tricolor (rename felicie to felicia)
+
+
+

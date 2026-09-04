@@ -17,24 +17,8 @@
   const navLinks = document.getElementById('nav-links');
 
   if (navbar) {
-    const mobileNav = window.matchMedia('(max-width: 860px)');
-    let lastY = window.scrollY;
     window.addEventListener('scroll', () => {
-      const y = window.scrollY;
-      navbar.classList.toggle('scrolled', y > 40);
-      if (mobileNav.matches) {
-        const menuOpen = navLinks && navLinks.classList.contains('open');
-        if (menuOpen || y < 80) {
-          navbar.classList.remove('nav-hidden');
-        } else if (y > lastY) {
-          navbar.classList.add('nav-hidden');
-        } else {
-          navbar.classList.remove('nav-hidden');
-        }
-      } else {
-        navbar.classList.remove('nav-hidden');
-      }
-      lastY = y;
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
     }, { passive: true });
   }
 
