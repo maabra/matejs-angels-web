@@ -643,6 +643,7 @@ em { font-style: italic; }
   border-bottom: 2px solid var(--gold);
   padding: 2rem;
   text-align: center;
+  transition: background 0.3s ease;
 }
 .breed-feature-title h3 {
   color: var(--navy);
@@ -650,8 +651,11 @@ em { font-style: italic; }
   margin: 0;
   transition: color 0.3s ease;
 }
+.breed-feature-title:hover {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+}
 .breed-feature-title:hover h3 {
-  color: var(--gold);
+  color: var(--navy);
 }
 
 /* ---- DOG CARD ---- */
