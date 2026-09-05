@@ -57,6 +57,7 @@ a { color: inherit; text-decoration: none; }
 ul, ol { list-style: none; }
 button { cursor: pointer; border: none; background: none; font-family: inherit; font-size: inherit; }
 input, textarea, select { font-family: inherit; }
+:focus-visible { outline: 3px solid var(--gold-light); outline-offset: 3px; }
 
 /* ---- TYPOGRAPHY ---- */
 h1, h2, h3, h4, h5, h6 {
@@ -1908,11 +1909,16 @@ em { font-style: italic; }
 @media (max-width: 420px) {
   .lang-cards { flex-direction: column; align-items: center; }
   .lang-card { width: 100%; max-width: 280px; padding: 1.4rem 2rem; }
-  .lang-popup .lang-cards { flex-direction: row; align-items: stretch; }
+  .lang-popup .lang-cards { flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: stretch; }
   .lang-popup .lang-card { width: 130px; max-width: none; padding: 1rem 0.75rem; }
   .hero-actions { flex-direction: column; align-items: center; }
   .btn { white-space: normal; text-align: center; }
   .footer-grid { gap: 1.75rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
 
 /* ================================================================

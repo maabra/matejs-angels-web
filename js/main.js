@@ -23,6 +23,12 @@
   }
 
   if (hamburger && navLinks) {
+    function closeMenu() {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+
     hamburger.addEventListener('click', () => {
       const open = hamburger.classList.toggle('open');
       navLinks.classList.toggle('open', open);
@@ -32,16 +38,14 @@
     // close on link click
     navLinks.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        navLinks.classList.remove('open');
+        closeMenu();
       });
     });
 
     // close on outside click
     document.addEventListener('click', (e) => {
       if (!navbar.contains(e.target)) {
-        hamburger.classList.remove('open');
-        navLinks.classList.remove('open');
+        closeMenu();
       }
     });
   }
@@ -94,17 +98,25 @@
   }
 
   // Collect all gallery items
-  document.querySelectorAll('.gallery-item').forEach((el, i) => {
+  document.querySelectorAll('.gallery-item').forEach(el => {
     const img = el.querySelector('img');
     if (!img) return;
+    const index = items.length;
     items.push({
       src: img.src,
       alt: img.alt,
       caption: el.dataset.caption || img.alt
     });
-    el.addEventListener('click', () => open(i));
+    el.addEventListener('click', () => open(index));
+    el.setAttribute('role', 'button');
+    el.setAttribute('aria-label', `Open image: ${img.alt || 'gallery image'}`);
     el.setAttribute('tabindex', '0');
-    el.addEventListener('keydown', e => { if (e.key === 'Enter') open(i); });
+    el.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        open(index);
+      }
+    });
   });
 
   if (lbClose) lbClose.addEventListener('click', close);
