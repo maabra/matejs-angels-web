@@ -48,7 +48,26 @@
         closeMenu();
       }
     });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
+    });
   }
+})();
+
+/* ---- SKIP LINK ---- */
+(function () {
+  const content = document.querySelector('.page-content');
+  if (!content) return;
+
+  content.id = 'main-content';
+  content.setAttribute('tabindex', '-1');
+
+  const skipLink = document.createElement('a');
+  skipLink.className = 'skip-link';
+  skipLink.href = '#main-content';
+  skipLink.textContent = 'Skip to content';
+  document.body.insertBefore(skipLink, document.body.firstChild);
 })();
 
 /* ---- ACTIVE NAV LINK ---- */

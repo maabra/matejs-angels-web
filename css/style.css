@@ -58,6 +58,18 @@ ul, ol { list-style: none; }
 button { cursor: pointer; border: none; background: none; font-family: inherit; font-size: inherit; }
 input, textarea, select { font-family: inherit; }
 :focus-visible { outline: 3px solid var(--gold-light); outline-offset: 3px; }
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 2000;
+  padding: 0.6rem 0.9rem;
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: 700;
+  transform: translateY(-150%);
+}
+.skip-link:focus { transform: translateY(0); }
 
 /* ---- TYPOGRAPHY ---- */
 h1, h2, h3, h4, h5, h6 {
