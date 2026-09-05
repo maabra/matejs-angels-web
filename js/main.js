@@ -120,6 +120,13 @@
   document.querySelectorAll('.gallery-item').forEach(el => {
     const img = el.querySelector('img');
     if (!img) return;
+    const sourcePath = img.getAttribute('src');
+    const optimizedPath = sourcePath && sourcePath.match(/^(.*images\/)(litters|gallery)\/(.+)\.(?:jpe?g|png)$/i);
+    if (optimizedPath) {
+      const basePath = `${optimizedPath[1]}optimized/${optimizedPath[2]}/${optimizedPath[3]}`;
+      img.srcset = `${basePath}-480.jpg 480w, ${basePath}-960.jpg 960w`;
+      img.sizes = '(max-width: 640px) 50vw, (max-width: 1200px) 33vw, 290px';
+    }
     const index = items.length;
     items.push({
       src: img.src,
