@@ -669,12 +669,6 @@ em { font-style: italic; }
   margin: 0;
   transition: color 0.3s ease;
 }
-.breed-feature-title:hover {
-  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-}
-.breed-feature-title:hover h3 {
-  color: var(--navy);
-}
 
 /* ---- DOG CARD ---- */
 .dog-card {
@@ -687,7 +681,7 @@ em { font-style: italic; }
   display: block;
   position: relative;
 }
-.dog-card:hover {
+a.dog-card[href]:hover {
   border-color: var(--gold);
   transform: translateY(-6px);
   box-shadow: var(--shadow-gold);
@@ -898,7 +892,7 @@ em { font-style: italic; }
   padding: 1.4rem 1.5rem 1.5rem;
   transition: var(--transition);
 }
-.chron-card:hover {
+a.chron-card[href]:hover {
   border-color: var(--gold);
   box-shadow: var(--shadow-gold);
 }
@@ -1021,7 +1015,7 @@ em { font-style: italic; }
   text-align: center;
   transition: var(--transition);
 }
-.puppy-card:hover { border-color: var(--gold); transform: translateY(-3px); box-shadow: var(--shadow-sm); }
+a.puppy-card[href]:hover { border-color: var(--gold); transform: translateY(-3px); box-shadow: var(--shadow-sm); }
 .puppy-card-img {
   width: 100%;
   aspect-ratio: 1;
@@ -1403,7 +1397,7 @@ em { font-style: italic; }
   padding: 1rem 1.1rem;
   transition: var(--transition);
 }
-.health-card:hover { border-color: var(--gold); }
+a.health-card[href]:hover { border-color: var(--gold); }
 .health-test {
   font-size: 0.7rem;
   font-weight: 700;
@@ -1631,6 +1625,13 @@ em { font-style: italic; }
 .footer-col ul li { margin-bottom: 0.55rem; font-size: 0.86rem; line-height: 1.5; color: var(--text-muted); }
 .footer-col ul li a { color: inherit; transition: color 0.2s; }
 .footer-col ul li a:hover { color: var(--gold); }
+.footer-counter {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.footer-counter a { display: inline-block; max-width: 100%; }
+.footer-counter img { display: block; max-width: 100%; height: auto; border: 0; }
+
 .footer-bottom {
   border-top: 1px solid rgba(212,175,55,0.12);
   padding-top: 1.5rem;
@@ -2061,7 +2062,7 @@ em { font-style: italic; }
   border: 1px solid var(--border);
   transition: transform 0.2s, box-shadow 0.2s;
 }
-.where-now-card:hover {
+a.where-now-card[href]:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.3);
 }

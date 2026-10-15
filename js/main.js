@@ -121,7 +121,7 @@
     const img = el.querySelector('img');
     if (!img) return;
     const sourcePath = img.getAttribute('src');
-    const optimizedPath = sourcePath && sourcePath.match(/^(.*images\/)(litters|gallery)\/(.+)\.(?:jpe?g|png)$/i);
+    const optimizedPath = sourcePath && sourcePath.match(/^(.*images\/)(litters|gallery)\/(.+)\.(?:jpe?g|png|webp)$/i);
     if (optimizedPath) {
       const basePath = `${optimizedPath[1]}optimized/${optimizedPath[2]}/${optimizedPath[3]}`;
       img.srcset = `${basePath}-480.jpg 480w, ${basePath}-960.jpg 960w`;
