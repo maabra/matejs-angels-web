@@ -2,6 +2,9 @@
   MATEJ'S ANGELS KENNEL. Main JavaScript
    ================================================================ */
 
+const siteIsCroatian = document.documentElement.lang.toLowerCase().startsWith('hr');
+const siteLabel = (hr, en) => siteIsCroatian ? hr : en;
+
 /* ---- DIAGONAL BACKGROUND PATTERN ---- */
 (function () {
   const el = document.createElement('div');
@@ -66,7 +69,7 @@
   const skipLink = document.createElement('a');
   skipLink.className = 'skip-link';
   skipLink.href = '#main-content';
-  skipLink.textContent = 'Skip to content';
+  skipLink.textContent = siteLabel('Preskoči na sadržaj', 'Skip to content');
   document.body.insertBefore(skipLink, document.body.firstChild);
 })();
 
@@ -91,6 +94,11 @@
   const lbClose   = lb.querySelector('#lb-close');
   const lbPrev    = lb.querySelector('#lb-prev');
   const lbNext    = lb.querySelector('#lb-next');
+
+  lb.setAttribute('aria-label', siteLabel('Pregled fotografija', 'Photo viewer'));
+  if (lbClose) lbClose.setAttribute('aria-label', siteLabel('Zatvori', 'Close'));
+  if (lbPrev) lbPrev.setAttribute('aria-label', siteLabel('Prethodna fotografija', 'Previous photo'));
+  if (lbNext) lbNext.setAttribute('aria-label', siteLabel('Sljedeća fotografija', 'Next photo'));
 
   let items = [];
   let current = 0;
@@ -135,7 +143,7 @@
     });
     el.addEventListener('click', () => open(index));
     el.setAttribute('role', 'button');
-    el.setAttribute('aria-label', `Open image: ${img.alt || 'gallery image'}`);
+    el.setAttribute('aria-label', `${siteLabel('Otvori fotografiju', 'Open image')}: ${img.alt || siteLabel('fotografija iz galerije', 'gallery image')}`);
     el.setAttribute('tabindex', '0');
     el.addEventListener('keydown', e => {
       if (e.key === 'Enter' || e.key === ' ') {
@@ -318,9 +326,9 @@ function setupPedHint(el) {
     if (valid) {
       const btn = form.querySelector('button[type="submit"]');
       if (btn) {
-        btn.textContent = 'Message sent!';
+        btn.textContent = siteLabel('Poruka je poslana!', 'Message sent!');
         btn.disabled = true;
-        setTimeout(() => { btn.textContent = 'Send Message'; btn.disabled = false; }, 3000);
+        setTimeout(() => { btn.textContent = siteLabel('Pošalji poruku', 'Send Message'); btn.disabled = false; }, 3000);
       }
     }
   });
@@ -339,7 +347,7 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
 (function () {
   const btn = document.createElement('button');
   btn.className = 'back-to-top';
-  btn.setAttribute('aria-label', 'Back to top');
+  btn.setAttribute('aria-label', siteLabel('Povratak na vrh', 'Back to top'));
   btn.innerHTML = '&#8593;';
   document.body.appendChild(btn);
   window.addEventListener('scroll', () => {
@@ -525,14 +533,14 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
     const email = a.href.replace('mailto:', '').split('?')[0];
     const btn = document.createElement('button');
     btn.className = 'copy-email-btn';
-    btn.setAttribute('aria-label', 'Copy email address');
-    btn.title = 'Copy to clipboard';
+    btn.setAttribute('aria-label', siteLabel('Kopiraj e-adresu', 'Copy email address'));
+    btn.title = siteLabel('Kopiraj u međuspremnik', 'Copy to clipboard');
     btn.innerHTML = clipSvg;
     btn.addEventListener('click', e => {
       e.preventDefault();
       e.stopPropagation();
       navigator.clipboard.writeText(email).then(() => {
-        showToast('Copied: ' + email);
+        showToast(siteLabel('Kopirano: ', 'Copied: ') + email);
         btn.textContent = '✓';
         setTimeout(() => { btn.innerHTML = clipSvg; }, 2000);
       });

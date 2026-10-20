@@ -1,5 +1,8 @@
-.claude/settings.local.json
-/hosting-ready/
+.claude
 HOSTING.md
 .htaccess
-hosting-ready/
+hosting-ready
+host details.txt
+PREGLED-STRANICE.md
+scripts
+.site-update-baseline.json
