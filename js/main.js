@@ -188,12 +188,14 @@
     btn.addEventListener('click', () => {
       const group = btn.closest('.dog-tabs') || document.querySelector('.dog-tabs');
       const target = btn.dataset.tab;
+      if (!group) return;
+      const panel = group.querySelector(`#tab-${target}`);
+      if (!panel) return;
 
       group.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       group.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
 
       btn.classList.add('active');
-      const panel = group.querySelector(`#tab-${target}`);
       if (panel) {
         panel.classList.add('active');
         requestAnimationFrame(() => panel.querySelectorAll('.ped-outer').forEach(setupPedHint));
@@ -203,6 +205,39 @@
 })();
 
 /* ---- PEDIGREE SCROLL HINT ---- */
+/* Drag with a mouse; touch devices retain native scrolling. */
+document.querySelectorAll('.ped-outer, .pedigree-wrapper').forEach(el => {
+  let drag = null;
+  el.addEventListener('pointerdown', e => {
+    if (e.pointerType !== 'mouse' || e.button !== 0 ||
+        el.scrollWidth <= el.clientWidth ||
+        e.target.closest('a, button, input, select, textarea')) return;
+    drag = { id: e.pointerId, x: e.clientX, scroll: el.scrollLeft, active: false };
+  });
+  el.addEventListener('pointermove', e => {
+    if (!drag || e.pointerId !== drag.id) return;
+    const distance = e.clientX - drag.x;
+    if (!drag.active && Math.abs(distance) < 5) return;
+    if (!drag.active) {
+      drag.active = true;
+      el.setPointerCapture(e.pointerId);
+      el.classList.add('ped-dragging');
+      window.getSelection()?.removeAllRanges();
+    }
+    e.preventDefault();
+    el.scrollLeft = drag.scroll - distance;
+  });
+  function endDrag() {
+    const previous = drag;
+    drag = null;
+    el.classList.remove('ped-dragging');
+    if (previous && el.hasPointerCapture(previous.id)) el.releasePointerCapture(previous.id);
+  }
+  window.addEventListener('pointerup', endDrag);
+  window.addEventListener('pointercancel', endDrag);
+  el.addEventListener('lostpointercapture', endDrag);
+});
+
 function setupPedHint(el) {
   if (el.parentNode.classList.contains('ped-scroll-wrap')) return;
   if (el.scrollWidth <= el.clientWidth + 1) return;
@@ -217,9 +252,18 @@ function setupPedHint(el) {
   hint.setAttribute('aria-hidden', 'true');
   wrap.appendChild(hint);
 
-  el.addEventListener('scroll', () => {
+  const leftHint = document.createElement('div');
+  leftHint.className = 'ped-scroll-hint ped-scroll-hint-left';
+  leftHint.setAttribute('aria-hidden', 'true');
+  wrap.appendChild(leftHint);
+
+  function updateHints() {
+    leftHint.style.opacity = el.scrollLeft > 4 ? '1' : '0';
     hint.style.opacity = el.scrollLeft + el.clientWidth >= el.scrollWidth - 4 ? '0' : '1';
-  }, { passive: true });
+  }
+  el.addEventListener('scroll', updateHints, { passive: true });
+  window.addEventListener('resize', updateHints, { passive: true });
+  updateHints();
 }
 
 (function () {
@@ -228,18 +272,26 @@ function setupPedHint(el) {
 
 /* ---- SCROLL ANIMATIONS ---- */
 (function () {
-  if (!('IntersectionObserver' in window)) return;
+  if (!('IntersectionObserver' in window) ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('in-view');
+        entry.target.classList.remove('anim-pending');
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0, rootMargin: '0px' });
 
-  document.querySelectorAll('[data-anim]').forEach(el => observer.observe(el));
+  document.querySelectorAll('[data-anim]').forEach(el => {
+    // Content already on screen stays visible on first paint.
+    if (el.getBoundingClientRect().top >= window.innerHeight) {
+      el.classList.add('anim-pending');
+    }
+    observer.observe(el);
+  });
 })();
 
 /* ---- CONTACT FORM (basic client-side validation) ---- */
@@ -266,7 +318,7 @@ function setupPedHint(el) {
     if (valid) {
       const btn = form.querySelector('button[type="submit"]');
       if (btn) {
-        btn.textContent = '✓ Message Sent!';
+        btn.textContent = 'Message sent!';
         btn.disabled = true;
         setTimeout(() => { btn.textContent = 'Send Message'; btn.disabled = false; }, 3000);
       }
@@ -358,8 +410,7 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
       'min-width:260px',
     ].join(';');
     toast.innerHTML = [
-      '<div style="font-size:2.8rem;line-height:1">🎮</div>',
-      '<div style="font-size:1.5rem;font-weight:bold;margin:0.5rem 0;letter-spacing:0.03em">🐕 WOOF! 🐕</div>',
+      '<div style="font-size:1.5rem;font-weight:bold;margin:0.5rem 0;letter-spacing:0.03em">WOOF!</div>',
       '<div style="font-size:1rem;color:#fff">You found the secret dog!</div>',
       '<div style="font-size:0.78rem;color:rgba(255,229,0,0.6);margin-top:0.5rem">ZywOo has joined the kennel</div>',
     ].join('');
@@ -481,7 +532,7 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
       e.preventDefault();
       e.stopPropagation();
       navigator.clipboard.writeText(email).then(() => {
-        showToast('✓ Copied: ' + email);
+        showToast('Copied: ' + email);
         btn.textContent = '✓';
         setTimeout(() => { btn.innerHTML = clipSvg; }, 2000);
       });

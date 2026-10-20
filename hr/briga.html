@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../images/index/logotransparent.png" sizes="32x32">
+    <link rel="icon" type="image/svg+xml" href="../images/index/favicon.svg?v=rounded1" sizes="any">
   <link rel="apple-touch-icon" href="../images/index/logotransparent.png">
   <meta name="theme-color" content="#0D1B2A">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css?v=eaebf484ffdf">
 
   <style>
     /* ── Zigzag rows ── */
@@ -36,17 +36,18 @@
       margin: 0 0 1rem;
       font-size: 1.2rem;
     }
-    .zigzag-row .zz-text ul {
-      padding-left: 1.25rem;
+    .zigzag-row .zz-text .care-prose {
+      padding-left: 0;
       display: flex;
       flex-direction: column;
       gap: 0.55rem;
-      list-style: disc;
+
       color: var(--text-muted);
       line-height: 1.7;
       font-size: 0.95rem;
     }
-    .zigzag-row .zz-text ul li strong { color: var(--cream); }
+    .zigzag-row .zz-text .care-prose strong { color: var(--cream); }
+    .care-prose p { font-size: 0.95rem; line-height: 1.7; color: var(--text-muted); }
     figcaption {
       margin-top: 0.5rem;
       font-size: 0.8rem;
@@ -185,8 +186,8 @@
     .page-content img { cursor: zoom-in; }
   </style>
   
-    <title>Briga o psu - Uzgajivačnica Matej&#x27;s Angels</title>
-  <meta name="description" content="Potpuni vodič za brigu o Pomerancima i Cavalier King Charles španjelima: njega, prehrana, zdravlje, vježbanje i više od uzgajivačnice Matej&#x27;s Angels.">
+    <title>Briga o psu - Uzgajivačnica Matej's Angels</title>
+  <meta name="description" content="Potpuni vodič za brigu o Pomerancima i Cavalier King Charles španjelima: njega, prehrana, zdravlje, vježbanje i više od uzgajivačnice Matej's Angels.">
   <link rel="canonical" href="https://matejsangels.com/hr/briga">
   <link rel="alternate" hreflang="en" href="https://matejsangels.com/en/care">
   <link rel="alternate" hreflang="hr" href="https://matejsangels.com/hr/briga">
@@ -194,15 +195,15 @@
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Matej’s Angels">
-  <meta property="og:title" content="Briga o psu - Uzgajivačnica Matej&#x27;s Angels">
-  <meta property="og:description" content="Potpuni vodič za brigu o Pomerancima i Cavalier King Charles španjelima: njega, prehrana, zdravlje, vježbanje i više od uzgajivačnice Matej&#x27;s Angels.">
+  <meta property="og:title" content="Briga o psu - Uzgajivačnica Matej's Angels">
+  <meta property="og:description" content="Potpuni vodič za brigu o Pomerancima i Cavalier King Charles španjelima: njega, prehrana, zdravlje, vježbanje i više od uzgajivačnice Matej's Angels.">
   <meta property="og:url" content="https://matejsangels.com/hr/briga">
   <meta property="og:image" content="https://matejsangels.com/images/index/logotransparent.png">
   <meta property="og:image:alt" content="Matej’s Angels kennel logo">
   <meta property="og:locale" content="hr_HR">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Briga o psu - Uzgajivačnica Matej&#x27;s Angels">
-  <meta name="twitter:description" content="Potpuni vodič za brigu o Pomerancima i Cavalier King Charles španjelima: njega, prehrana, zdravlje, vježbanje i više od uzgajivačnice Matej&#x27;s Angels.">
+  <meta name="twitter:title" content="Briga o psu - Uzgajivačnica Matej's Angels">
+  <meta name="twitter:description" content="Potpuni vodič za brigu o Pomerancima i Cavalier King Charles španjelima: njega, prehrana, zdravlje, vježbanje i više od uzgajivačnice Matej's Angels.">
   <meta name="twitter:image" content="https://matejsangels.com/images/index/logotransparent.png">
   <script type="application/ld+json" id="site-seo">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://matejsangels.com/#organization", "name": "Matej’s Angels", "url": "https://matejsangels.com/", "logo": "https://matejsangels.com/images/index/logotransparent.png", "email": "sanjaimatej@gmail.com", "telephone": "+385955152150", "address": {"@type": "PostalAddress", "streetAddress": "Selo Varoš 70 D", "addressLocality": "Premantura", "postalCode": "52100", "addressCountry": "HR"}, "sameAs": ["https://www.facebook.com/matejsangels/"]}, {"@type": "WebSite", "@id": "https://matejsangels.com/#website", "url": "https://matejsangels.com/", "name": "Matej’s Angels", "inLanguage": ["en", "hr"], "publisher": {"@id": "https://matejsangels.com/#organization"}}, {"@type": "WebPage", "@id": "https://matejsangels.com/hr/briga#webpage", "url": "https://matejsangels.com/hr/briga", "name": "Briga o psu - Uzgajivačnica Matej's Angels", "description": "Potpuni vodič za brigu o Pomerancima i Cavalier King Charles španjelima: njega, prehrana, zdravlje, vježbanje i više od uzgajivačnice Matej's Angels.", "inLanguage": "hr", "isPartOf": {"@id": "https://matejsangels.com/#website"}}]}</script>
 </head>
@@ -240,7 +241,7 @@
 
   <div class="page-content">
 
-    <section class="hero" style="min-height:45vh">
+    <section class="hero">
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <span class="hero-eyebrow">Znanje o pasmini</span>
@@ -263,7 +264,7 @@
         <div style="text-align:center;margin-bottom:3rem" data-anim>
           <span class="hero-eyebrow" style="font-size:0.7rem">Vodič za pasminu</span>
           <h2>Briga o Cavalier King Charles španijelu</h2>
-          <div class="gold-divider" style="margin:1rem auto 0;max-width:180px;"><span>✦</span></div>
+          <div class="gold-divider" style="margin:1rem auto 0;max-width:180px;"><span></span></div>
         </div>
 
         <!-- Njega dlake -->
@@ -274,14 +275,11 @@
           </figure>
           <div class="zz-text">
             <h3>Njega dlake</h3>
-            <ul>
-              <li>Kavaliri imaju svilenkastu dlaku srednje duljine s resicama na ušima, prsima, nogama i repu. Četkajte <strong>3–4 puta tjedno</strong> kako biste spriječili zapetljavanje.</li>
-              <li>Koristite meku četku, a zatim metalni češalj. Posebnu pažnju posvetite <strong>resicama na ušima</strong>, tamo se najlakše stvaraju čvorovi koji uzrokuju nelagodu.</li>
-              <li>Kupajte svakih <strong>3–4 tjedna</strong> nježnim hipoalergenim šamponom. Uvijek osušite fenoм i dobro osušite uši, vlažne uši sklone su gljivičnim infekcijama.</li>
-              <li>Duge uši zahtijevaju tjedni pregled i čišćenje. Obrišite unutrašnju ušnu školjku vatom navlaženom veterinarskim sredstvom.</li>
-              <li>Šišajte nokte jednom mjesečno. Blago obrezivanje oko šapa i ušiju čuva tip pasmine, izbjegavajte jako šišanje.</li>
-              <li>Redovito perite zube; zubne bolesti vrlo su česte u Kavalira.</li>
-            </ul>
+            <div class="care-prose">
+              <p>Kavaliri imaju svilenkastu dlaku srednje duljine s resicama na ušima, prsima, nogama i repu. Četkajte <strong>3–4 puta tjedno</strong> kako biste spriječili zapetljavanje. Koristite meku četku, a zatim metalni češalj. Posebnu pažnju posvetite <strong>resicama na ušima</strong> jer se tamo se najlakše stvaraju čvorovi koji uzrokuju nelagodu.</p>
+              <p>Kupajte svakih <strong>3–4 tjedna</strong> nježnim hipoalergenim šamponom. Uvijek osušite fenom i dobro osušite uši. Vlažne uši sklone su gljivičnim infekcijama. Duge uši zahtijevaju tjedni pregled i čišćenje. Obrišite unutrašnju ušnu školjku vatom navlaženom veterinarskim sredstvom.</p>
+              <p>Šišajte nokte jednom mjesečno. Blago obrezivanje oko šapa i ušiju čuva tip pasmine. Izbjegavajte jako šišanje. Redovito perite zube; zubne bolesti vrlo su česte u Kavalira.</p>
+            </div>
           </div>
         </div>
 
@@ -305,7 +303,7 @@
               <div class="prod-type">Uređivanje ušiju i šapa</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/hair trimmer.webp" alt="Trimer za dlaku" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/hair%20trimmer.webp" alt="Trimer za dlaku" loading="lazy"></div>
               <div class="prod-name">Trimer za dlaku</div>
               <div class="prod-type">Šape i detalji</div>
             </div>
@@ -315,22 +313,22 @@
               <div class="prod-type">Hipoalergeno kupanje</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/waterless shampoo.jpg" alt="Bio-Groom Waterless Bath" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/waterless%20shampoo.jpg" alt="Bio-Groom Waterless Bath" loading="lazy"></div>
               <div class="prod-name">Bio-Groom Waterless Bath</div>
               <div class="prod-type">Osvježavanje između kupanja</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/teeth brush.webp" alt="Beaphar četkica i pasta" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/teeth%20brush.webp" alt="Beaphar četkica i pasta" loading="lazy"></div>
               <div class="prod-name">Beaphar set za zube</div>
               <div class="prod-type">Dentalna higijena</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/nail clipper.jpg" alt="Epica kliješta za nokte" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/nail%20clipper.jpg" alt="Epica kliješta za nokte" loading="lazy"></div>
               <div class="prod-name">Epica kliješta za nokte</div>
               <div class="prod-type">Mjesečno šišanje noktiju</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/nail grinder.webp" alt="Boshel brusilica za nokte" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/nail%20grinder.webp" alt="Boshel brusilica za nokte" loading="lazy"></div>
               <div class="prod-name">Boshel brusilica za nokte</div>
               <div class="prod-type">Glatka završna obrada</div>
             </div>
@@ -340,27 +338,24 @@
         <!-- Prehrana -->
         <div class="zigzag-row zz-reverse" data-anim>
           <figure class="zz-figure">
-            <img src="../images/care/josera kibble.jpg" alt="Josera Adult Mini Lamb granule" class="prod" loading="lazy">
+            <img src="../images/care/josera%20kibble.jpg" alt="Josera Adult Mini Lamb granule" class="prod" loading="lazy">
             <figcaption>Josera Adult Mini Lamb: žitaricama slobodna, mono-proteinska hrana super-premium kvalitete, naša preporuka za odrasle pse obje pasmine.</figcaption>
           </figure>
           <div class="zz-text">
             <h3>Prehrana</h3>
-            <ul>
-              <li>Svako štene odlazi od nas s <strong>poklon vrećicom Royal Canin Puppy Small</strong> granula, miješajte ih postupno s odabranom hranom kroz 7–10 dana kako biste izbjegli probavne smetnje.</li>
-              <li>Za odrasle pse, mi hranimo i preporučujemo <strong>Josera Adult Mini Lamb</strong>: žitaricama slobodna, mono-proteinska hrana s janjetinom kao jedinim izvorom životinjskog proteina.</li>
-              <li>Većina odraslih pasa dobro napreduje na <strong>¾ do 1 šalici</strong> granula dnevno, podijeljenih u dva obroka. Uvijek vagajte obroke umjesto procjenjivanja na oko.</li>
-              <li>Kavaliri su <strong>visoko motivirani hranom</strong> i skloni pretilosti, pretilost dramatično povećava rizik od napredovanja srčane bolesti.</li>
-              <li>Izbjegavajte hranu otrovnu za pse: grožđe, grožđice, luk, čokoladu i ksilitol.</li>
-              <li>Uvijek osigurajte pristup svježoj, čistoj vodi.</li>
-            </ul>
+            <div class="care-prose">
+              <p>Svako štene odlazi od nas s <strong>poklon vrećicom Royal Canin Puppy Small</strong> granula. Miješajte ih postupno s odabranom hranom kroz 7–10 dana kako biste izbjegli probavne smetnje. Za odrasle pse, mi hranimo i preporučujemo <strong>Josera Adult Mini Lamb</strong>: žitaricama slobodna, mono-proteinska hrana s janjetinom kao jedinim izvorom životinjskog proteina.</p>
+              <p>Većina odraslih pasa dobro napreduje na <strong>¾ do 1 šalici</strong> granula dnevno, podijeljenih u dva obroka. Uvijek vagajte obroke umjesto procjenjivanja na oko. Kavaliri su <strong>visoko motivirani hranom</strong> i skloni pretilosti. Pretilost dramatično povećava rizik od napredovanja srčane bolesti.</p>
+              <p>Izbjegavajte hranu otrovnu za pse: grožđe, grožđice, luk, čokoladu i ksilitol. Uvijek osigurajte pristup svježoj, čistoj vodi.</p>
+            </div>
 
             <div class="photo-strip" style="max-width:320px;margin-top:1.5rem">
               <figure>
-                <img src="../images/care/royal canine kibble puppy.jpg" alt="Royal Canin Puppy Small" loading="lazy">
+                <img src="../images/care/royal%20canine%20kibble%20puppy.jpg" alt="Royal Canin Puppy Small" loading="lazy">
                 <figcaption>Royal Canin Puppy Small: u poklon vrećici</figcaption>
               </figure>
               <figure>
-                <img src="../images/care/josera kibble.jpg" alt="Josera Adult Mini Lamb" loading="lazy">
+                <img src="../images/care/josera%20kibble.jpg" alt="Josera Adult Mini Lamb" loading="lazy">
                 <figcaption>Josera Adult Mini Lamb: preporuka za odrasle</figcaption>
               </figure>
             </div>
@@ -375,13 +370,11 @@
           </figure>
           <div class="zz-text">
             <h3>Vježbanje i šetnje</h3>
-            <ul>
-              <li>Kavaliri su prilagodljivi: vole dobru šetnju ali su jednako sretni i na mirnom popodnevu na kauču. Oko <strong>45–60 minuta vježbanja dnevno</strong> idealno je za odraslog Kavalira.</li>
-              <li>Vole šetnje uz puno njušenja (uvijek im dopustite istraživanje!), aportiranje i druženje s drugim psima.</li>
-              <li>Kavaliri ne podnose dobro ekstremnu vrućinu. Ljeti vježbajte rano ujutro ili navečer i uvijek osigurajte sjenu i vodu.</li>
-              <li>Kavaliri <strong>nikada ne smiju biti bez povodca</strong> na neosiguranom prostoru, njihov španijel instinkt znači da mogu nestati u sekundi jureći miris.</li>
-              <li>Dobro prilagođeni <strong>prsni remen</strong> udobniji je za šetnje od ogrlice i izbjegava pritisak na grlo.</li>
-            </ul>
+            <div class="care-prose">
+              <p>Kavaliri su prilagodljivi: vole dobru šetnju ali su jednako sretni i na mirnom popodnevu na kauču. Oko <strong>45–60 minuta vježbanja dnevno</strong> idealno je za odraslog Kavalira. Vole šetnje uz puno njušenja (uvijek im dopustite istraživanje!), aportiranje i druženje s drugim psima.</p>
+              <p>Kavaliri ne podnose dobro ekstremnu vrućinu. Ljeti vježbajte rano ujutro ili navečer i uvijek osigurajte sjenu i vodu. Kavaliri <strong>nikada ne smiju biti bez povodca</strong> na neosiguranom prostoru. Njihov španijel instinkt znači da mogu nestati u sekundi jureći miris.</p>
+              <p>Dobro prilagođeni <strong>prsni remen</strong> udobniji je za šetnje od ogrlice i izbjegava pritisak na grlo.</p>
+            </div>
 
             <div class="photo-strip" style="max-width:280px;margin-top:1.5rem">
               <figure>
@@ -404,14 +397,11 @@
           </figure>
           <div class="zz-text">
             <h3>Zdravlje</h3>
-            <ul>
-              <li><strong>Mitralna valvularna bolest (MVD)</strong> najznačajnija je zdravstvena briga. Srčani šum može se razviti od srednje dobi. Godišnji kardiološki pregledi toplo su preporučeni od 2.–3. godine.</li>
-              <li><strong>Siringomijelija (SM) i Chiari-like malformacija (CM)</strong> zahvaćaju neke Kavalire. Odgovorni uzgajivači MRI snimaju pse prije parenja kako bi minimizirali ovaj rizik.</li>
-              <li>Mogu se javiti očne bolesti (katarakte, problemi mrežnice), preporučuju se godišnji pregledi vida.</li>
-              <li>Primjenite <strong>zaštitu od parazita</strong> jednom mjesečno: koristimo Frontline Combo Spot On cijelu godinu.</li>
-              <li>Kavaliri ne podnose dugo ostajanje sami. Može se razviti separacijska anksioznost, postupno navikavanje i trening u boksu pomaže.</li>
-              <li>Zakazujte <strong>godišnje veterinarske preglede</strong> i redovito provodite cijepljenje i odglinjavanje.</li>
-            </ul>
+            <div class="care-prose">
+              <p><strong>Mitralna valvularna bolest (MVD)</strong> najznačajnija je zdravstvena briga. Srčani šum može se razviti od srednje dobi. Godišnji kardiološki pregledi toplo su preporučeni od 2.–3. godine. <strong>Siringomijelija (SM) i Chiari-like malformacija (CM)</strong> zahvaćaju neke Kavalire. Odgovorni uzgajivači MRI snimaju pse prije parenja kako bi minimizirali ovaj rizik.</p>
+              <p>Mogu se javiti očne bolesti (katarakte, problemi mrežnice). Preporučuju se godišnji pregledi vida. Primjenite <strong>zaštitu od parazita</strong> jednom mjesečno: koristimo Frontline Combo Spot On cijelu godinu.</p>
+              <p>Kavaliri ne podnose dugo ostajanje sami. Može se razviti separacijska anksioznost. Postupno navikavanje i trening u boksu mogu pomoći. Zakazujte <strong>godišnje veterinarske preglede</strong> i redovito provodite cijepljenje i odglinjavanje.</p>
+            </div>
           </div>
         </div>
 
@@ -423,13 +413,11 @@
           </figure>
           <div class="zz-text">
             <h3>Trening i socijalizacija</h3>
-            <ul>
-              <li>Kavaliri su <strong>blagi, željni ugađanja i visoko podučljivi</strong>. Najboije reagiraju na pozitivno potkrepljenje, oštre korekcije su nepotrebne i kontraproduktivne.</li>
-              <li>Održavajte sesije kratke (10–15 minuta) i zabavne. Kavaliri napreduju uz dosljednost i rutinu.</li>
-              <li>Rana i široka socijalizacija je ključna: izložite ih različitim ljudima, psima, zvukovima i okruženjima od prvih tjedana.</li>
-              <li>Izvrsno se slažu s djecom, drugim psima pa čak i mačkama kad su pravilno upoznati.</li>
-              <li>Čistoća se brzo uči uz trening u boksu i dosljedan raspored. Podloge za trening pomažu u prvim tjednima.</li>
-            </ul>
+            <div class="care-prose">
+              <p>Kavaliri su <strong>blagi, željni ugađanja i visoko podučljivi</strong>. Najbolje reagiraju na pozitivno potkrepljenje. Oštre korekcije su nepotrebne i kontraproduktivne. Održavajte sesije kratke (10–15 minuta) i zabavne. Kavaliri napreduju uz dosljednost i rutinu.</p>
+              <p>Rana i široka socijalizacija je ključna: izložite ih različitim ljudima, psima, zvukovima i okruženjima od prvih tjedana. Izvrsno se slažu s djecom, drugim psima pa čak i mačkama kad su pravilno upoznati.</p>
+              <p>Čistoća se brzo uči uz trening u boksu i dosljedan raspored. Podloge za trening pomažu u prvim tjednima.</p>
+            </div>
           </div>
         </div>
 
@@ -437,22 +425,22 @@
         <div data-anim>
           <div class="care-tip-grid">
             <div class="care-tip-card">
-              <div class="tip-icon">❤</div>
+
               <h4>Zdravlje srca na prvom mjestu</h4>
               <p>MVD je gotovo univerzalna s dobi. Godišnji kardiološki pregledi od 2.–3. godine omogućuju rano otkrivanje i pažljivo praćenje.</p>
             </div>
             <div class="care-tip-card">
-              <div class="tip-icon">👂</div>
+
               <h4>Tjedna njega ušiju</h4>
               <p>Duge resičaste uši zadržavaju vlagu i nečistoće. Tjedni pregled i čišćenje sprječavaju infekcije i nelagodu.</p>
             </div>
             <div class="care-tip-card">
-              <div class="tip-icon">🏠</div>
+
               <h4>Nikada dugo sami</h4>
               <p>Kavaliri su psi za društvo. Redovita dulja osamljenost može uzrokovati anksioznost. Razmislite o drugom psu kao kompanjonu.</p>
             </div>
             <div class="care-tip-card">
-              <div class="tip-icon">🐕</div>
+
               <h4>Povodac je obvezan</h4>
               <p>Na siguran povratak na poziv ne možete se osloniti vani. Uvijek koristite povodac ili sigurno ograđen prostor.</p>
             </div>
@@ -473,7 +461,7 @@
         <div style="text-align:center;margin-bottom:3rem" data-anim>
           <span class="hero-eyebrow" style="font-size:0.7rem">Vodič za pasminu</span>
           <h2>Briga o Pomerancima</h2>
-          <div class="gold-divider" style="margin:1rem auto 0;max-width:180px;"><span>✦</span></div>
+          <div class="gold-divider" style="margin:1rem auto 0;max-width:180px;"><span></span></div>
         </div>
 
         <!-- Njega dlake -->
@@ -484,15 +472,12 @@
           </figure>
           <div class="zz-text">
             <h3>Njega dlake</h3>
-            <ul>
-              <li>Pomeranci imaju gustu dvostruku dlaku: meki gust poddlak i duži grublji vanjski sloj. <strong>Svakodnevno četkanje</strong> sprječava zapetljavanje i kontrolira linjanje.</li>
-              <li>Koristite četku za lišćelje, a zatim završite širokim metalnim češljem, uvijek radite do kože, a ne samo površinski.</li>
-              <li>Kupajte svakih <strong>3–4 tjedna</strong> hipoalergenim šamponom za pse. Nakon kupanja dobro osušite fenom, vlažan poddlak uzrokuje kožne probleme.</li>
-              <li>Između kupanja <strong>sprej bez ispiranja</strong> osvježava dlaku bez vode.</li>
-              <li>Profesionalna njega (šišanje, sanitarni trid, uređivanje ušiju) svakih <strong>6–8 tjedana</strong>.</li>
-              <li>Šišajte nokte jednom mjesečno: kliještima ili brusilicom, oboje radi. Čistite uši tjedno.</li>
-              <li>Perite zube barem <strong>3× tjedno</strong>; male pasmine visoko su sklone zubnim bolestima.</li>
-            </ul>
+            <div class="care-prose">
+              <p>Pomeranci imaju gustu dvostruku dlaku: meki gust poddlak i duži grublji vanjski sloj. <strong>Svakodnevno četkanje</strong> sprječava zapetljavanje i kontrolira linjanje. Koristite četku za lišćelje, a zatim završite širokim metalnim češljem. Uvijek radite do kože, a ne samo površinski.</p>
+              <p>Kupajte svakih <strong>3–4 tjedna</strong> hipoalergenim šamponom za pse. Nakon kupanja dobro osušite fenom. Vlažan poddlak uzrokuje kožne probleme. Između kupanja <strong>sprej bez ispiranja</strong> osvježava dlaku bez vode.</p>
+              <p>Dogovorite profesionalnu njegu, uključujući šišanje, higijensko uređivanje i uređivanje ušiju, svakih <strong>6–8 tjedana</strong>. Šišajte nokte jednom mjesečno kliještima ili brusilicom. Čistite uši tjedno.</p>
+              <p>Perite zube barem <strong>3× tjedno</strong>; male pasmine visoko su sklone zubnim bolestima.</p>
+            </div>
           </div>
         </div>
 
@@ -516,7 +501,7 @@
               <div class="prod-type">Obrezivanje i oblikovanje</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/hair trimmer.webp" alt="Trimer za dlaku" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/hair%20trimmer.webp" alt="Trimer za dlaku" loading="lazy"></div>
               <div class="prod-name">Trimer za dlaku</div>
               <div class="prod-type">Šape i detalji</div>
             </div>
@@ -526,22 +511,22 @@
               <div class="prod-type">Hipoalergeno kupanje</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/waterless shampoo.jpg" alt="Bio-Groom Waterless Bath" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/waterless%20shampoo.jpg" alt="Bio-Groom Waterless Bath" loading="lazy"></div>
               <div class="prod-name">Bio-Groom Waterless Bath</div>
               <div class="prod-type">Osvježavanje između kupanja</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/teeth brush.webp" alt="Beaphar četkica i pasta za zube" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/teeth%20brush.webp" alt="Beaphar četkica i pasta za zube" loading="lazy"></div>
               <div class="prod-name">Beaphar set za zube</div>
               <div class="prod-type">Dentalna higijena</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/nail clipper.jpg" alt="Epica kliješta za nokte" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/nail%20clipper.jpg" alt="Epica kliješta za nokte" loading="lazy"></div>
               <div class="prod-name">Epica kliješta za nokte</div>
               <div class="prod-type">Mjesečno šišanje noktiju</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/nail grinder.webp" alt="Boshel brusilica za nokte" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/nail%20grinder.webp" alt="Boshel brusilica za nokte" loading="lazy"></div>
               <div class="prod-name">Boshel brusilica za nokte</div>
               <div class="prod-type">Glatka završna obrada</div>
             </div>
@@ -551,27 +536,24 @@
         <!-- Prehrana -->
         <div class="zigzag-row zz-reverse" data-anim>
           <figure class="zz-figure">
-            <img src="../images/care/royal canine kibble puppy.jpg" alt="Royal Canin Puppy Small granule" class="prod" loading="lazy">
+            <img src="../images/care/royal%20canine%20kibble%20puppy.jpg" alt="Royal Canin Puppy Small granule" class="prod" loading="lazy">
             <figcaption>Royal Canin Puppy Small: svaki štene odlazi od nas s poklon vrećicom ove hrane kako biste mogli postupno prijeći na odabranu hranu za odrasle.</figcaption>
           </figure>
           <div class="zz-text">
             <h3>Prehrana</h3>
-            <ul>
-              <li>Svako štene odlazi od nas s <strong>poklon vrećicom Royal Canin Puppy Small</strong> granula, miješajte ih postupno s odabranom hranom kroz 7–10 dana kako biste izbjegli probavne smetnje.</li>
-              <li>Za odrasle pse, mi hranimo i preporučujemo <strong>Josera Adult Mini Lamb</strong>: žitaricama slobodna, mono-proteinska hrana vrhunske njemačke kvalitete s janjetinom kao jedinim izvorom životinjskog proteina.</li>
-              <li>Odrasli psi obično jedu <strong>¼ do ½ šalice</strong> dnevno, podijeljenih u dva obroka. Prilagodite individualnoj težini, dobi i razini aktivnosti.</li>
-              <li>Pomeranci su skloni <strong>hipoglikemiji</strong>, posebno kao štenci, nikada ih ne ostavljajte predugo bez hrane.</li>
-              <li>Ograničite poslastice na <strong>10% dnevnih kalorija</strong>. Pretilost ozbiljno opterećuje zglobove i srce.</li>
-              <li>Uvijek osigurajte pristup svježoj, čistoj vodi.</li>
-            </ul>
+            <div class="care-prose">
+              <p>Svako štene odlazi od nas s <strong>poklon vrećicom Royal Canin Puppy Small</strong> granula. Miješajte ih postupno s odabranom hranom kroz 7–10 dana kako biste izbjegli probavne smetnje. Za odrasle pse, mi hranimo i preporučujemo <strong>Josera Adult Mini Lamb</strong>: žitaricama slobodna, mono-proteinska hrana vrhunske njemačke kvalitete s janjetinom kao jedinim izvorom životinjskog proteina.</p>
+              <p>Odrasli psi obično jedu <strong>¼ do ½ šalice</strong> dnevno, podijeljenih u dva obroka. Prilagodite individualnoj težini, dobi i razini aktivnosti. Pomeranci su skloni <strong>hipoglikemiji</strong>, posebno kao štenci. Nikada ih ne ostavljajte predugo bez hrane.</p>
+              <p>Ograničite poslastice na <strong>10% dnevnih kalorija</strong>. Pretilost ozbiljno opterećuje zglobove i srce. Uvijek osigurajte pristup svježoj, čistoj vodi.</p>
+            </div>
 
             <div class="photo-strip" style="max-width:320px;margin-top:1.5rem">
               <figure>
-                <img src="../images/care/royal canine kibble puppy.jpg" alt="Royal Canin Puppy Small" loading="lazy">
+                <img src="../images/care/royal%20canine%20kibble%20puppy.jpg" alt="Royal Canin Puppy Small" loading="lazy">
                 <figcaption>Royal Canin Puppy Small: u poklon vrećici</figcaption>
               </figure>
               <figure>
-                <img src="../images/care/josera kibble.jpg" alt="Josera Adult Mini Lamb" loading="lazy">
+                <img src="../images/care/josera%20kibble.jpg" alt="Josera Adult Mini Lamb" loading="lazy">
                 <figcaption>Josera Adult Mini Lamb: preporuka za odrasle</figcaption>
               </figure>
             </div>
@@ -587,7 +569,7 @@
               <figcaption>Pedigree Dentastix: smanjuje nakupljanje kamenca</figcaption>
             </figure>
             <figure>
-              <img src="../images/care/teeth brush.webp" alt="Beaphar četkica i pasta" loading="lazy">
+              <img src="../images/care/teeth%20brush.webp" alt="Beaphar četkica i pasta" loading="lazy">
               <figcaption>Beaphar set za zube</figcaption>
             </figure>
             <figure>
@@ -605,14 +587,11 @@
           </figure>
           <div class="zz-text">
             <h3>Vježbanje i šetnje</h3>
-            <ul>
-              <li>Unatoč maloj veličini, Pomeranci su <strong>energični i radoznali</strong>. Potrebno im je najmanje <strong>30 minuta aktivnosti dnevno</strong>: dvije kraće šetnje su idealne.</li>
-              <li>Jednako uživaju u puzzle igračkama i kratkim treninzima kao i u vanjskim šetnjama.</li>
-              <li>Uvijek koristite <strong>prsni remen, ne ogrlicu</strong>, Pomeranci su skloni kolapsu traheje i pritisak ogrlice pogoršava stanje.</li>
-              <li>Uvlačeći povodac poput Flexi-ja daje im slobodu istraživanja uz sigurnost na otvorenim prostorima.</li>
-              <li>Izbjegavajte naporan trening u vrućini, gusta dlaka čini ih sklonima pregrijavanju. Šetajte u hladnijim dijelovima dana ljeti.</li>
-              <li>Slobodna igra u sigurno ograđenom vrtu je odlična, ali uvijek nadgledajte, Pomeranci mogu proći kroz iznenađujuće male otvore.</li>
-            </ul>
+            <div class="care-prose">
+              <p>Unatoč maloj veličini, Pomeranci su <strong>energični i radoznali</strong>. Potrebno im je najmanje <strong>30 minuta aktivnosti dnevno</strong>: dvije kraće šetnje su idealne. Jednako uživaju u puzzle igračkama i kratkim treninzima kao i u vanjskim šetnjama.</p>
+              <p>Uvijek koristite <strong>prsni remen, ne ogrlicu</strong> jer su Pomeranci skloni kolapsu traheje i pritisak ogrlice pogoršava stanje. Uvlačeći povodac poput Flexi-ja daje im slobodu istraživanja uz sigurnost na otvorenim prostorima.</p>
+              <p>Izbjegavajte naporan trening u vrućini. Gusta dlaka čini ih sklonima pregrijavanju. Šetajte u hladnijim dijelovima dana ljeti. Slobodna igra u sigurno ograđenom vrtu je odlična, ali uvijek nadgledajte. Pomeranci mogu proći kroz iznenađujuće male otvore.</p>
+            </div>
 
             <div class="photo-strip" style="max-width:280px;margin-top:1.5rem">
               <figure>
@@ -635,14 +614,11 @@
           </figure>
           <div class="zz-text">
             <h3>Zdravlje</h3>
-            <ul>
-              <li><strong>Luksacija patele</strong> (klizanje kapice koljena) česta je kod malih pasmina. Održavajte zdravu tjelesnu težinu i izbjegavajte pretjerano skakanje s visina.</li>
-              <li>Može doći do kolapsa traheje, uvijek koristite prsni remen i izbjegavajte ikakav pritisak na grlo.</li>
-              <li>Black Skin Disease (Alopecia X) može uzrokovati gubitak dlake u mužjaka.</li>
-              <li>Primjenite <strong>zaštitu od parazita</strong> jednom mjesečno: koristimo Frontline Combo Spot On za zaštitu od buha, krpelja i uši.</li>
-              <li>Zakazujte <strong>godišnje veterinarske preglede</strong> uključujući srčanu procjenu, certifikaciju vida i pregled patele.</li>
-              <li>Redovito cijepljenje i odglinjavanje, tijekom cijele godine.</li>
-            </ul>
+            <div class="care-prose">
+              <p><strong>Luksacija patele</strong> (klizanje kapice koljena) česta je kod malih pasmina. Održavajte zdravu tjelesnu težinu i izbjegavajte pretjerano skakanje s visina. Može doći do kolapsa traheje. Uvijek koristite prsni remen i izbjegavajte ikakav pritisak na grlo.</p>
+              <p>Black Skin Disease (Alopecia X) može uzrokovati gubitak dlake u mužjaka. Primjenite <strong>zaštitu od parazita</strong> jednom mjesečno: koristimo Frontline Combo Spot On za zaštitu od buha, krpelja i uši.</p>
+              <p>Zakazujte <strong>godišnje veterinarske preglede</strong> uključujući srčanu procjenu, certifikaciju vida i pregled patele. Redovito provodite cijepljenje i čišćenje od crijevnih parazita tijekom cijele godine.</p>
+            </div>
           </div>
         </div>
 
@@ -652,22 +628,22 @@
           <p style="color:var(--text-muted);font-size:0.95rem;margin-bottom:1.5rem;line-height:1.7">Pomeranci su inteligentni i brzo uče, ali mogu biti tvrdoglavi. Kratke, dosljedne sesije s <strong style="color:var(--cream)">isključivo pozitivnim potkrepljanjem</strong> daju najbolje rezultate. Rana i široka socijalizacija ključna je, dobro socijaliziran Pomeranac siguran je i prilagodljiv u kontaktu s ljudima, psima i različitim okruženjima.</p>
           <div class="care-tip-grid">
             <div class="care-tip-card">
-              <div class="tip-icon">🌡</div>
+
               <h4>Osjetljivost na vrućinu</h4>
               <p>Pomeranci se brzo pregrijavaju. Ljeti ograničite šetnje na jutro i večer. Nikada ih ne ostavljajte u vrućem autu.</p>
             </div>
             <div class="care-tip-card">
-              <div class="tip-icon">🦷</div>
+
               <h4>Dentalna rutina</h4>
               <p>Male pasmine visoko su sklone nakupljanju kamenca. Počnite pranje zuba od štenadske dobi i dopunite dentalnim grickalicama.</p>
             </div>
             <div class="care-tip-card">
-              <div class="tip-icon">🧠</div>
+
               <h4>Mentalna stimulacija</h4>
               <p>Puzzle hranilice, igre njuhanjem i trening trikova sprječavaju dosadu i destruktivno ponašanje kod ove pametne pasmine.</p>
             </div>
             <div class="care-tip-card">
-              <div class="tip-icon">🔇</div>
+
               <h4>Upravljanje lajanjem</h4>
               <p>Pomeranci mogu biti glasni. Naučite naredbu "tiho" od ranog djetinjstva, nikada nenamjerno ne nagrađujte lajanje pažnjom.</p>
             </div>
@@ -696,26 +672,26 @@
             <div class="social-links"><a href="https://www.facebook.com/matejsangels/" class="social-link" target="_blank" rel="noopener noreferrer">f</a><a href="https://wa.me/385955152150" class="social-link" target="_blank" rel="noopener" aria-label="WhatsApp">W</a></div>
           </div>
           <div class="footer-col"><h5>Stranice</h5><ul><li><a href="o-nama">O nama</a></li><li><a href="legla">Legla</a></li><li><a href="kronologija">Kronologija</a></li><li><a href="nasi-psi">Naši psi</a></li><li><a href="galerija">Galerija</a></li></ul></div>
-          <div class="footer-col"><h5>Više</h5><ul><li><a href="vijesti">Vijesti</a></li><li><a href="faq">FAQ</a></li><li><a href="briga">Briga</a></li><li><a href="kontakt">Kontakt</a></li><li><a href="../en/care">🇬🇧 English</a></li></ul></div>
+          <div class="footer-col"><h5>Više</h5><ul><li><a href="vijesti">Vijesti</a></li><li><a href="faq">FAQ</a></li><li><a href="briga">Briga</a></li><li><a href="kontakt">Kontakt</a></li><li><a href="../en/care"> English</a></li></ul></div>
           <div class="footer-col"><h5>Kontakt</h5><ul><li><a href="mailto:sanjaimatej@gmail.com">sanjaimatej@gmail.com</a></li><li>Selo Varoš 70 D, Premantura, Hrvatska</li></ul></div>
         </div>
         <div class="footer-counter">
           <a href="https://info.flagcounter.com/fMiv"><img src="https://s01.flagcounter.com/count2/fMiv/bg_FFFFFF/txt_000000/border_FFFFFF/columns_4/maxflags_16/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter"></a>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2024 Matej's Angels Kennel. Sva prava pridržana.</p>
-          <p>Made with ♥ for dogs</p>
+          <p>© 2026. Matej Abramović. Sva prava pridržana.</p>
+          <p>Made with love for dogs.</p>
         </div>
       </div>
     </footer>
   </div>
 
   <div id="care-lb" role="dialog" aria-modal="true" aria-label="Preglednik slika">
-    <button id="care-lb-close" aria-label="Zatvori">&times;</button>
+    <button id="care-lb-close" aria-label="Zatvori">×</button>
     <div id="care-lb-list"></div>
   </div>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=4d1498abc66d"></script>
   <script>
   (function () {
     var imgs = Array.from(document.querySelectorAll('.section img, .section-mid img'));

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../images/index/logotransparent.png" sizes="32x32">
+    <link rel="icon" type="image/svg+xml" href="../images/index/favicon.svg?v=rounded1" sizes="any">
   <link rel="apple-touch-icon" href="../images/index/logotransparent.png">
   <meta name="theme-color" content="#0D1B2A">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css?v=eaebf484ffdf">
 
   <style>
     /* ── Zigzag rows ── */
@@ -36,17 +36,18 @@
       margin: 0 0 1rem;
       font-size: 1.2rem;
     }
-    .zigzag-row .zz-text ul {
-      padding-left: 1.25rem;
+    .zigzag-row .zz-text .care-prose {
+      padding-left: 0;
       display: flex;
       flex-direction: column;
       gap: 0.55rem;
-      list-style: disc;
+
       color: var(--text-muted);
       line-height: 1.7;
       font-size: 0.95rem;
     }
-    .zigzag-row .zz-text ul li strong { color: var(--cream); }
+    .zigzag-row .zz-text .care-prose strong { color: var(--cream); }
+    .care-prose p { font-size: 0.95rem; line-height: 1.7; color: var(--text-muted); }
     figcaption {
       margin-top: 0.5rem;
       font-size: 0.8rem;
@@ -185,8 +186,8 @@
     .page-content img { cursor: zoom-in; }
   </style>
   
-    <title>Care Guide - Matej&#x27;s Angels Kennel</title>
-  <meta name="description" content="Complete care guides for Pomeranians and Cavalier King Charles Spaniels, grooming, nutrition, health, exercise and more from Matej&#x27;s Angels Kennel.">
+    <title>Care Guide - Matej's Angels Kennel</title>
+  <meta name="description" content="Complete care guides for Pomeranians and Cavalier King Charles Spaniels, grooming, nutrition, health, exercise and more from Matej's Angels Kennel.">
   <link rel="canonical" href="https://matejsangels.com/en/care">
   <link rel="alternate" hreflang="en" href="https://matejsangels.com/en/care">
   <link rel="alternate" hreflang="hr" href="https://matejsangels.com/hr/briga">
@@ -194,15 +195,15 @@
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Matej’s Angels">
-  <meta property="og:title" content="Care Guide - Matej&#x27;s Angels Kennel">
-  <meta property="og:description" content="Complete care guides for Pomeranians and Cavalier King Charles Spaniels, grooming, nutrition, health, exercise and more from Matej&#x27;s Angels Kennel.">
+  <meta property="og:title" content="Care Guide - Matej's Angels Kennel">
+  <meta property="og:description" content="Complete care guides for Pomeranians and Cavalier King Charles Spaniels, grooming, nutrition, health, exercise and more from Matej's Angels Kennel.">
   <meta property="og:url" content="https://matejsangels.com/en/care">
   <meta property="og:image" content="https://matejsangels.com/images/index/logotransparent.png">
   <meta property="og:image:alt" content="Matej’s Angels kennel logo">
   <meta property="og:locale" content="en_GB">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Care Guide - Matej&#x27;s Angels Kennel">
-  <meta name="twitter:description" content="Complete care guides for Pomeranians and Cavalier King Charles Spaniels, grooming, nutrition, health, exercise and more from Matej&#x27;s Angels Kennel.">
+  <meta name="twitter:title" content="Care Guide - Matej's Angels Kennel">
+  <meta name="twitter:description" content="Complete care guides for Pomeranians and Cavalier King Charles Spaniels, grooming, nutrition, health, exercise and more from Matej's Angels Kennel.">
   <meta name="twitter:image" content="https://matejsangels.com/images/index/logotransparent.png">
   <script type="application/ld+json" id="site-seo">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://matejsangels.com/#organization", "name": "Matej’s Angels", "url": "https://matejsangels.com/", "logo": "https://matejsangels.com/images/index/logotransparent.png", "email": "sanjaimatej@gmail.com", "telephone": "+385955152150", "address": {"@type": "PostalAddress", "streetAddress": "Selo Varoš 70 D", "addressLocality": "Premantura", "postalCode": "52100", "addressCountry": "HR"}, "sameAs": ["https://www.facebook.com/matejsangels/"]}, {"@type": "WebSite", "@id": "https://matejsangels.com/#website", "url": "https://matejsangels.com/", "name": "Matej’s Angels", "inLanguage": ["en", "hr"], "publisher": {"@id": "https://matejsangels.com/#organization"}}, {"@type": "WebPage", "@id": "https://matejsangels.com/en/care#webpage", "url": "https://matejsangels.com/en/care", "name": "Care Guide - Matej's Angels Kennel", "description": "Complete care guides for Pomeranians and Cavalier King Charles Spaniels, grooming, nutrition, health, exercise and more from Matej's Angels Kennel.", "inLanguage": "en", "isPartOf": {"@id": "https://matejsangels.com/#website"}}]}</script>
 </head>
@@ -240,7 +241,7 @@
 
   <div class="page-content">
 
-    <section class="hero" style="min-height:45vh">
+    <section class="hero">
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <span class="hero-eyebrow">Breed Knowledge</span>
@@ -263,7 +264,7 @@
         <div style="text-align:center;margin-bottom:3rem" data-anim>
           <span class="hero-eyebrow" style="font-size:0.7rem">Breed Guide</span>
           <h2>Cavalier King Charles Spaniel Care</h2>
-          <div class="gold-divider" style="margin:1rem auto 0;max-width:180px;"><span>✦</span></div>
+          <div class="gold-divider" style="margin:1rem auto 0;max-width:180px;"><span></span></div>
         </div>
 
         <!-- Grooming -->
@@ -274,14 +275,11 @@
           </figure>
           <div class="zz-text">
             <h3>Grooming</h3>
-            <ul>
-              <li>Cavaliers have a silky medium-length coat with feathering on ears, chest, legs and tail. Brush <strong>3–4 times per week</strong> to prevent tangles and matting.</li>
-              <li>Use a soft bristle brush followed by a metal comb. Pay close attention to <strong>ear feathering</strong>, this is where mats form most easily and cause the most discomfort.</li>
-              <li>Bathe every <strong>3–4 weeks</strong> with a gentle hypoallergenic shampoo. Always blow-dry and ensure the ears are thoroughly dried, damp ears are prone to yeast infections.</li>
-              <li>Long ears need weekly inspection and cleaning. Wipe the inner ear flap with a cotton ball dampened with veterinarian-approved ear cleaner.</li>
-              <li>Trim nails monthly. Light trimming around paws and ears maintains a tidy appearance, avoid heavy scissoring to preserve breed type.</li>
-              <li>Brush teeth regularly; dental disease is very common in Cavaliers.</li>
-            </ul>
+            <div class="care-prose">
+              <p>Cavaliers have a silky medium-length coat with feathering on ears, chest, legs and tail. Brush <strong>3–4 times per week</strong> to prevent tangles and matting. Use a soft bristle brush followed by a metal comb. Pay close attention to <strong>ear feathering</strong>. This is where mats form most easily and cause the most discomfort.</p>
+              <p>Bathe every <strong>3–4 weeks</strong> with a gentle hypoallergenic shampoo. Always blow-dry and ensure the ears are thoroughly dried. Damp ears are prone to yeast infections. Long ears need weekly inspection and cleaning. Wipe the inner ear flap with a cotton ball dampened with veterinarian-approved ear cleaner.</p>
+              <p>Trim nails monthly. Light trimming around paws and ears maintains a tidy appearance. Avoid heavy scissoring to preserve breed type. Brush teeth regularly; dental disease is very common in Cavaliers.</p>
+            </div>
           </div>
         </div>
 
@@ -305,7 +303,7 @@
               <div class="prod-type">Ear &amp; paw tidy</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/hair trimmer.webp" alt="Pet Hair Trimmer" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/hair%20trimmer.webp" alt="Pet Hair Trimmer" loading="lazy"></div>
               <div class="prod-name">Pet Hair Trimmer</div>
               <div class="prod-type">Paws &amp; detail areas</div>
             </div>
@@ -315,22 +313,22 @@
               <div class="prod-type">Hypoallergenic bathing</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/waterless shampoo.jpg" alt="Bio-Groom Waterless Bath" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/waterless%20shampoo.jpg" alt="Bio-Groom Waterless Bath" loading="lazy"></div>
               <div class="prod-name">Bio-Groom Waterless Bath</div>
               <div class="prod-type">Between-bath refresh</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/teeth brush.webp" alt="Beaphar Toothbrush & Toothpaste" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/teeth%20brush.webp" alt="Beaphar Toothbrush &amp; Toothpaste" loading="lazy"></div>
               <div class="prod-name">Beaphar Toothbrush Set</div>
               <div class="prod-type">Dental hygiene</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/nail clipper.jpg" alt="Epica Nail Clipper" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/nail%20clipper.jpg" alt="Epica Nail Clipper" loading="lazy"></div>
               <div class="prod-name">Epica Nail Clipper</div>
               <div class="prod-type">Monthly nail trim</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/nail grinder.webp" alt="Boshel Nail Grinder" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/nail%20grinder.webp" alt="Boshel Nail Grinder" loading="lazy"></div>
               <div class="prod-name">Boshel Nail Grinder</div>
               <div class="prod-type">Smooth nail finish</div>
             </div>
@@ -340,27 +338,24 @@
         <!-- Nutrition -->
         <div class="zigzag-row zz-reverse" data-anim>
           <figure class="zz-figure">
-            <img src="../images/care/josera kibble.jpg" alt="Josera Adult Mini Lamb kibble" class="prod" loading="lazy">
+            <img src="../images/care/josera%20kibble.jpg" alt="Josera Adult Mini Lamb kibble" class="prod" loading="lazy">
             <figcaption>Josera Adult Mini Lamb: grain-free, monoprotein super-premium kibble, our adult food of choice for both breeds.</figcaption>
           </figure>
           <div class="zz-text">
             <h3>Nutrition</h3>
-            <ul>
-              <li>Every puppy leaves us with a <strong>gift bag of Royal Canin Puppy Small</strong> kibble, blend it gradually with your chosen food over 7–10 days to avoid digestive upset.</li>
-              <li>For adults, we feed and recommend <strong>Josera Adult Mini Lamb</strong>: grain-free, monoprotein, lamb as the sole animal protein source.</li>
-              <li>Most adults do well on <strong>¾ to 1 cup</strong> of kibble per day, divided into two meals. Always weigh portions rather than estimating.</li>
-              <li>Cavaliers are <strong>highly food-motivated</strong> and prone to obesity, excess weight dramatically increases the risk of heart disease progression.</li>
-              <li>Avoid foods toxic to dogs: grapes, raisins, onions, chocolate and xylitol.</li>
-              <li>Always provide access to fresh, clean water.</li>
-            </ul>
+            <div class="care-prose">
+              <p>Every puppy leaves us with a <strong>gift bag of Royal Canin Puppy Small</strong> kibble. Blend it gradually with your chosen food over 7–10 days to avoid digestive upset. For adults, we feed and recommend <strong>Josera Adult Mini Lamb</strong>: grain-free, monoprotein, lamb as the sole animal protein source.</p>
+              <p>Most adults do well on <strong>¾ to 1 cup</strong> of kibble per day, divided into two meals. Always weigh portions rather than estimating. Cavaliers are <strong>highly food-motivated</strong> and prone to obesity. Excess weight dramatically increases the risk of heart disease progression.</p>
+              <p>Avoid foods toxic to dogs: grapes, raisins, onions, chocolate and xylitol. Always provide access to fresh, clean water.</p>
+            </div>
 
             <div class="photo-strip" style="max-width:320px;margin-top:1.5rem">
               <figure>
-                <img src="../images/care/royal canine kibble puppy.jpg" alt="Royal Canin Puppy Small" loading="lazy">
+                <img src="../images/care/royal%20canine%20kibble%20puppy.jpg" alt="Royal Canin Puppy Small" loading="lazy">
                 <figcaption>Royal Canin Puppy Small: included in gift bag</figcaption>
               </figure>
               <figure>
-                <img src="../images/care/josera kibble.jpg" alt="Josera Adult Mini Lamb" loading="lazy">
+                <img src="../images/care/josera%20kibble.jpg" alt="Josera Adult Mini Lamb" loading="lazy">
                 <figcaption>Josera Adult Mini Lamb: our adult food recommendation</figcaption>
               </figure>
             </div>
@@ -375,13 +370,11 @@
           </figure>
           <div class="zz-text">
             <h3>Exercise &amp; Walking</h3>
-            <ul>
-              <li>Cavaliers are adaptable: they love a good walk but are equally happy on a quiet afternoon on the sofa. Around <strong>45–60 minutes of daily exercise</strong> is ideal for an adult.</li>
-              <li>They love sniffing walks (always allow them to explore!), fetch and socialising with other dogs.</li>
-              <li>Cavaliers do not tolerate extreme heat well. In summer, exercise in the early morning or evening and always ensure shade and water are available.</li>
-              <li>Cavaliers should <strong>never be off-lead</strong> in an unsecured area, their spaniel instinct means they can disappear chasing a scent in seconds.</li>
-              <li>A well-fitted <strong>harness</strong> is more comfortable for walks than a collar and avoids any pressure on the throat.</li>
-            </ul>
+            <div class="care-prose">
+              <p>Cavaliers are adaptable: they love a good walk but are equally happy on a quiet afternoon on the sofa. Around <strong>45–60 minutes of daily exercise</strong> is ideal for an adult. They love sniffing walks (always allow them to explore!), fetch and socialising with other dogs.</p>
+              <p>Cavaliers do not tolerate extreme heat well. In summer, exercise in the early morning or evening and always ensure shade and water are available. Cavaliers should <strong>never be off-lead</strong> in an unsecured area. Their spaniel instinct means they can disappear chasing a scent in seconds.</p>
+              <p>A well-fitted <strong>harness</strong> is more comfortable for walks than a collar and avoids any pressure on the throat.</p>
+            </div>
 
             <div class="photo-strip" style="max-width:280px;margin-top:1.5rem">
               <figure>
@@ -399,19 +392,16 @@
         <!-- Health -->
         <div class="zigzag-row zz-reverse" data-anim>
           <figure class="zz-figure">
-            <img src="../images/care/1753218178-frontline-combo-spot-on-s-protiv-buha-i-krpelja-za-pse-2-10-kg-1-pipeta.jpg" alt="Frontline Combo Spot On flea & tick treatment" class="prod" loading="lazy">
+            <img src="../images/care/1753218178-frontline-combo-spot-on-s-protiv-buha-i-krpelja-za-pse-2-10-kg-1-pipeta.jpg" alt="Frontline Combo Spot On flea &amp; tick treatment" class="prod" loading="lazy">
             <figcaption>Frontline Combo Spot On: monthly protection against fleas, ticks and lice. Essential year-round parasite prevention.</figcaption>
           </figure>
           <div class="zz-text">
             <h3>Health</h3>
-            <ul>
-              <li><strong>Mitral Valve Disease (MVD)</strong> is the most significant health concern. A heart murmur may develop from middle age. Annual cardiac examinations by a cardiologist are strongly recommended from age 2–3.</li>
-              <li><strong>Syringomyelia (SM) and Chiari-like Malformation (CM)</strong> affect some Cavaliers. Reputable breeders MRI screen before breeding to minimise this risk.</li>
-              <li>Eye conditions (cataracts, retinal problems) can occur, annual eye examinations are advised.</li>
-              <li>Apply <strong>parasite prevention</strong> monthly: we use Frontline Combo Spot On year-round.</li>
-              <li>Cavaliers do not do well if left alone for long periods. Separation anxiety can develop, gradual alone-time training and crate introduction helps.</li>
-              <li>Schedule <strong>annual vet check-ups</strong> and keep vaccinations and deworming current.</li>
-            </ul>
+            <div class="care-prose">
+              <p><strong>Mitral Valve Disease (MVD)</strong> is the most significant health concern. A heart murmur may develop from middle age. Annual cardiac examinations by a cardiologist are strongly recommended from age 2–3. <strong>Syringomyelia (SM) and Chiari-like Malformation (CM)</strong> affect some Cavaliers. Reputable breeders MRI screen before breeding to minimise this risk.</p>
+              <p>Eye conditions (cataracts, retinal problems) can occur. Annual eye examinations are advised. Apply <strong>parasite prevention</strong> monthly: we use Frontline Combo Spot On year-round.</p>
+              <p>Cavaliers do not do well if left alone for long periods. Separation anxiety can develop. Gradual alone-time training and crate introduction can help. Schedule <strong>annual vet check-ups</strong> and keep vaccinations and deworming current.</p>
+            </div>
           </div>
         </div>
 
@@ -423,13 +413,11 @@
           </figure>
           <div class="zz-text">
             <h3>Training &amp; Socialisation</h3>
-            <ul>
-              <li>Cavaliers are <strong>gentle, eager to please and highly trainable</strong>. They respond best to positive reinforcement, harsh corrections are unnecessary and counterproductive.</li>
-              <li>Keep training sessions short (10–15 minutes) and fun. Cavaliers thrive with consistency and routine.</li>
-              <li>Socialise early and widely: introduce to different people, dogs, sounds and environments from the very first weeks.</li>
-              <li>They get along beautifully with children, other dogs and even cats when introduced properly.</li>
-              <li>House-training is straightforward with crate training and a consistent schedule. Training pads help during the early weeks.</li>
-            </ul>
+            <div class="care-prose">
+              <p>Cavaliers are <strong>gentle, eager to please and highly trainable</strong>. They respond best to positive reinforcement. Harsh corrections are unnecessary and counterproductive. Keep training sessions short (10–15 minutes) and fun. Cavaliers thrive with consistency and routine.</p>
+              <p>Socialise early and widely: introduce to different people, dogs, sounds and environments from the very first weeks. They get along beautifully with children, other dogs and even cats when introduced properly.</p>
+              <p>House-training is straightforward with crate training and a consistent schedule. Training pads help during the early weeks.</p>
+            </div>
           </div>
         </div>
 
@@ -437,22 +425,22 @@
         <div data-anim>
           <div class="care-tip-grid">
             <div class="care-tip-card">
-              <div class="tip-icon">❤</div>
+
               <h4>Heart Health First</h4>
               <p>MVD is nearly universal in the breed with age. Annual cardiologist checks from age 2–3 allow early detection and careful management.</p>
             </div>
             <div class="care-tip-card">
-              <div class="tip-icon">👂</div>
+
               <h4>Weekly Ear Care</h4>
               <p>Long feathered ears trap moisture and debris. Inspect and gently clean weekly to prevent yeast infections and discomfort.</p>
             </div>
             <div class="care-tip-card">
-              <div class="tip-icon">🏠</div>
+
               <h4>Never Alone Too Long</h4>
               <p>Cavaliers are people-dogs. Regular long periods alone can cause anxiety. Consider a companion dog if your schedule is demanding.</p>
             </div>
             <div class="care-tip-card">
-              <div class="tip-icon">🐕</div>
+
               <h4>Lead Discipline is Essential</h4>
               <p>A solid recall cannot be trusted outdoors. Always use a lead or a securely fenced area, their nose overrides everything.</p>
             </div>
@@ -473,7 +461,7 @@
         <div style="text-align:center;margin-bottom:3rem" data-anim>
           <span class="hero-eyebrow" style="font-size:0.7rem">Breed Guide</span>
           <h2>Pomeranian Care</h2>
-          <div class="gold-divider" style="margin:1rem auto 0;max-width:180px;"><span>✦</span></div>
+          <div class="gold-divider" style="margin:1rem auto 0;max-width:180px;"><span></span></div>
         </div>
 
         <!-- Grooming -->
@@ -484,15 +472,12 @@
           </figure>
           <div class="zz-text">
             <h3>Grooming</h3>
-            <ul>
-              <li>Pomeranians have a thick double coat: a soft dense undercoat and a longer harsher outer coat. <strong>Daily brushing</strong> prevents matting and controls shedding.</li>
-              <li>Use a slicker brush first, then finish with a wide-tooth metal comb, always working down to the skin rather than just the surface.</li>
-              <li>Bathe every <strong>3–4 weeks</strong> with a hypoallergenic dog shampoo. Thoroughly blow-dry afterwards, damp undercoat causes skin problems.</li>
-              <li>Between baths a <strong>waterless shampoo spray</strong> freshens the coat without water.</li>
-              <li>Professional grooming (scissoring, sanitary trim, ear tidy) every <strong>6–8 weeks</strong>.</li>
-              <li>Trim nails monthly: clipper or grinder, both work well. Clean ears weekly.</li>
-              <li>Brush teeth at least <strong>3× per week</strong>; small breeds are highly prone to dental disease.</li>
-            </ul>
+            <div class="care-prose">
+              <p>Pomeranians have a thick double coat: a soft dense undercoat and a longer harsher outer coat. <strong>Daily brushing</strong> prevents matting and controls shedding. Use a slicker brush first, then finish with a wide-tooth metal comb, always working down to the skin rather than just the surface.</p>
+              <p>Bathe every <strong>3–4 weeks</strong> with a hypoallergenic dog shampoo. Thoroughly blow-dry afterwards. Damp undercoat causes skin problems. Between baths a <strong>waterless shampoo spray</strong> freshens the coat without water.</p>
+              <p>Arrange professional grooming, including scissoring, a sanitary trim and ear tidying, every <strong>6–8 weeks</strong>. Trim nails monthly with either clippers or a grinder. Clean ears weekly.</p>
+              <p>Brush teeth at least <strong>3× per week</strong>; small breeds are highly prone to dental disease.</p>
+            </div>
           </div>
         </div>
 
@@ -516,7 +501,7 @@
               <div class="prod-type">Trimming &amp; shaping</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/hair trimmer.webp" alt="Pet Hair Trimmer" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/hair%20trimmer.webp" alt="Pet Hair Trimmer" loading="lazy"></div>
               <div class="prod-name">Pet Hair Trimmer</div>
               <div class="prod-type">Paws &amp; detail areas</div>
             </div>
@@ -526,22 +511,22 @@
               <div class="prod-type">Hypoallergenic bathing</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/waterless shampoo.jpg" alt="Bio-Groom Waterless Bath" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/waterless%20shampoo.jpg" alt="Bio-Groom Waterless Bath" loading="lazy"></div>
               <div class="prod-name">Bio-Groom Waterless Bath</div>
               <div class="prod-type">Between-bath refresh</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/teeth brush.webp" alt="Beaphar Toothbrush & Toothpaste" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/teeth%20brush.webp" alt="Beaphar Toothbrush &amp; Toothpaste" loading="lazy"></div>
               <div class="prod-name">Beaphar Toothbrush Set</div>
               <div class="prod-type">Dental hygiene</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/nail clipper.jpg" alt="Epica Nail Clipper" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/nail%20clipper.jpg" alt="Epica Nail Clipper" loading="lazy"></div>
               <div class="prod-name">Epica Nail Clipper</div>
               <div class="prod-type">Monthly nail trim</div>
             </div>
             <div class="prod-card">
-              <div class="prod-img"><img src="../images/care/nail grinder.webp" alt="Boshel Nail Grinder" loading="lazy"></div>
+              <div class="prod-img"><img src="../images/care/nail%20grinder.webp" alt="Boshel Nail Grinder" loading="lazy"></div>
               <div class="prod-name">Boshel Nail Grinder</div>
               <div class="prod-type">Smooth nail finish</div>
             </div>
@@ -551,27 +536,24 @@
         <!-- Nutrition -->
         <div class="zigzag-row zz-reverse" data-anim>
           <figure class="zz-figure">
-            <img src="../images/care/royal canine kibble puppy.jpg" alt="Royal Canin Puppy Small kibble" class="prod" loading="lazy">
+            <img src="../images/care/royal%20canine%20kibble%20puppy.jpg" alt="Royal Canin Puppy Small kibble" class="prod" loading="lazy">
             <figcaption>Royal Canin Puppy Small: every puppy leaves us with a gift bag of this kibble so you can transition gradually to your chosen adult food.</figcaption>
           </figure>
           <div class="zz-text">
             <h3>Nutrition</h3>
-            <ul>
-              <li>Every puppy leaves us with a <strong>gift bag of Royal Canin Puppy Small</strong> kibble, use it to blend gradually with your chosen food over 7–10 days to avoid digestive upset.</li>
-              <li>For adults, we feed and recommend <strong>Josera Adult Mini Lamb</strong>: a grain-free, monoprotein German-quality kibble with lamb as the sole animal protein source.</li>
-              <li>Adults typically eat <strong>¼ to ½ cup</strong> per day, split into two meals. Adjust for your dog's weight, age and activity level.</li>
-              <li>Pomeranians are prone to <strong>hypoglycaemia</strong>, especially as puppies, never leave them too long between meals.</li>
-              <li>Limit treats to no more than <strong>10% of daily calories</strong>. Obesity puts serious strain on joints and heart.</li>
-              <li>Always provide access to fresh, clean water.</li>
-            </ul>
+            <div class="care-prose">
+              <p>Every puppy leaves us with a <strong>gift bag of Royal Canin Puppy Small</strong> kibble. Use it to blend gradually with your chosen food over 7–10 days to avoid digestive upset. For adults, we feed and recommend <strong>Josera Adult Mini Lamb</strong>: a grain-free, monoprotein German-quality kibble with lamb as the sole animal protein source.</p>
+              <p>Adults typically eat <strong>¼ to ½ cup</strong> per day, split into two meals. Adjust for your dog's weight, age and activity level. Pomeranians are prone to <strong>hypoglycaemia</strong>, especially as puppies. Never leave them too long between meals.</p>
+              <p>Limit treats to no more than <strong>10% of daily calories</strong>. Obesity puts serious strain on joints and heart. Always provide access to fresh, clean water.</p>
+            </div>
 
             <div class="photo-strip" style="max-width:320px;margin-top:1.5rem">
               <figure>
-                <img src="../images/care/royal canine kibble puppy.jpg" alt="Royal Canin Puppy Small" loading="lazy">
+                <img src="../images/care/royal%20canine%20kibble%20puppy.jpg" alt="Royal Canin Puppy Small" loading="lazy">
                 <figcaption>Royal Canin Puppy Small: included in gift bag</figcaption>
               </figure>
               <figure>
-                <img src="../images/care/josera kibble.jpg" alt="Josera Adult Mini Lamb" loading="lazy">
+                <img src="../images/care/josera%20kibble.jpg" alt="Josera Adult Mini Lamb" loading="lazy">
                 <figcaption>Josera Adult Mini Lamb: our adult food recommendation</figcaption>
               </figure>
             </div>
@@ -587,7 +569,7 @@
               <figcaption>Pedigree Dentastix: reduces tartar build-up</figcaption>
             </figure>
             <figure>
-              <img src="../images/care/teeth brush.webp" alt="Beaphar Toothbrush & Toothpaste" loading="lazy">
+              <img src="../images/care/teeth%20brush.webp" alt="Beaphar Toothbrush &amp; Toothpaste" loading="lazy">
               <figcaption>Beaphar Toothbrush &amp; Toothpaste</figcaption>
             </figure>
             <figure>
@@ -605,14 +587,11 @@
           </figure>
           <div class="zz-text">
             <h3>Exercise &amp; Walking</h3>
-            <ul>
-              <li>Despite their small size, Pomeranians are <strong>energetic and curious</strong>. At least <strong>30 minutes of daily activity</strong>: two shorter walks is ideal.</li>
-              <li>They enjoy indoor puzzle toys and short training sessions just as much as outdoor walks.</li>
-              <li>Always use a <strong>harness, not a collar</strong>, Pomeranians are prone to tracheal collapse and collar pressure worsens this.</li>
-              <li>A retractable lead like the Flexi gives them freedom to explore while keeping them safe in open areas.</li>
-              <li>Avoid strenuous exercise in extreme heat, their thick coat makes them prone to overheating. Walk in the cooler parts of the day in summer.</li>
-              <li>Off-leash play in a securely fenced garden is great, but always supervise, Poms can squeeze through surprisingly small gaps.</li>
-            </ul>
+            <div class="care-prose">
+              <p>Despite their small size, Pomeranians are <strong>energetic and curious</strong>. Aim for at least <strong>30 minutes of daily activity</strong>, ideally spread over two shorter walks. They enjoy indoor puzzle toys and short training sessions just as much as outdoor walks.</p>
+              <p>Always use a <strong>harness, not a collar</strong> because Pomeranians are prone to tracheal collapse and collar pressure worsens this. A retractable lead like the Flexi gives them freedom to explore while keeping them safe in open areas.</p>
+              <p>Avoid strenuous exercise in extreme heat because their thick coat makes them prone to overheating. Walk in the cooler parts of the day in summer. Off-leash play in a securely fenced garden is great, but always supervise. Poms can squeeze through surprisingly small gaps.</p>
+            </div>
 
             <div class="photo-strip" style="max-width:280px;margin-top:1.5rem">
               <figure>
@@ -630,19 +609,16 @@
         <!-- Health -->
         <div class="zigzag-row zz-reverse" data-anim>
           <figure class="zz-figure">
-            <img src="../images/care/1753218178-frontline-combo-spot-on-s-protiv-buha-i-krpelja-za-pse-2-10-kg-1-pipeta.jpg" alt="Frontline Combo Spot On flea & tick treatment" class="prod" loading="lazy">
+            <img src="../images/care/1753218178-frontline-combo-spot-on-s-protiv-buha-i-krpelja-za-pse-2-10-kg-1-pipeta.jpg" alt="Frontline Combo Spot On flea &amp; tick treatment" class="prod" loading="lazy">
             <figcaption>Frontline Combo Spot On: monthly spot-on treatment against fleas, ticks and lice for dogs 2–10 kg.</figcaption>
           </figure>
           <div class="zz-text">
             <h3>Health</h3>
-            <ul>
-              <li><strong>Luxating patella</strong> (slipping kneecap) is common in small breeds. Maintain a healthy weight and avoid excessive jumping from height.</li>
-              <li>Tracheal collapse can occur, always use a harness and avoid any pressure on the throat.</li>
-              <li>Black Skin Disease (Alopecia X) can cause coat loss in males.</li>
-              <li>Apply <strong>parasite prevention</strong> monthly: we use Frontline Combo Spot On for flea, tick and lice protection.</li>
-              <li>Schedule <strong>annual vet check-ups</strong> including cardiac evaluation, eye certification and patella assessment.</li>
-              <li>Keep vaccinations and deworming up to date year-round.</li>
-            </ul>
+            <div class="care-prose">
+              <p><strong>Luxating patella</strong> (slipping kneecap) is common in small breeds. Maintain a healthy weight and avoid excessive jumping from height. Tracheal collapse can occur. Always use a harness and avoid any pressure on the throat.</p>
+              <p>Black Skin Disease (Alopecia X) can cause coat loss in males. Apply <strong>parasite prevention</strong> monthly: we use Frontline Combo Spot On for flea, tick and lice protection.</p>
+              <p>Schedule <strong>annual vet check-ups</strong> including cardiac evaluation, eye certification and patella assessment. Keep vaccinations and deworming up to date year-round.</p>
+            </div>
           </div>
         </div>
 
@@ -652,22 +628,22 @@
           <p style="color:var(--text-muted);font-size:0.95rem;margin-bottom:1.5rem;line-height:1.7">Pomeranians are intelligent and quick learners, but they can be stubborn. Short, consistent sessions with <strong style="color:var(--cream)">positive reinforcement only</strong> get the best results. Socialise early and widely, a well-socialised Pom is confident and adaptable around people, dogs and different environments.</p>
           <div class="care-tip-grid">
             <div class="care-tip-card">
-              <div class="tip-icon">🌡</div>
+
               <h4>Heat Sensitivity</h4>
               <p>Pomeranians overheat quickly. In summer limit walks to early morning and evening. Never leave them in a hot car.</p>
             </div>
             <div class="care-tip-card">
-              <div class="tip-icon">🦷</div>
+
               <h4>Dental Routine</h4>
               <p>Small breeds are highly prone to tartar build-up. Start brushing from puppyhood and supplement with dental chews like Dentastix.</p>
             </div>
             <div class="care-tip-card">
-              <div class="tip-icon">🧠</div>
+
               <h4>Mental Stimulation</h4>
               <p>Puzzle feeders, scent games and trick training prevent boredom and destructive behaviour in this clever breed.</p>
             </div>
             <div class="care-tip-card">
-              <div class="tip-icon">🔇</div>
+
               <h4>Barking Management</h4>
               <p>Pomeranians can be vocal. Teach a "quiet" command early and consistently, do not inadvertently reward barking with attention.</p>
             </div>
@@ -696,26 +672,26 @@
             <div class="social-links"><a href="https://www.facebook.com/matejsangels/" class="social-link" target="_blank" rel="noopener noreferrer">f</a><a href="https://wa.me/385955152150" class="social-link" target="_blank" rel="noopener" aria-label="WhatsApp">W</a></div>
           </div>
           <div class="footer-col"><h5>Pages</h5><ul><li><a href="about">About Us</a></li><li><a href="litters">Litters</a></li><li><a href="chronology">Chronology</a></li><li><a href="our-dogs">Our Dogs</a></li><li><a href="gallery">Gallery</a></li></ul></div>
-          <div class="footer-col"><h5>More</h5><ul><li><a href="news">News</a></li><li><a href="faq">FAQ</a></li><li><a href="care">Care</a></li><li><a href="contact">Contact</a></li><li><a href="../hr/briga">🇭🇷 Hrvatski</a></li></ul></div>
+          <div class="footer-col"><h5>More</h5><ul><li><a href="news">News</a></li><li><a href="faq">FAQ</a></li><li><a href="care">Care</a></li><li><a href="contact">Contact</a></li><li><a href="../hr/briga"> Hrvatski</a></li></ul></div>
           <div class="footer-col"><h5>Contact</h5><ul><li><a href="mailto:sanjaimatej@gmail.com">sanjaimatej@gmail.com</a></li><li>Selo Varoš 70 D, Premantura, Croatia</li></ul></div>
         </div>
         <div class="footer-counter">
           <a href="https://info.flagcounter.com/fMiv"><img src="https://s01.flagcounter.com/count2/fMiv/bg_FFFFFF/txt_000000/border_FFFFFF/columns_4/maxflags_16/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter"></a>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2024 Matej's Angels Kennel. All rights reserved.</p>
-          <p>Made with ♥ for dogs</p>
+          <p>© 2026. Matej Abramović. All rights reserved.</p>
+          <p>Made with love for dogs.</p>
         </div>
       </div>
     </footer>
   </div>
 
   <div id="care-lb" role="dialog" aria-modal="true" aria-label="Image viewer">
-    <button id="care-lb-close" aria-label="Close">&times;</button>
+    <button id="care-lb-close" aria-label="Close">×</button>
     <div id="care-lb-list"></div>
   </div>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=4d1498abc66d"></script>
   <script>
   (function () {
     var imgs = Array.from(document.querySelectorAll('.section img, .section-mid img'));
