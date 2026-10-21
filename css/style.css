@@ -1236,7 +1236,8 @@ a.puppy-card[href]:hover { border-color: var(--gold); transform: translateY(-3px
   align-items: start;
   padding: 3.5rem 0;
 }
-.dog-profile-sidebar { position: sticky; top: 88px; }
+/* Tall sidebars scroll until their bottom is visible before sticking. */
+.dog-profile-sidebar { position: sticky; top: var(--sidebar-top, 88px); }
 /* Prevent the wide pedigree tree from expanding the grid column beyond 1fr */
 .dog-profile-grid > div { min-width: 0; }
 .dog-img-frame {

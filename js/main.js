@@ -58,6 +58,28 @@ const siteLabel = (hr, en) => siteIsCroatian ? hr : en;
   }
 })();
 
+/* ---- KEEP TALL PROFILE SIDEBARS REACHABLE ---- */
+(function () {
+  const sidebars = document.querySelectorAll('.dog-profile-sidebar');
+  if (!sidebars.length) return;
+
+  function updateOffsets() {
+    const viewportHeight = document.documentElement.clientHeight;
+    sidebars.forEach(sidebar => {
+      // Use normal page scrolling to reveal the entire sidebar, then pin its bottom.
+      const top = Math.min(88, viewportHeight - sidebar.offsetHeight - 24);
+      sidebar.style.setProperty('--sidebar-top', `${top}px`);
+    });
+  }
+
+  updateOffsets();
+  window.addEventListener('resize', updateOffsets, { passive: true });
+  if ('ResizeObserver' in window) {
+    const observer = new ResizeObserver(updateOffsets);
+    sidebars.forEach(sidebar => observer.observe(sidebar));
+  }
+})();
+
 /* ---- SKIP LINK ---- */
 (function () {
   const content = document.querySelector('.page-content');
