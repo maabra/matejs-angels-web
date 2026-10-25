@@ -3,8 +3,6 @@
    Palette: Deep Navy · Royal Gold · Ivory Cream
    ================================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
-
 /* ---- VARIABLES ---- */
 :root {
   --navy:          #0D1B2A;
@@ -1696,6 +1694,57 @@ a.health-card[href]:hover { border-color: var(--gold); }
 }
 .footer-bottom p { font-size: 0.78rem; color: var(--cream-muted); }
 .footer-bottom a { color: var(--gold); }
+
+/* ---- PRIVACY PREFERENCES ---- */
+.privacy-consent {
+  position: fixed;
+  z-index: 3000;
+  right: 1rem;
+  bottom: 1rem;
+  width: min(34rem, calc(100vw - 2rem));
+  padding: 1.25rem;
+  color: var(--cream);
+  background: var(--navy-mid);
+  border: 1px solid var(--gold);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+.privacy-consent[hidden],
+.privacy-consent-settings[hidden] { display: none; }
+.privacy-consent h2 { margin-bottom: 0.5rem; font-size: 1.35rem; }
+.privacy-consent p { margin-bottom: 0.65rem; font-size: 0.9rem; }
+.privacy-consent > a,
+.privacy-footer-controls a { color: var(--gold-light); text-decoration: underline; }
+.privacy-consent-actions,
+.privacy-consent-settings,
+.privacy-footer-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 0.8rem;
+}
+.privacy-consent-settings { align-items: flex-start; flex-direction: column; }
+.privacy-consent-settings label { display: flex; align-items: center; gap: 0.6rem; }
+.privacy-consent-settings input { width: 1.1rem; height: 1.1rem; accent-color: var(--gold); }
+.privacy-consent-status { margin: 0.5rem 0 0 !important; color: var(--gold-light) !important; }
+.privacy-footer-controls { justify-content: center; margin: 0; }
+.privacy-settings-link {
+  padding: 0;
+  color: var(--gold);
+  text-decoration: underline;
+}
+.privacy-map-message { margin: 0 0 0.75rem; }
+.privacy-page h1 { margin: 1.5rem 0 1rem; }
+.privacy-page h2 { margin: 2rem 0 0.7rem; font-size: 1.5rem; }
+.privacy-page p,
+.privacy-page li { margin-bottom: 0.75rem; }
+.privacy-page ul { list-style: disc; padding-left: 1.5rem; }
+.privacy-page a:not(.btn) { color: var(--gold-light); text-decoration: underline; }
+@media (max-width: 520px) {
+  .privacy-consent { right: 0.5rem; bottom: 0.5rem; width: calc(100vw - 1rem); }
+  .privacy-consent-actions { align-items: stretch; flex-direction: column; }
+}
 
 /* ---- BREADCRUMB ---- */
 .breadcrumb {

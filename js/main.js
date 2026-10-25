@@ -537,6 +537,240 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
   });
 })();
 
+/* ---- PRIVACY AND OPTIONAL THIRD-PARTY CONTENT ---- */
+(function () {
+  const storageKey = 'matejs-angels-privacy-consent';
+  const consentDuration = 183 * 24 * 60 * 60 * 1000;
+  const privacyUrl = siteIsCroatian ? '/hr/privatnost' : '/en/privacy';
+  const text = siteIsCroatian ? {
+    title: 'Postavke privatnosti',
+    intro: 'Koristimo samo nužnu pohranu za pamćenje vaših odabira. Uz vašu suglasnost možemo učitati brojač posjeta Flag Counter (analitika) te Google karte i Google Fonts (vanjski sadržaj).',
+    privacy: 'Politika privatnosti',
+    accept: 'Prihvati sve',
+    reject: 'Odbij neobavezno',
+    manage: 'Postavke',
+    save: 'Spremi odabir',
+    analytics: 'Analitika (Flag Counter)',
+    media: 'Vanjski sadržaj (Google karte i Google Fonts)',
+    unavailable: 'Postavke se ne mogu spremiti u ovom pregledniku; odabir vrijedi samo do zatvaranja preglednika.',
+    mapBlocked: 'Karta je blokirana dok ne dopustite vanjski sadržaj.',
+    allowMap: 'Dopusti Google karte',
+    settings: 'Postavke kolačića i privatnosti',
+    saved: 'Postavke privatnosti su spremljene.'
+  } : {
+    title: 'Privacy preferences',
+    intro: 'We use only essential browser storage to remember your choices. With your permission, we may load the Flag Counter visitor counter (analytics) and Google Maps and Google Fonts (external content).',
+    privacy: 'Privacy policy',
+    accept: 'Accept all',
+    reject: 'Reject optional',
+    manage: 'Settings',
+    save: 'Save choices',
+    analytics: 'Analytics (Flag Counter)',
+    media: 'External content (Google Maps and Google Fonts)',
+    unavailable: 'Preferences cannot be saved in this browser; your choice will last only until you close the browser.',
+    mapBlocked: 'The map is blocked until you allow external content.',
+    allowMap: 'Allow Google Maps',
+    settings: 'Cookie and privacy settings',
+    saved: 'Privacy preferences saved.'
+  };
+  let consent = { analytics: false, media: false };
+  let storageAvailable = true;
+  let hasStoredConsent = false;
+  let statusMessage = '';
+
+  function readConsent() {
+    try {
+      const saved = localStorage.getItem(storageKey);
+      if (!saved) return;
+      const value = JSON.parse(saved);
+      if (value && Number.isFinite(value.expiresAt) && value.expiresAt > Date.now()) {
+        consent = { analytics: value.analytics === true, media: value.media === true };
+        hasStoredConsent = true;
+      } else {
+        localStorage.removeItem(storageKey);
+      }
+    } catch (error) {
+      storageAvailable = false;
+      console.error('Unable to read privacy preferences from browser storage.', error);
+      statusMessage = text.unavailable;
+    }
+  }
+
+  function saveConsent(next) {
+    consent = { analytics: next.analytics === true, media: next.media === true };
+    if (!storageAvailable) return;
+    try {
+      localStorage.setItem(storageKey, JSON.stringify({
+        ...consent,
+        expiresAt: Date.now() + consentDuration
+      }));
+      statusMessage = text.saved;
+    } catch (error) {
+      storageAvailable = false;
+      console.error('Unable to save privacy preferences to browser storage.', error);
+      statusMessage = text.unavailable;
+    }
+  }
+
+  function syncOptionalServices() {
+    const fonts = document.getElementById('optional-google-fonts');
+    if (consent.media && !fonts) {
+      const link = document.createElement('link');
+      link.id = 'optional-google-fonts';
+      link.rel = 'stylesheet';
+      link.href = 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap';
+      link.referrerPolicy = 'no-referrer';
+      document.head.appendChild(link);
+    } else if (!consent.media && fonts) {
+      fonts.remove();
+    }
+
+    document.querySelectorAll('.google-map-consent').forEach(container => {
+      const frame = container.querySelector('iframe');
+      if (consent.media && !frame) {
+        const map = document.createElement('iframe');
+        map.src = container.dataset.mapSrc;
+        map.width = '100%';
+        map.height = '400';
+        map.loading = 'lazy';
+        map.title = container.dataset.mapTitle;
+        map.referrerPolicy = 'no-referrer';
+        map.allowFullscreen = true;
+        map.style.cssText = 'border:0;border-radius:10px;display:block';
+        container.replaceChildren(map);
+      } else if (!consent.media && frame) {
+        showMapPlaceholder(container);
+      } else if (!consent.media) {
+        showMapPlaceholder(container);
+      }
+    });
+
+    document.querySelectorAll('.footer-counter').forEach(container => {
+      const image = container.querySelector('img');
+      if (consent.analytics && !image) {
+        const link = document.createElement('a');
+        link.href = 'https://info.flagcounter.com/fMiv';
+        link.rel = 'noopener noreferrer';
+        link.target = '_blank';
+        const counter = document.createElement('img');
+        counter.src = 'https://s01.flagcounter.com/count2/fMiv/bg_FFFFFF/txt_000000/border_FFFFFF/columns_4/maxflags_16/viewers_0/labels_0/pageviews_1/flags_0/percent_0/';
+        counter.alt = siteLabel('Brojač posjeta', 'Visitor counter');
+        counter.referrerPolicy = 'no-referrer';
+        link.appendChild(counter);
+        container.replaceChildren(link);
+      } else if (!consent.analytics && image) {
+        container.replaceChildren();
+      }
+    });
+  }
+
+  function showMapPlaceholder(container) {
+    const message = document.createElement('p');
+    message.className = 'privacy-map-message';
+    message.textContent = text.mapBlocked;
+    const button = document.createElement('button');
+    button.className = 'btn btn-outline btn-sm';
+    button.type = 'button';
+    button.textContent = text.allowMap;
+    button.addEventListener('click', () => {
+      saveConsent({ ...consent, media: true });
+      syncOptionalServices();
+      updateStatus();
+    });
+    container.replaceChildren(message, button);
+  }
+
+  function updateStatus() {
+    const status = panel.querySelector('.privacy-consent-status');
+    if (status) status.textContent = statusMessage;
+  }
+
+  readConsent();
+  const panel = document.createElement('section');
+  panel.className = 'privacy-consent';
+  panel.setAttribute('aria-label', text.title);
+  panel.hidden = true;
+
+  const title = document.createElement('h2');
+  title.textContent = text.title;
+  const intro = document.createElement('p');
+  intro.textContent = text.intro;
+  const privacyLink = document.createElement('a');
+  privacyLink.href = privacyUrl;
+  privacyLink.textContent = text.privacy;
+  const actions = document.createElement('div');
+  actions.className = 'privacy-consent-actions';
+  const settings = document.createElement('div');
+  settings.className = 'privacy-consent-settings';
+  settings.hidden = true;
+  const status = document.createElement('p');
+  status.className = 'privacy-consent-status';
+  status.setAttribute('aria-live', 'polite');
+  status.textContent = statusMessage;
+
+  function makeButton(label, callback, className) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = className;
+    button.textContent = label;
+    button.addEventListener('click', callback);
+    return button;
+  }
+
+  function setChoice(next) {
+    saveConsent(next);
+    syncOptionalServices();
+    panel.hidden = true;
+    updateStatus();
+  }
+
+  const analyticsLabel = document.createElement('label');
+  const analyticsToggle = document.createElement('input');
+  analyticsToggle.type = 'checkbox';
+  analyticsToggle.checked = consent.analytics;
+  analyticsLabel.append(analyticsToggle, document.createTextNode(text.analytics));
+  const mediaLabel = document.createElement('label');
+  const mediaToggle = document.createElement('input');
+  mediaToggle.type = 'checkbox';
+  mediaToggle.checked = consent.media;
+  mediaLabel.append(mediaToggle, document.createTextNode(text.media));
+  settings.append(analyticsLabel, mediaLabel, makeButton(
+    text.save,
+    () => setChoice({ analytics: analyticsToggle.checked, media: mediaToggle.checked }),
+    'btn btn-primary btn-sm'
+  ));
+  actions.append(
+    makeButton(text.accept, () => setChoice({ analytics: true, media: true }), 'btn btn-primary btn-sm'),
+    makeButton(text.reject, () => setChoice({ analytics: false, media: false }), 'btn btn-outline btn-sm'),
+    makeButton(text.manage, () => {
+      settings.hidden = !settings.hidden;
+      if (!settings.hidden) analyticsToggle.focus();
+    }, 'btn btn-outline btn-sm')
+  );
+  panel.append(title, intro, privacyLink, actions, settings, status);
+  document.body.appendChild(panel);
+
+  const footerBottom = document.querySelector('.footer-bottom');
+  if (footerBottom) {
+    const controls = document.createElement('div');
+    controls.className = 'privacy-footer-controls';
+    const policy = document.createElement('a');
+    policy.href = privacyUrl;
+    policy.textContent = text.privacy;
+    controls.append(policy, makeButton(text.settings, () => {
+      panel.hidden = false;
+      settings.hidden = false;
+      analyticsToggle.checked = consent.analytics;
+      mediaToggle.checked = consent.media;
+      analyticsToggle.focus();
+    }, 'privacy-settings-link'));
+    footerBottom.appendChild(controls);
+  }
+
+  syncOptionalServices();
+  if (!hasStoredConsent) panel.hidden = false;
+})();
+
 /* ---- COPY EMAIL TO CLIPBOARD ---- */
 (function () {
   if (!navigator.clipboard) return;
