@@ -1735,6 +1735,20 @@ a.health-card[href]:hover { border-color: var(--gold); }
   text-decoration: underline;
 }
 .privacy-map-message { margin: 0 0 0.75rem; }
+.privacy-video-placeholder {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--navy-card);
+  text-align: center;
+}
+.privacy-video-placeholder p { margin: 0; }
 .privacy-page h1 { margin: 1.5rem 0 1rem; }
 .privacy-page h2 { margin: 2rem 0 0.7rem; font-size: 1.5rem; }
 .privacy-page p,

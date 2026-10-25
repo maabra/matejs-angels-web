@@ -539,37 +539,41 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
 
 /* ---- PRIVACY AND OPTIONAL THIRD-PARTY CONTENT ---- */
 (function () {
-  const storageKey = 'matejs-angels-privacy-consent';
+  const storageKey = 'matejs-angels-privacy-consent-v2';
   const consentDuration = 183 * 24 * 60 * 60 * 1000;
   const privacyUrl = siteIsCroatian ? '/hr/privatnost' : '/en/privacy';
   const text = siteIsCroatian ? {
     title: 'Postavke privatnosti',
-    intro: 'Koristimo samo nužnu pohranu za pamćenje vaših odabira. Uz vašu suglasnost možemo učitati brojač posjeta Flag Counter (analitika) te Google karte i Google Fonts (vanjski sadržaj).',
+    intro: 'Koristimo samo nužnu pohranu za pamćenje vaših odabira. Uz vašu suglasnost možemo učitati brojač posjeta Flag Counter (analitika) te Google karte, Google Fonts i YouTube videozapise (vanjski sadržaj).',
     privacy: 'Politika privatnosti',
     accept: 'Prihvati sve',
     reject: 'Odbij neobavezno',
     manage: 'Postavke',
     save: 'Spremi odabir',
     analytics: 'Analitika (Flag Counter)',
-    media: 'Vanjski sadržaj (Google karte i Google Fonts)',
+    media: 'Vanjski sadržaj (Google karte, Google Fonts i YouTube)',
     unavailable: 'Postavke se ne mogu spremiti u ovom pregledniku; odabir vrijedi samo do zatvaranja preglednika.',
     mapBlocked: 'Karta je blokirana dok ne dopustite vanjski sadržaj.',
-    allowMap: 'Dopusti Google karte',
+    allowMap: 'Upravljaj suglasnošću za vanjski sadržaj',
+    videoBlocked: 'Videozapis se ne učitava dok ne dopustite vanjski sadržaj.',
+    allowVideo: 'Upravljaj suglasnošću za vanjski sadržaj',
     settings: 'Postavke kolačića i privatnosti',
     saved: 'Postavke privatnosti su spremljene.'
   } : {
     title: 'Privacy preferences',
-    intro: 'We use only essential browser storage to remember your choices. With your permission, we may load the Flag Counter visitor counter (analytics) and Google Maps and Google Fonts (external content).',
+    intro: 'We use only essential browser storage to remember your choices. With your permission, we may load the Flag Counter visitor counter (analytics) and Google Maps, Google Fonts and YouTube videos (external content).',
     privacy: 'Privacy policy',
     accept: 'Accept all',
     reject: 'Reject optional',
     manage: 'Settings',
     save: 'Save choices',
     analytics: 'Analytics (Flag Counter)',
-    media: 'External content (Google Maps and Google Fonts)',
+    media: 'External content (Google Maps, Google Fonts and YouTube)',
     unavailable: 'Preferences cannot be saved in this browser; your choice will last only until you close the browser.',
     mapBlocked: 'The map is blocked until you allow external content.',
-    allowMap: 'Allow Google Maps',
+    allowMap: 'Manage external-content consent',
+    videoBlocked: 'The video is not loaded until you allow external content.',
+    allowVideo: 'Manage external-content consent',
     settings: 'Cookie and privacy settings',
     saved: 'Privacy preferences saved.'
   };
@@ -645,6 +649,35 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
       }
     });
 
+    document.querySelectorAll('iframe[data-optional-src]').forEach(frame => {
+      const wrapper = frame.parentElement;
+      let placeholder = wrapper.querySelector('.privacy-video-placeholder');
+      if (consent.media) {
+        if (!frame.hasAttribute('src')) {
+          frame.referrerPolicy = 'no-referrer';
+          frame.src = frame.dataset.optionalSrc;
+        }
+        frame.removeAttribute('aria-hidden');
+        if (placeholder) placeholder.remove();
+      } else {
+        frame.removeAttribute('src');
+        frame.setAttribute('aria-hidden', 'true');
+        if (!placeholder) {
+          placeholder = document.createElement('div');
+          placeholder.className = 'privacy-video-placeholder';
+          const message = document.createElement('p');
+          message.textContent = text.videoBlocked;
+          const button = document.createElement('button');
+          button.className = 'btn btn-outline btn-sm';
+          button.type = 'button';
+          button.textContent = text.allowVideo;
+          button.addEventListener('click', openMediaPreferences);
+          placeholder.append(message, button);
+          wrapper.appendChild(placeholder);
+        }
+      }
+    });
+
     document.querySelectorAll('.footer-counter').forEach(container => {
       const image = container.querySelector('img');
       if (consent.analytics && !image) {
@@ -672,12 +705,16 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
     button.className = 'btn btn-outline btn-sm';
     button.type = 'button';
     button.textContent = text.allowMap;
-    button.addEventListener('click', () => {
-      saveConsent({ ...consent, media: true });
-      syncOptionalServices();
-      updateStatus();
-    });
+    button.addEventListener('click', openMediaPreferences);
     container.replaceChildren(message, button);
+  }
+
+  function openMediaPreferences() {
+    panel.hidden = false;
+    settings.hidden = false;
+    analyticsToggle.checked = consent.analytics;
+    mediaToggle.checked = consent.media;
+    mediaToggle.focus();
   }
 
   function updateStatus() {
