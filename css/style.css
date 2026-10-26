@@ -1187,6 +1187,15 @@ a.puppy-card[href]:hover { border-color: var(--gold); transform: translateY(-3px
   font-size: 0.88rem;
   text-align: center;
 }
+.lightbox-status {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  color: var(--cream);
+  text-align: center;
+  padding: 1rem;
+}
 @media (max-width: 640px) {
   .lightbox-inner {
     width: calc(100vw - 80px);

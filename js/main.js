@@ -55,6 +55,11 @@ const siteLabel = (hr, en) => siteIsCroatian ? hr : en;
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeMenu();
     });
+    // Do not resurrect an open mobile menu after rotating or resizing the screen.
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1200) closeMenu();
+    }, { passive: true });
+    window.addEventListener('pageshow', closeMenu);
   }
 })();
 
@@ -116,6 +121,13 @@ const siteLabel = (hr, en) => siteIsCroatian ? hr : en;
   const lbClose   = lb.querySelector('#lb-close');
   const lbPrev    = lb.querySelector('#lb-prev');
   const lbNext    = lb.querySelector('#lb-next');
+  if (!lbImg) return;
+  const status = document.createElement('p');
+  status.id = 'lb-status';
+  status.className = 'lightbox-status';
+  status.setAttribute('role', 'status');
+  lb.querySelector('.lightbox-inner').appendChild(status);
+  lb.setAttribute('aria-modal', 'true');
 
   lb.setAttribute('aria-label', siteLabel('Pregled fotografija', 'Photo viewer'));
   if (lbClose) lbClose.setAttribute('aria-label', siteLabel('Zatvori', 'Close'));
@@ -124,24 +136,53 @@ const siteLabel = (hr, en) => siteIsCroatian ? hr : en;
 
   let items = [];
   let current = 0;
+  let returnFocus;
+  let previousOverflow = '';
+
+  lbImg.addEventListener('load', () => {
+    if (!lb.classList.contains('active')) return;
+    lbImg.style.visibility = '';
+    status.textContent = '';
+    lb.removeAttribute('aria-busy');
+  });
+  lbImg.addEventListener('error', () => {
+    if (!lb.classList.contains('active')) return;
+    lbImg.style.visibility = 'hidden';
+    status.textContent = siteLabel('Fotografiju nije moguće učitati. Pokušajte drugu fotografiju ili ponovno otvorite ovu.', 'This photo could not be loaded. Try another photo or reopen this one.');
+    lb.removeAttribute('aria-busy');
+  });
 
   function open(index) {
+    if (!items[index]) return;
+    if (!lb.classList.contains('active')) {
+      returnFocus = document.activeElement;
+      previousOverflow = document.body.style.overflow;
+    }
     current = index;
     const item = items[current];
+    lbImg.style.visibility = 'hidden';
+    status.textContent = siteLabel('Učitavanje fotografije…', 'Loading photo…');
+    lb.setAttribute('aria-busy', 'true');
     lbImg.src = item.src;
     lbImg.alt = item.alt || '';
     if (lbCaption) lbCaption.textContent = item.caption || item.alt || '';
     lb.classList.add('active');
     document.body.style.overflow = 'hidden';
+    if (!lb.contains(document.activeElement) && lbClose) lbClose.focus();
   }
 
   function close() {
+    if (!lb.classList.contains('active')) return;
     lb.classList.remove('active');
-    document.body.style.overflow = '';
-    lbImg.src = '';
+    document.body.style.overflow = previousOverflow;
+    lbImg.removeAttribute('src');
+    lb.removeAttribute('aria-busy');
+    status.textContent = '';
+    if (returnFocus && returnFocus.isConnected) returnFocus.focus({ preventScroll: true });
   }
 
   function navigate(dir) {
+    if (!items.length || !lb.classList.contains('active')) return;
     current = (current + dir + items.length) % items.length;
     open(current);
   }
@@ -163,7 +204,7 @@ const siteLabel = (hr, en) => siteIsCroatian ? hr : en;
       alt: img.alt,
       caption: el.dataset.caption || img.alt
     });
-    el.addEventListener('click', () => open(index));
+    el.addEventListener('click', () => { el.focus({ preventScroll: true }); open(index); });
     el.setAttribute('role', 'button');
     el.setAttribute('aria-label', `${siteLabel('Otvori fotografiju', 'Open image')}: ${img.alt || siteLabel('fotografija iz galerije', 'gallery image')}`);
     el.setAttribute('tabindex', '0');
@@ -183,15 +224,23 @@ const siteLabel = (hr, en) => siteIsCroatian ? hr : en;
 
   document.addEventListener('keydown', e => {
     if (!lb.classList.contains('active')) return;
+    if (['Escape', 'ArrowLeft', 'ArrowRight', 'Tab'].includes(e.key)) e.preventDefault();
+    if (e.key === 'Tab') {
+      const controls = [lbClose, lbPrev, lbNext].filter(Boolean);
+      const index = controls.indexOf(document.activeElement);
+      controls[(index + (e.shiftKey ? -1 : 1) + controls.length) % controls.length].focus();
+    }
     if (e.key === 'Escape')    close();
     if (e.key === 'ArrowLeft') navigate(-1);
     if (e.key === 'ArrowRight')navigate(1);
   });
+  window.addEventListener('pagehide', close);
 })();
 
 /* ---- FAQ ACCORDION ---- */
 (function () {
   document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.setAttribute('aria-expanded', String(btn.classList.contains('open')));
     btn.addEventListener('click', () => {
       const item   = btn.closest('.faq-item');
       const answer = item.querySelector('.faq-a');
@@ -200,12 +249,14 @@ const siteLabel = (hr, en) => siteIsCroatian ? hr : en;
       // close all
       document.querySelectorAll('.faq-q.open').forEach(b => {
         b.classList.remove('open');
+        b.setAttribute('aria-expanded', 'false');
         b.closest('.faq-item').querySelector('.faq-a').classList.remove('open');
       });
 
       // open clicked if it was closed
       if (!isOpen) {
         btn.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
         answer.classList.add('open');
       }
     });
@@ -246,6 +297,7 @@ document.querySelectorAll('.ped-outer, .pedigree-wrapper').forEach(el => {
   });
   el.addEventListener('pointermove', e => {
     if (!drag || e.pointerId !== drag.id) return;
+    if (!(e.buttons & 1)) { endDrag(); return; }
     const distance = e.clientX - drag.x;
     if (!drag.active && Math.abs(distance) < 5) return;
     if (!drag.active) {
@@ -265,6 +317,7 @@ document.querySelectorAll('.ped-outer, .pedigree-wrapper').forEach(el => {
   }
   window.addEventListener('pointerup', endDrag);
   window.addEventListener('pointercancel', endDrag);
+  window.addEventListener('blur', endDrag);
   el.addEventListener('lostpointercapture', endDrag);
 });
 
@@ -358,11 +411,14 @@ function setupPedHint(el) {
 
 /* ---- LOGO IMG FALLBACK ---- */
 document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => {
-  img.addEventListener('error', function () {
-    this.style.display = 'none';
-    const fallback = this.nextElementSibling;
+  function showFallback() {
+    img.style.display = 'none';
+    const fallback = img.nextElementSibling;
     if (fallback) fallback.style.display = 'flex';
-  });
+  }
+  img.addEventListener('error', showFallback);
+  // A cached failure may have fired before this script finished loading.
+  if (img.complete && img.naturalWidth === 0) showFallback();
 });
 
 /* ---- BACK TO TOP ---- */
@@ -640,14 +696,17 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
     // Browser timers cannot represent the full 183-day interval.
     expiryTimer = setTimeout(() => {
       if (Date.now() >= expiresAt) {
-        try { localStorage.removeItem(storageKey); } catch (error) { /* Storage may be unavailable. */ }
-        consent = { analytics: false, media: false };
-        hasStoredConsent = false;
-        expiresAt = 0;
+        // A suspended tab may have missed a newer choice made in another tab.
+        if (storageAvailable) readConsent();
+        else {
+          consent = { analytics: false, media: false };
+          hasStoredConsent = false;
+          expiresAt = 0;
+        }
         syncOptionalServices();
-        setPanelVisible(true);
-        analyticsToggle.checked = false;
-        mediaToggle.checked = false;
+        if (!hasStoredConsent) setPanelVisible(true);
+        analyticsToggle.checked = consent.analytics;
+        mediaToggle.checked = consent.media;
       }
       scheduleExpiry();
     }, Math.min(Math.max(expiresAt - Date.now(), 1), 2147483647));
@@ -903,7 +962,7 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
     setPanelVisible(!hasStoredConsent);
   });
   document.addEventListener('visibilitychange', () => {
-    if (!document.hidden && expiresAt && Date.now() >= expiresAt) {
+    if (!document.hidden && (storageAvailable || (expiresAt && Date.now() >= expiresAt))) {
       readConsent();
       syncOptionalServices();
       scheduleExpiry();
@@ -911,6 +970,15 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
       analyticsToggle.checked = consent.analytics;
       mediaToggle.checked = consent.media;
     }
+  });
+  window.addEventListener('pageshow', event => {
+    if (!event.persisted) return;
+    if (storageAvailable) readConsent();
+    syncOptionalServices();
+    scheduleExpiry();
+    analyticsToggle.checked = consent.analytics;
+    mediaToggle.checked = consent.media;
+    if (!hasStoredConsent && !document.querySelector('.privacy-page')) setPanelVisible(true);
   });
   syncOptionalServices();
   scheduleExpiry();
@@ -935,17 +1003,25 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
     const email = a.href.replace('mailto:', '').split('?')[0];
     const btn = document.createElement('button');
     btn.className = 'copy-email-btn';
+    btn.type = 'button';
     btn.setAttribute('aria-label', siteLabel('Kopiraj e-adresu', 'Copy email address'));
     btn.title = siteLabel('Kopiraj u međuspremnik', 'Copy to clipboard');
     btn.innerHTML = clipSvg;
+    let resetTimer;
+    let copying = false;
     btn.addEventListener('click', e => {
       e.preventDefault();
       e.stopPropagation();
-      navigator.clipboard.writeText(email).then(() => {
+      if (copying) return;
+      copying = true;
+      Promise.resolve().then(() => navigator.clipboard.writeText(email)).then(() => {
         showToast(siteLabel('Kopirano: ', 'Copied: ') + email);
         btn.textContent = '✓';
-        setTimeout(() => { btn.innerHTML = clipSvg; }, 2000);
-      });
+        clearTimeout(resetTimer);
+        resetTimer = setTimeout(() => { btn.innerHTML = clipSvg; }, 2000);
+      }).catch(() => {
+        showToast(siteLabel('Kopiranje nije uspjelo. Označite i kopirajte e-adresu.', 'Unable to copy. Select and copy the email address.'));
+      }).finally(() => { copying = false; });
     });
     a.insertAdjacentElement('afterend', btn);
   });

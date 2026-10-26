@@ -88,3 +88,27 @@ test('damaged consent can be replaced with a persisted fresh choice', () => {
   assert.equal(JSON.parse(saved).analytics, true);
   assert.ok(page(saved).loaded());
 });
+
+test('restored pages reconcile choices changed while away', () => {
+  const p = page(); p.click('Accept all');
+  p.data.set(key, JSON.stringify({ analytics: false, media: false, expiresAt: 1000000001000 }));
+  p.events.pageshow({ persisted: true });
+  assert.equal(p.loaded(), false);
+  assert.equal(p.map.querySelector('iframe'), null);
+});
+
+test('a delayed expiry timer preserves a newer choice from another tab', () => {
+  const p = page(JSON.stringify({ analytics: false, media: false, expiresAt: 1000000000100 }));
+  const newer = JSON.stringify({ analytics: true, media: false, expiresAt: 1000000005000 });
+  p.data.set(key, newer);
+  p.advance(200);
+  assert.equal(p.data.get(key), newer);
+  assert.ok(p.loaded());
+});
+
+test('returning to a visible tab reconciles withdrawal before expiry', () => {
+  const p = page(); p.click('Accept all'); p.data.clear();
+  p.events.visibilitychange();
+  assert.equal(p.loaded(), false);
+  assert.equal(p.frame.src, undefined);
+});
