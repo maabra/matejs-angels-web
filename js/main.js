@@ -26,16 +26,42 @@ const siteLabel = (hr, en) => siteIsCroatian ? hr : en;
   }
 
   if (hamburger && navLinks) {
-    function closeMenu() {
-      hamburger.classList.remove('open');
-      navLinks.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
+    const compact = window.matchMedia('(max-width: 1200px)');
+    const links = [...navLinks.querySelectorAll('a')];
+    hamburger.type = 'button';
+    hamburger.setAttribute('aria-controls', navLinks.id);
+    navLinks.dataset.menuLabel = siteLabel('Istražite uzgajivačnicu', 'Explore the kennel');
+    function setMenu(open, focusFirst = false) {
+      open = open && compact.matches;
+      hamburger.classList.toggle('open', open);
+      navLinks.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', String(open));
+      hamburger.setAttribute('aria-label', open ? siteLabel('Zatvori izbornik', 'Close menu') : siteLabel('Otvori izbornik', 'Open menu'));
+      navLinks.inert = compact.matches && !open;
+      if (open && focusFirst && links[0]) links[0].focus();
+    }
+    function closeMenu(restoreFocus = false) {
+      const wasOpen = navLinks.classList.contains('open');
+      setMenu(false);
+      if (wasOpen && restoreFocus) hamburger.focus();
     }
 
     hamburger.addEventListener('click', () => {
-      const open = hamburger.classList.toggle('open');
-      navLinks.classList.toggle('open', open);
-      hamburger.setAttribute('aria-expanded', open);
+      setMenu(!navLinks.classList.contains('open'));
+    });
+    hamburger.addEventListener('keydown', event => {
+      if (event.key === 'ArrowDown') {
+        event.preventDefault();
+        setMenu(true, true);
+      }
+    });
+    navLinks.addEventListener('keydown', event => {
+      if (!compact.matches || !['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.key)) return;
+      event.preventDefault();
+      const index = links.indexOf(document.activeElement);
+      const next = event.key === 'Home' ? 0 : event.key === 'End' ? links.length - 1 :
+        (index + (event.key === 'ArrowUp' ? -1 : 1) + links.length) % links.length;
+      links[next]?.focus();
     });
 
     // close on link click
@@ -53,13 +79,19 @@ const siteLabel = (hr, en) => siteIsCroatian ? hr : en;
     });
 
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeMenu();
+      if (e.key === 'Escape') closeMenu(true);
+    });
+    navbar.addEventListener('focusout', event => {
+      if (event.relatedTarget && !navbar.contains(event.relatedTarget)) closeMenu();
     });
     // Do not resurrect an open mobile menu after rotating or resizing the screen.
     window.addEventListener('resize', () => {
       if (window.innerWidth > 1200) closeMenu();
     }, { passive: true });
-    window.addEventListener('pageshow', closeMenu);
+    compact.addEventListener('change', () => closeMenu());
+    window.addEventListener('pageshow', () => closeMenu());
+    window.addEventListener('pagehide', () => closeMenu());
+    closeMenu();
   }
 })();
 
