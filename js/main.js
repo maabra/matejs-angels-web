@@ -552,7 +552,7 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
     save: 'Spremi odabir',
     analytics: 'Analitika (Flag Counter)',
     media: 'Vanjski sadržaj (Google karte, Google Fonts i YouTube)',
-    unavailable: 'Postavke se ne mogu spremiti u ovom pregledniku; odabir vrijedi samo do zatvaranja preglednika.',
+    unavailable: 'Postavke se ne mogu spremiti u ovom pregledniku; odabir vrijedi samo na ovoj stranici.',
     mapBlocked: 'Karta je blokirana dok ne dopustite vanjski sadržaj.',
     allowMap: 'Upravljaj suglasnošću za vanjski sadržaj',
     videoBlocked: 'Videozapis se ne učitava dok ne dopustite vanjski sadržaj.',
@@ -569,7 +569,7 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
     save: 'Save choices',
     analytics: 'Analytics (Flag Counter)',
     media: 'External content (Google Maps, Google Fonts and YouTube)',
-    unavailable: 'Preferences cannot be saved in this browser; your choice will last only until you close the browser.',
+    unavailable: 'Preferences cannot be saved in this browser; your choice applies to this page only.',
     mapBlocked: 'The map is blocked until you allow external content.',
     allowMap: 'Manage external-content consent',
     videoBlocked: 'The video is not loaded until you allow external content.',
@@ -581,15 +581,31 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
   let storageAvailable = true;
   let hasStoredConsent = false;
   let statusMessage = '';
+  let expiresAt = 0;
+  let expiryTimer;
+  let returnFocus;
 
   function readConsent() {
+    consent = { analytics: false, media: false };
+    hasStoredConsent = false;
+    expiresAt = 0;
     try {
       const saved = localStorage.getItem(storageKey);
       if (!saved) return;
-      const value = JSON.parse(saved);
-      if (value && Number.isFinite(value.expiresAt) && value.expiresAt > Date.now()) {
+      let value;
+      try {
+        value = JSON.parse(saved);
+      } catch (error) {
+        // A damaged record is not a browser-storage failure. Allow a fresh choice.
+        localStorage.removeItem(storageKey);
+        return;
+      }
+      if (value && Number.isFinite(value.expiresAt) && value.expiresAt > Date.now() &&
+          value.expiresAt <= Date.now() + consentDuration &&
+          typeof value.analytics === 'boolean' && typeof value.media === 'boolean') {
         consent = { analytics: value.analytics === true, media: value.media === true };
         hasStoredConsent = true;
+        expiresAt = value.expiresAt;
       } else {
         localStorage.removeItem(storageKey);
       }
@@ -602,11 +618,13 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
 
   function saveConsent(next) {
     consent = { analytics: next.analytics === true, media: next.media === true };
-    if (!storageAvailable) return;
+    expiresAt = Date.now() + consentDuration;
+    hasStoredConsent = true;
+    if (!storageAvailable) { statusMessage = text.unavailable; return; }
     try {
       localStorage.setItem(storageKey, JSON.stringify({
         ...consent,
-        expiresAt: Date.now() + consentDuration
+        expiresAt
       }));
       statusMessage = text.saved;
     } catch (error) {
@@ -614,6 +632,25 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
       console.error('Unable to save privacy preferences to browser storage.', error);
       statusMessage = text.unavailable;
     }
+  }
+
+  function scheduleExpiry() {
+    clearTimeout(expiryTimer);
+    if (!expiresAt) return;
+    // Browser timers cannot represent the full 183-day interval.
+    expiryTimer = setTimeout(() => {
+      if (Date.now() >= expiresAt) {
+        try { localStorage.removeItem(storageKey); } catch (error) { /* Storage may be unavailable. */ }
+        consent = { analytics: false, media: false };
+        hasStoredConsent = false;
+        expiresAt = 0;
+        syncOptionalServices();
+        setPanelVisible(true);
+        analyticsToggle.checked = false;
+        mediaToggle.checked = false;
+      }
+      scheduleExpiry();
+    }, Math.min(Math.max(expiresAt - Date.now(), 1), 2147483647));
   }
 
   function syncOptionalServices() {
@@ -658,10 +695,12 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
           frame.src = frame.dataset.optionalSrc;
         }
         frame.removeAttribute('aria-hidden');
+        frame.removeAttribute('tabindex');
         if (placeholder) placeholder.remove();
       } else {
         frame.removeAttribute('src');
         frame.setAttribute('aria-hidden', 'true');
+        frame.setAttribute('tabindex', '-1');
         if (!placeholder) {
           placeholder = document.createElement('div');
           placeholder.className = 'privacy-video-placeholder';
@@ -710,7 +749,8 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
   }
 
   function openMediaPreferences() {
-    panel.hidden = false;
+    returnFocus = document.activeElement;
+    setPanelVisible(true);
     settings.hidden = false;
     analyticsToggle.checked = consent.analytics;
     mediaToggle.checked = consent.media;
@@ -723,13 +763,61 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
   }
 
   readConsent();
-  const panel = document.createElement('section');
+  const panel = document.createElement('dialog');
   panel.className = 'privacy-consent';
   panel.setAttribute('aria-label', text.title);
+  panel.setAttribute('tabindex', '-1');
   panel.hidden = true;
+  panel.addEventListener('cancel', event => {
+    event.preventDefault();
+    setPanelVisible(false);
+  });
+
+  function setPanelVisible(visible) {
+    panel.hidden = !visible;
+    if (visible && !panel.open) {
+      returnFocus = document.activeElement;
+      panel.showModal();
+      panel.focus({ preventScroll: true });
+    } else if (!visible && panel.open) {
+      panel.close();
+      if (returnFocus && returnFocus.isConnected) returnFocus.focus();
+    }
+  }
 
   const title = document.createElement('h2');
   title.textContent = text.title;
+  const languageSwitch = document.createElement('nav');
+  languageSwitch.className = 'privacy-language-switch';
+  languageSwitch.setAttribute('aria-label', siteLabel('Jezik stranice', 'Site language'));
+  [
+    { lang: 'en', label: 'English', href: '/en/about', active: !siteIsCroatian,
+      flag: '<svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg"><path fill="#153575" d="M0 0h60v40H0z"/><path stroke="#fff" stroke-width="9" d="m0 0 60 40M60 0 0 40"/><path stroke="#cf2035" stroke-width="4" d="m0 0 60 40M60 0 0 40"/><path stroke="#fff" stroke-width="13" d="M30 0v40M0 20h60"/><path stroke="#cf2035" stroke-width="7" d="M30 0v40M0 20h60"/></svg>' },
+    { lang: 'hr', label: 'Hrvatski', href: '/', active: siteIsCroatian,
+      flag: '<svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg"><path fill="#ef3340" d="M0 0h60v14H0z"/><path fill="#fff" d="M0 13h60v14H0z"/><path fill="#17449b" d="M0 26h60v14H0z"/><path fill="#fff" stroke="#ef3340" d="M22 12h16v13q0 7-8 10-8-3-8-10z"/><path fill="#ef3340" d="M22 12h3v4h-3zm6 0h4v4h-4zm7 0h3v4h-3zm-10 4h3v4h-3zm7 0h3v4h-3zm-10 4h3v4h-3zm6 0h4v4h-4zm7 0h3v4h-3zm-10 4h3v4h-3zm7 0h3v4h-3zm-5 4h6v4h-6z"/><path fill="#4ca8d8" stroke="#17449b" d="m22 11 1-5 4 1 3-2 3 2 4-1 1 5z"/></svg>' }
+  ].forEach(language => {
+    const link = document.createElement('a');
+    const flag = document.createElement('span');
+    flag.className = 'privacy-language-flag';
+    flag.setAttribute('aria-hidden', 'true');
+    flag.innerHTML = language.flag;
+    const label = document.createElement('span');
+    label.textContent = language.label;
+    link.append(flag, label);
+    link.href = language.href;
+    link.lang = language.lang;
+    link.hreflang = language.lang;
+    link.className = 'privacy-language-option';
+    if (language.active) {
+      link.setAttribute('aria-current', 'true');
+      const selected = document.createElement('span');
+      selected.className = 'privacy-language-selected';
+      selected.setAttribute('aria-hidden', 'true');
+      selected.textContent = '✓';
+      link.appendChild(selected);
+    }
+    languageSwitch.appendChild(link);
+  });
   const intro = document.createElement('p');
   intro.textContent = text.intro;
   const privacyLink = document.createElement('a');
@@ -757,7 +845,9 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
   function setChoice(next) {
     saveConsent(next);
     syncOptionalServices();
-    panel.hidden = true;
+    scheduleExpiry();
+    setPanelVisible(false);
+    if (returnFocus && returnFocus.isConnected) returnFocus.focus();
     updateStatus();
   }
 
@@ -777,25 +867,23 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
     'btn btn-primary btn-sm'
   ));
   actions.append(
-    makeButton(text.accept, () => setChoice({ analytics: true, media: true }), 'btn btn-primary btn-sm'),
+    makeButton(text.accept, () => setChoice({ analytics: true, media: true }), 'btn btn-outline btn-sm'),
     makeButton(text.reject, () => setChoice({ analytics: false, media: false }), 'btn btn-outline btn-sm'),
     makeButton(text.manage, () => {
       settings.hidden = !settings.hidden;
       if (!settings.hidden) analyticsToggle.focus();
     }, 'btn btn-outline btn-sm')
   );
-  panel.append(title, intro, privacyLink, actions, settings, status);
+  panel.append(languageSwitch, title, intro, privacyLink, actions, settings, status);
   document.body.appendChild(panel);
 
   const footerBottom = document.querySelector('.footer-bottom');
   if (footerBottom) {
     const controls = document.createElement('div');
     controls.className = 'privacy-footer-controls';
-    const policy = document.createElement('a');
-    policy.href = privacyUrl;
-    policy.textContent = text.privacy;
-    controls.append(policy, makeButton(text.settings, () => {
-      panel.hidden = false;
+    controls.append(makeButton(text.settings, () => {
+      returnFocus = document.activeElement;
+      setPanelVisible(true);
       settings.hidden = false;
       analyticsToggle.checked = consent.analytics;
       mediaToggle.checked = consent.media;
@@ -804,8 +892,29 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
     footerBottom.appendChild(controls);
   }
 
+  // Reflect withdrawal/clearing storage in every open tab.
+  window.addEventListener('storage', event => {
+    if (event.key !== storageKey && event.key !== null) return;
+    readConsent();
+    syncOptionalServices();
+    scheduleExpiry();
+    analyticsToggle.checked = consent.analytics;
+    mediaToggle.checked = consent.media;
+    setPanelVisible(!hasStoredConsent);
+  });
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden && expiresAt && Date.now() >= expiresAt) {
+      readConsent();
+      syncOptionalServices();
+      scheduleExpiry();
+      if (!hasStoredConsent) setPanelVisible(true);
+      analyticsToggle.checked = consent.analytics;
+      mediaToggle.checked = consent.media;
+    }
+  });
   syncOptionalServices();
-  if (!hasStoredConsent) panel.hidden = false;
+  scheduleExpiry();
+  if (!hasStoredConsent && !document.querySelector('.privacy-page')) setPanelVisible(true);
 })();
 
 /* ---- COPY EMAIL TO CLIPBOARD ---- */
