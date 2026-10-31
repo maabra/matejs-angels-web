@@ -37,7 +37,6 @@
       "dogs_action": "Meet our dogs",
       "litters_action": "Explore the litters",
       "contact_action": "Get in touch",
-      "photo_caption": "Our dogs together at home in Premantura.",
       "story_title": "Dogs first. Part of the family.",
       "story_text": "Our story began with Bernese Mountain Dogs and an Irish Setter, before Cavaliers and, later, Pomeranians joined us. Here we share their photographs, recorded results and the litters we have raised.",
       "story_action": "Get to know us",
@@ -48,7 +47,8 @@
       "visit_text": "Tell us about the dog or litter you are interested in. If you would like to visit, contact us first so we can arrange a time.",
       "facebook_action": "More from us on Facebook",
       "duo_alt": "A Cavalier and a Pomeranian together at home",
-      "poms_alt": "Pomeranians relaxing together on the sofa"
+      "poms_alt": "Pomeranians relaxing together on the sofa",
+      "pack_alt": "Cavaliers and Pomeranians from Matej?s Angels"
     },
     "country": "Croatia",
     "album_action": "Open album"
@@ -91,7 +91,6 @@
       "dogs_action": "Upoznajte naše pse",
       "litters_action": "Istražite legla",
       "contact_action": "Javite nam se",
-      "photo_caption": "Naši psi zajedno kod kuće u Premanturi.",
       "story_title": "Prije svega psi. Dio obitelji.",
       "story_text": "Naša je priča počela s bernskim planinskim psima i irskom setericom, prije nego što su nam se pridružili kavaliri, a zatim i pomeranci. Ovdje dijelimo njihove fotografije, zabilježene rezultate i legla koja su odrasla kod nas.",
       "story_action": "Upoznajte nas",
@@ -102,7 +101,8 @@
       "visit_text": "Napišite nam koji vas pas ili leglo zanima. Ako nas želite posjetiti, javite nam se unaprijed da dogovorimo termin.",
       "facebook_action": "Više o nama na Facebooku",
       "duo_alt": "Kavalir i pomeranac zajedno kod kuće",
-      "poms_alt": "Pomeranci se odmaraju zajedno na kauču"
+      "poms_alt": "Pomeranci se odmaraju zajedno na kauču",
+      "pack_alt": "Kavaliri i pomeranci uzgajiva?nice Matej?s Angels"
     },
     "country": "Hrvatska",
     "album_action": "Otvori album"
