@@ -286,3 +286,8 @@ a.btn.whatsapp-link:hover, a.btn.viber-link:hover { background: rgba(250,246,240
 .care-page .care-section-heading h2 { display: inline-block; background: var(--navy); padding: .65rem 1rem; border-radius: 5px; }
 .care-page figcaption { background: var(--navy); padding: .65rem .85rem; border-radius: 4px; }
 .care-page .prod-section-label { display: inline-block; background: var(--navy); padding: .45rem .65rem; border-radius: 4px; }
+
+/* Give the landing page pattern a little more presence. */
+.home-page > .section { --kennel-pattern-image: url('../images/index/kennel-pattern-home.svg'); }
+.home-page > .section-mid { --kennel-pattern-image: url('../images/index/kennel-pattern-home-mid.svg'); }
+.home-page > .section-ivory { --kennel-pattern-image: url('../images/index/kennel-pattern-home-ivory.svg'); }
