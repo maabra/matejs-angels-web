@@ -2455,7 +2455,7 @@ a.where-now-card[href]:hover {
 .hero-content h1, .hero-content:has(.hero-logo) h1 { font-size: clamp(1.85rem, 3.5vw, 2.4rem); margin-bottom: 0.75rem; }
 .hero-content p { font-size: 1rem; max-width: 540px; }
 .hero-content .hero-eyebrow { margin-bottom: 0.65rem; }
-.hero-eyebrow { border-bottom: 0; padding-bottom: 0; }
+.hero-eyebrow { border-bottom: 0; padding-bottom: 0; text-transform: none; letter-spacing: 0.06em; }
 .hero-content h1 { text-shadow: none; font-weight: 500; }
 .hero-logo, .index-logo-wrap img { filter: none; }
 .hero-bar { height: 1px; background: var(--gold-muted); }
