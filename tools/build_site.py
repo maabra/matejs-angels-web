@@ -41,11 +41,10 @@ def build(check=False):
         prefix = 'hr/' if lang == 'hr' else 'en/'
         def link(target): return html.escape(relative(path, target), quote=True)
         nav = []
-        for key in ['about', 'dogs', 'stud', 'litters', 'gallery', 'news', 'care', 'contact']:
+        for key in ['about', 'dogs', 'litters', 'gallery', 'news', 'care', 'contact']:
             target = prefix + c['routes'][key] + '.html'
-            fragment = '#stud-dogs' if key == 'stud' else ''
-            active = ' class="active" aria-current="page"' if path == target and key != 'stud' else ''
-            nav.append(f'<li><a href="{link(target)}{fragment}"{active}>{c[key]}</a></li>')
+            active = ' class="active" aria-current="page"' if path == target else ''
+            nav.append(f'<li><a href="{link(target)}"{active}>{c[key]}</a></li>')
         values = {
             'home': link(home), 'logo': posixpath.relpath('images/index/logotransparent.png', posixpath.dirname(path) or '.'),
             'kennel': c['kennel'], 'nav_links': '\n'.join(nav), 'menu': c['menu'],

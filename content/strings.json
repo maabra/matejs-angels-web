@@ -7,7 +7,6 @@
     "more": "More",
     "about": "About us",
     "dogs": "Our dogs",
-    "stud": "Stud dogs",
     "litters": "Litters",
     "gallery": "Gallery",
     "news": "News",
@@ -23,7 +22,6 @@
     "routes": {
       "about": "about",
       "dogs": "our-dogs",
-      "stud": "our-dogs",
       "litters": "litters",
       "gallery": "gallery",
       "news": "news",
@@ -62,7 +60,6 @@
     "more": "Više",
     "about": "O nama",
     "dogs": "Naši psi",
-    "stud": "Parnjaci",
     "litters": "Legla",
     "gallery": "Galerija",
     "news": "Vijesti",
@@ -78,7 +75,6 @@
     "routes": {
       "about": "o-nama",
       "dogs": "nasi-psi",
-      "stud": "nasi-psi",
       "litters": "legla",
       "gallery": "galerija",
       "news": "vijesti",
