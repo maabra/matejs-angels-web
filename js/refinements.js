@@ -54,4 +54,36 @@
       }
     });
   }
+  document.querySelectorAll('.home-carousel').forEach(carousel => {
+    const slides = [...carousel.querySelectorAll('.home-carousel-slides img')];
+    const count = carousel.querySelector('.home-carousel-count');
+    const toggle = carousel.querySelector('[data-carousel-pause]');
+    const motion = matchMedia('(prefers-reduced-motion: reduce)');
+    let index = 0;
+    let paused = motion.matches;
+    let timer;
+    const show = next => {
+      index = (next + slides.length) % slides.length;
+      slides.forEach((slide, i) => { slide.hidden = i !== index; });
+      count.textContent = `${index + 1} / ${slides.length}`;
+    };
+    const sync = () => {
+      clearInterval(timer);
+      toggle.setAttribute('aria-label', paused ? toggle.dataset.play : toggle.dataset.pause);
+      toggle.textContent = paused ? '▶' : 'Ⅱ';
+      if (!paused && !document.hidden && !carousel.matches(':hover') && !carousel.contains(document.activeElement)) {
+        timer = setInterval(() => show(index + 1), 6000);
+      }
+    };
+    carousel.querySelectorAll('[data-slide]').forEach(button => button.addEventListener('click', () => {
+      show(index + Number(button.dataset.slide));
+      sync();
+    }));
+    toggle.addEventListener('click', () => { paused = !paused; sync(); });
+    ['mouseenter', 'mouseleave', 'focusin'].forEach(event => carousel.addEventListener(event, sync));
+    carousel.addEventListener('focusout', () => setTimeout(sync, 0));
+    document.addEventListener('visibilitychange', sync);
+    motion.addEventListener('change', () => { paused = motion.matches; sync(); });
+    sync();
+  });
 })();
