@@ -7,5 +7,7 @@ PREGLED-STRANICE.md
 scripts
 .site-update-baseline.json
 debug.log
+tests/artifacts/
+__pycache__/
 DOG-PROFILE-INFO-NEEDED.md
 PRIVACY-REVIEW.md

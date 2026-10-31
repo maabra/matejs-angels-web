@@ -1,0 +1,426 @@
+[
+  {
+    "path": "index.html",
+    "lang": "hr",
+    "pair": "en/index.html"
+  },
+  {
+    "path": "en/about.html",
+    "lang": "en",
+    "pair": "hr/o-nama.html",
+    "copy_key": "en-about"
+  },
+  {
+    "path": "en/care.html",
+    "lang": "en",
+    "pair": "hr/briga.html",
+    "copy_key": "en-care"
+  },
+  {
+    "path": "en/chronology.html",
+    "lang": "en",
+    "pair": "hr/kronologija.html",
+    "copy_key": "en-chronology"
+  },
+  {
+    "path": "en/contact.html",
+    "lang": "en",
+    "pair": "hr/kontakt.html",
+    "copy_key": "en-contact"
+  },
+  {
+    "path": "en/faq.html",
+    "lang": "en",
+    "pair": "hr/faq.html",
+    "copy_key": "en-faq"
+  },
+  {
+    "path": "en/gallery.html",
+    "lang": "en",
+    "pair": "hr/galerija.html",
+    "copy_key": "en-gallery"
+  },
+  {
+    "path": "en/litter-a.html",
+    "lang": "en",
+    "pair": "hr/leglo-a.html"
+  },
+  {
+    "path": "en/litter-b.html",
+    "lang": "en",
+    "pair": "hr/leglo-b.html"
+  },
+  {
+    "path": "en/litter-c.html",
+    "lang": "en",
+    "pair": "hr/leglo-c.html"
+  },
+  {
+    "path": "en/litter-d.html",
+    "lang": "en",
+    "pair": "hr/leglo-d.html"
+  },
+  {
+    "path": "en/litter-e.html",
+    "lang": "en",
+    "pair": "hr/leglo-e.html"
+  },
+  {
+    "path": "en/litter-f.html",
+    "lang": "en",
+    "pair": "hr/leglo-f.html"
+  },
+  {
+    "path": "en/litter-g.html",
+    "lang": "en",
+    "pair": "hr/leglo-g.html"
+  },
+  {
+    "path": "en/litter-h.html",
+    "lang": "en",
+    "pair": "hr/leglo-h.html"
+  },
+  {
+    "path": "en/litters.html",
+    "lang": "en",
+    "pair": "hr/legla.html",
+    "copy_key": "en-litters"
+  },
+  {
+    "path": "en/news-archie-grand-prvak-hrvatske.html",
+    "lang": "en",
+    "pair": "hr/vijesti-archie-grand-prvak-hrvatske.html",
+    "copy_key": "en-news-archie-grand-prvak-hrvatske"
+  },
+  {
+    "path": "en/news-kimmy-breeding-evaluation.html",
+    "lang": "en",
+    "pair": "hr/vijesti-kimmy-uzgojni-pregled.html",
+    "copy_key": "en-news-kimmy-breeding-evaluation"
+  },
+  {
+    "path": "en/news-litter-h.html",
+    "lang": "en",
+    "pair": "hr/vijesti-leglo-h.html",
+    "copy_key": "en-news-litter-h"
+  },
+  {
+    "path": "en/news-pomeranians.html",
+    "lang": "en",
+    "pair": "hr/vijesti-pomeranci.html",
+    "copy_key": "en-news-pomeranians"
+  },
+  {
+    "path": "en/news-wendy.html",
+    "lang": "en",
+    "pair": "hr/vijesti-wendy.html",
+    "copy_key": "en-news-wendy"
+  },
+  {
+    "path": "en/news.html",
+    "lang": "en",
+    "pair": "hr/vijesti.html",
+    "copy_key": "en-news"
+  },
+  {
+    "path": "en/our-dogs.html",
+    "lang": "en",
+    "pair": "hr/nasi-psi.html",
+    "copy_key": "en-our-dogs"
+  },
+  {
+    "path": "en/privacy.html",
+    "lang": "en",
+    "pair": "hr/privatnost.html"
+  },
+  {
+    "path": "en/dogs/archie.html",
+    "lang": "en",
+    "pair": "hr/psi/archie.html"
+  },
+  {
+    "path": "en/dogs/aria.html",
+    "lang": "en",
+    "pair": "hr/psi/aria.html"
+  },
+  {
+    "path": "en/dogs/cashmir.html",
+    "lang": "en",
+    "pair": "hr/psi/cashmir.html"
+  },
+  {
+    "path": "en/dogs/charlie.html",
+    "lang": "en",
+    "pair": "hr/psi/charlie.html"
+  },
+  {
+    "path": "en/dogs/dali.html",
+    "lang": "en",
+    "pair": "hr/psi/dali.html"
+  },
+  {
+    "path": "en/dogs/hella.html",
+    "lang": "en",
+    "pair": "hr/psi/hella.html"
+  },
+  {
+    "path": "en/dogs/kimmy.html",
+    "lang": "en",
+    "pair": "hr/psi/kimmy.html"
+  },
+  {
+    "path": "en/dogs/masa.html",
+    "lang": "en",
+    "pair": "hr/psi/masa.html"
+  },
+  {
+    "path": "en/dogs/mo.html",
+    "lang": "en",
+    "pair": "hr/psi/mo.html"
+  },
+  {
+    "path": "en/dogs/olea.html",
+    "lang": "en",
+    "pair": "hr/psi/olea.html"
+  },
+  {
+    "path": "en/dogs/pegas.html",
+    "lang": "en",
+    "pair": "hr/psi/pegas.html"
+  },
+  {
+    "path": "en/dogs/quara.html",
+    "lang": "en",
+    "pair": "hr/psi/quara.html"
+  },
+  {
+    "path": "en/dogs/tomo.html",
+    "lang": "en",
+    "pair": "hr/psi/tomo.html"
+  },
+  {
+    "path": "en/dogs/wendy.html",
+    "lang": "en",
+    "pair": "hr/psi/wendy.html"
+  },
+  {
+    "path": "en/dogs/zywoo.html",
+    "lang": "en",
+    "pair": "hr/psi/zywoo.html"
+  },
+  {
+    "path": "hr/blog.html",
+    "lang": "hr",
+    "pair": "en/news.html",
+    "copy_key": "en-news"
+  },
+  {
+    "path": "hr/briga.html",
+    "lang": "hr",
+    "pair": "en/care.html",
+    "copy_key": "en-care"
+  },
+  {
+    "path": "hr/faq.html",
+    "lang": "hr",
+    "pair": "en/faq.html",
+    "copy_key": "en-faq"
+  },
+  {
+    "path": "hr/galerija.html",
+    "lang": "hr",
+    "pair": "en/gallery.html",
+    "copy_key": "en-gallery"
+  },
+  {
+    "path": "hr/kontakt.html",
+    "lang": "hr",
+    "pair": "en/contact.html",
+    "copy_key": "en-contact"
+  },
+  {
+    "path": "hr/kronologija.html",
+    "lang": "hr",
+    "pair": "en/chronology.html",
+    "copy_key": "en-chronology"
+  },
+  {
+    "path": "hr/legla.html",
+    "lang": "hr",
+    "pair": "en/litters.html",
+    "copy_key": "en-litters"
+  },
+  {
+    "path": "hr/leglo-a.html",
+    "lang": "hr",
+    "pair": "en/litter-a.html"
+  },
+  {
+    "path": "hr/leglo-b.html",
+    "lang": "hr",
+    "pair": "en/litter-b.html"
+  },
+  {
+    "path": "hr/leglo-c.html",
+    "lang": "hr",
+    "pair": "en/litter-c.html"
+  },
+  {
+    "path": "hr/leglo-d.html",
+    "lang": "hr",
+    "pair": "en/litter-d.html"
+  },
+  {
+    "path": "hr/leglo-e.html",
+    "lang": "hr",
+    "pair": "en/litter-e.html"
+  },
+  {
+    "path": "hr/leglo-f.html",
+    "lang": "hr",
+    "pair": "en/litter-f.html"
+  },
+  {
+    "path": "hr/leglo-g.html",
+    "lang": "hr",
+    "pair": "en/litter-g.html"
+  },
+  {
+    "path": "hr/leglo-h.html",
+    "lang": "hr",
+    "pair": "en/litter-h.html"
+  },
+  {
+    "path": "hr/nasi-psi.html",
+    "lang": "hr",
+    "pair": "en/our-dogs.html",
+    "copy_key": "en-our-dogs"
+  },
+  {
+    "path": "hr/o-nama.html",
+    "lang": "hr",
+    "pair": "en/about.html",
+    "copy_key": "en-about"
+  },
+  {
+    "path": "hr/privatnost.html",
+    "lang": "hr",
+    "pair": "en/privacy.html"
+  },
+  {
+    "path": "hr/vijesti-archie-grand-prvak-hrvatske.html",
+    "lang": "hr",
+    "pair": "en/news-archie-grand-prvak-hrvatske.html",
+    "copy_key": "en-news-archie-grand-prvak-hrvatske"
+  },
+  {
+    "path": "hr/vijesti-kimmy-uzgojni-pregled.html",
+    "lang": "hr",
+    "pair": "en/news-kimmy-breeding-evaluation.html",
+    "copy_key": "en-news-kimmy-breeding-evaluation"
+  },
+  {
+    "path": "hr/vijesti-leglo-h.html",
+    "lang": "hr",
+    "pair": "en/news-litter-h.html",
+    "copy_key": "en-news-litter-h"
+  },
+  {
+    "path": "hr/vijesti-pomeranci.html",
+    "lang": "hr",
+    "pair": "en/news-pomeranians.html",
+    "copy_key": "en-news-pomeranians"
+  },
+  {
+    "path": "hr/vijesti-wendy.html",
+    "lang": "hr",
+    "pair": "en/news-wendy.html",
+    "copy_key": "en-news-wendy"
+  },
+  {
+    "path": "hr/vijesti.html",
+    "lang": "hr",
+    "pair": "en/news.html",
+    "copy_key": "en-news"
+  },
+  {
+    "path": "hr/psi/archie.html",
+    "lang": "hr",
+    "pair": "en/dogs/archie.html"
+  },
+  {
+    "path": "hr/psi/aria.html",
+    "lang": "hr",
+    "pair": "en/dogs/aria.html"
+  },
+  {
+    "path": "hr/psi/cashmir.html",
+    "lang": "hr",
+    "pair": "en/dogs/cashmir.html"
+  },
+  {
+    "path": "hr/psi/charlie.html",
+    "lang": "hr",
+    "pair": "en/dogs/charlie.html"
+  },
+  {
+    "path": "hr/psi/dali.html",
+    "lang": "hr",
+    "pair": "en/dogs/dali.html"
+  },
+  {
+    "path": "hr/psi/hella.html",
+    "lang": "hr",
+    "pair": "en/dogs/hella.html"
+  },
+  {
+    "path": "hr/psi/kimmy.html",
+    "lang": "hr",
+    "pair": "en/dogs/kimmy.html"
+  },
+  {
+    "path": "hr/psi/masa.html",
+    "lang": "hr",
+    "pair": "en/dogs/masa.html"
+  },
+  {
+    "path": "hr/psi/mo.html",
+    "lang": "hr",
+    "pair": "en/dogs/mo.html"
+  },
+  {
+    "path": "hr/psi/olea.html",
+    "lang": "hr",
+    "pair": "en/dogs/olea.html"
+  },
+  {
+    "path": "hr/psi/pegas.html",
+    "lang": "hr",
+    "pair": "en/dogs/pegas.html"
+  },
+  {
+    "path": "hr/psi/quara.html",
+    "lang": "hr",
+    "pair": "en/dogs/quara.html"
+  },
+  {
+    "path": "hr/psi/tomo.html",
+    "lang": "hr",
+    "pair": "en/dogs/tomo.html"
+  },
+  {
+    "path": "hr/psi/wendy.html",
+    "lang": "hr",
+    "pair": "en/dogs/wendy.html"
+  },
+  {
+    "path": "hr/psi/zywoo.html",
+    "lang": "hr",
+    "pair": "en/dogs/zywoo.html"
+  },
+  {
+    "path": "en/index.html",
+    "lang": "en",
+    "pair": "index.html"
+  }
+]

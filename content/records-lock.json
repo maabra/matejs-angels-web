@@ -1,0 +1,314 @@
+{
+  "en/dogs/archie.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breed</span><span class=\"stat-val\">Cavalier King Charles Spaniel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Colour</span><span class=\"stat-val\">Tricolour</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Sex</span><span class=\"stat-val\">Male</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Date of birth</span><span class=\"stat-val\">11 September 2019</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pedigree number</span><span class=\"stat-val\">HR 11354 KKS</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Microchip</span><span class=\"stat-val\">191100002075063</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breeding assessment</span><span class=\"stat-val\">Excellent</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Titles</span><span class=\"stat-val\">CHM-HR</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Owner</span><span class=\"stat-val\">Alina Te</span></div>"
+  ],
+  "en/dogs/aria.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breed</span><span class=\"stat-val\">Cavalier King Charles Spaniel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Colour</span><span class=\"stat-val\">Tricolour</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Sex</span><span class=\"stat-val\">Female</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Date of birth</span><span class=\"stat-val\">26 August 2021</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pedigree number</span><span class=\"stat-val\">HR 11551 KKS</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Microchip</span><span class=\"stat-val\">191100002206160</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breeding assessment</span><span class=\"stat-val\">Excellent</span></div>"
+  ],
+  "en/dogs/cashmir.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breed</span><span class=\"stat-val\">Cavalier King Charles Spaniel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Colour</span><span class=\"stat-val\">Ruby</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Sex</span><span class=\"stat-val\">Male</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Date of birth</span><span class=\"stat-val\">23 April 2009</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pedigree number</span><span class=\"stat-val\">—</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Microchip</span><span class=\"stat-val\">191060000014103</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breeding assessment</span><span class=\"stat-val\">—</span></div>"
+  ],
+  "en/dogs/charlie.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breed</span><span class=\"stat-val\">Cavalier King Charles Spaniel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Colour</span><span class=\"stat-val\">Blenheim</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Sex</span><span class=\"stat-val\">Male</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Date of birth</span><span class=\"stat-val\">19 October 2019</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pedigree number</span><span class=\"stat-val\">HR 11374 KKS</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Microchip</span><span class=\"stat-val\">191100002043356</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breeding assessment</span><span class=\"stat-val\">Excellent</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Owner</span><span class=\"stat-val\">Alenka Turk</span></div>"
+  ],
+  "en/dogs/dali.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breed</span><span class=\"stat-val\">Cavalier King Charles Spaniel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Colour</span><span class=\"stat-val\">Blenheim</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Sex</span><span class=\"stat-val\">Male</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Date of birth</span><span class=\"stat-val\">15 March 2023</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pedigree number</span><span class=\"stat-val\">HR 11733 KKS</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Microchip</span><span class=\"stat-val\">191100002255263</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breeding assessment</span><span class=\"stat-val\">Excellent</span></div>"
+  ],
+  "en/dogs/hella.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breed</span><span class=\"stat-val\">Cavalier King Charles Spaniel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Colour</span><span class=\"stat-val\">Blenheim</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Sex</span><span class=\"stat-val\">Female</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Date of birth</span><span class=\"stat-val\">14 February 2017</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pedigree number</span><span class=\"stat-val\">HR 11140 KKS</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Microchip</span><span class=\"stat-val\">191100000928152</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breeding assessment</span><span class=\"stat-val\">Very good</span></div>"
+  ],
+  "en/dogs/kimmy.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breed</span><span class=\"stat-val\">Pomeranian</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Colour</span><span class=\"stat-val\">Orange Sable</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Sex</span><span class=\"stat-val\">Female</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Date of birth</span><span class=\"stat-val\">14 February 2025</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pedigree number</span><span class=\"stat-val\">HR 12633 POM</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Microchip</span><span class=\"stat-val\">191100002324549</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breeding assessment</span><span class=\"stat-val\">Very good</span></div>"
+  ],
+  "en/dogs/masa.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breed</span><span class=\"stat-val\">Pomeranian</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Colour</span><span class=\"stat-val\">Black &amp; Tan</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Sex</span><span class=\"stat-val\">Female</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Date of birth</span><span class=\"stat-val\">3 May 2020</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pedigree number</span><span class=\"stat-val\">HR 11407 POM</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Microchip</span><span class=\"stat-val\">643097200000455</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breeding assessment</span><span class=\"stat-val\">Very good</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Original pedigree number</span><span class=\"stat-val\">RKF 6003513</span></div>"
+  ],
+  "en/dogs/mo.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breed</span><span class=\"stat-val\">Pomeranian</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Colour</span><span class=\"stat-val\">Cream</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Sex</span><span class=\"stat-val\">Female</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Date of birth</span><span class=\"stat-val\">2 May 2022</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pedigree number</span><span class=\"stat-val\">HR 11795 POM</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Microchip</span><span class=\"stat-val\">—</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breeding assessment</span><span class=\"stat-val\">Excellent</span></div>"
+  ],
+  "en/dogs/olea.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breed</span><span class=\"stat-val\">Cavalier King Charles Spaniel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Colour</span><span class=\"stat-val\">Blenheim</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Sex</span><span class=\"stat-val\">Female</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Date of birth</span><span class=\"stat-val\">4 April 2019</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pedigree number</span><span class=\"stat-val\">HR 11432 KKS</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Microchip</span><span class=\"stat-val\">203098100438851</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breeding assessment</span><span class=\"stat-val\">Very good</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Original pedigree number</span><span class=\"stat-val\">CMKU 16553/19</span></div>"
+  ],
+  "en/dogs/pegas.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breed</span><span class=\"stat-val\">Cavalier King Charles Spaniel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Colour</span><span class=\"stat-val\">Tricolour</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Sex</span><span class=\"stat-val\">Male</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Date of birth</span><span class=\"stat-val\">17 April 2011</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pedigree number</span><span class=\"stat-val\">—</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Microchip</span><span class=\"stat-val\">900182000024603</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breeding assessment</span><span class=\"stat-val\">—</span></div>"
+  ],
+  "en/dogs/quara.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breed</span><span class=\"stat-val\">Cavalier King Charles Spaniel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Colour</span><span class=\"stat-val\">Blenheim</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Sex</span><span class=\"stat-val\">Female</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Date of birth</span><span class=\"stat-val\">28 March 2006</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pedigree number</span><span class=\"stat-val\">—</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Microchip</span><span class=\"stat-val\">191100000102250</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breeding assessment</span><span class=\"stat-val\">—</span></div>"
+  ],
+  "en/dogs/tomo.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breed</span><span class=\"stat-val\">Pomeranian</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Colour</span><span class=\"stat-val\">Orange</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Sex</span><span class=\"stat-val\">Male</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Date of birth</span><span class=\"stat-val\">25 February 2018</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pedigree number</span><span class=\"stat-val\">HR 10887 POM</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Microchip</span><span class=\"stat-val\">643099100020467</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breeding assessment</span><span class=\"stat-val\">Excellent</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Original pedigree number</span><span class=\"stat-val\">RKF 5439880</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Titles</span><span class=\"stat-val\">R.CACIB, CH-BIH, 4xCAC, R.CAC</span></div>"
+  ],
+  "en/dogs/wendy.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breed</span><span class=\"stat-val\">Cavalier King Charles Spaniel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Colour</span><span class=\"stat-val\">Blenheim</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Sex</span><span class=\"stat-val\">Female</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Date of birth</span><span class=\"stat-val\">20 October 2023</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pedigree number</span><span class=\"stat-val\">HR 11803 KKS</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Microchip</span><span class=\"stat-val\">953010006781300</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breeding assessment</span><span class=\"stat-val\">Excellent</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Original pedigree number</span><span class=\"stat-val\">CMKU 20053/23</span></div>"
+  ],
+  "en/dogs/zywoo.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Breed</span><span class=\"stat-val\">Counter-Strike 2</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Colour</span><span class=\"stat-val\">Vitality Yellow</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Sex</span><span class=\"stat-val\"> Male</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Date of Birth</span><span class=\"stat-val\">9 April 2000</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Country</span><span class=\"stat-val\"> France</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Team</span><span class=\"stat-val\">Team Vitality</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">FACEIT ID</span><span class=\"stat-val\">ZywOo</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Prize Money</span><span class=\"stat-val\">$1,848,326</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">World Rank</span><span class=\"stat-val\" style=\"color:#FFE500;font-weight:700\">#1 (2025.)</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Titles</span><span class=\"stat-val\">5× #1 World</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Majors Won</span><span class=\"stat-val\">3× Major + 3× MVP</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Trophies</span><span class=\"stat-val\">32</span></div>"
+  ],
+  "hr/psi/archie.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pasmina</span><span class=\"stat-val\">Kavalir King Charles španijel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Boja</span><span class=\"stat-val\">Tricolor</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Spol</span><span class=\"stat-val\">Mužjak</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Datum rođenja</span><span class=\"stat-val\">11. 09. 2019.</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Broj rodovnice</span><span class=\"stat-val\">HR 11354 KKS</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Čip</span><span class=\"stat-val\">191100002075063</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Ocjena uzgojnog pregleda</span><span class=\"stat-val\">Odličan</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Titule</span><span class=\"stat-val\">CHM-HR</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Vlasnik</span><span class=\"stat-val\">Alina Te</span></div>"
+  ],
+  "hr/psi/aria.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pasmina</span><span class=\"stat-val\">Kavalir King Charles španijel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Boja</span><span class=\"stat-val\">Tricolor</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Spol</span><span class=\"stat-val\">Ženka</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Datum rođenja</span><span class=\"stat-val\">26. 08. 2021.</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Broj rodovnice</span><span class=\"stat-val\">HR 11551 KKS</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Čip</span><span class=\"stat-val\">191100002206160</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Ocjena uzgojnog pregleda</span><span class=\"stat-val\">Odličan</span></div>"
+  ],
+  "hr/psi/cashmir.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pasmina</span><span class=\"stat-val\">Kavalir King Charles španijel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Boja</span><span class=\"stat-val\">Ruby</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Spol</span><span class=\"stat-val\">Mužjak</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Datum rođenja</span><span class=\"stat-val\">23. 04. 2009.</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Broj rodovnice</span><span class=\"stat-val\">—</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Čip</span><span class=\"stat-val\">191060000014103</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Ocjena uzgojnog pregleda</span><span class=\"stat-val\">—</span></div>"
+  ],
+  "hr/psi/charlie.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pasmina</span><span class=\"stat-val\">Kavalir King Charles španijel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Boja</span><span class=\"stat-val\">Blenheim</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Spol</span><span class=\"stat-val\">Mužjak</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Datum rođenja</span><span class=\"stat-val\">19. 10. 2019.</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Broj rodovnice</span><span class=\"stat-val\">HR 11374 KKS</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Čip</span><span class=\"stat-val\">191100002043356</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Ocjena uzgojnog pregleda</span><span class=\"stat-val\">Odličan</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Vlasnik</span><span class=\"stat-val\">Alenka Turk</span></div>"
+  ],
+  "hr/psi/dali.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pasmina</span><span class=\"stat-val\">Kavalir King Charles španijel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Boja</span><span class=\"stat-val\">Blenheim</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Spol</span><span class=\"stat-val\">Mužjak</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Datum rođenja</span><span class=\"stat-val\">15. 03. 2023.</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Broj rodovnice</span><span class=\"stat-val\">HR 11733 KKS</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Čip</span><span class=\"stat-val\">191100002255263</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Ocjena uzgojnog pregleda</span><span class=\"stat-val\">Odličan</span></div>"
+  ],
+  "hr/psi/hella.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pasmina</span><span class=\"stat-val\">Kavalir King Charles španijel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Boja</span><span class=\"stat-val\">Blenheim</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Spol</span><span class=\"stat-val\">Ženka</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Datum rođenja</span><span class=\"stat-val\">14. 02. 2017.</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Broj rodovnice</span><span class=\"stat-val\">HR 11140 KKS</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Čip</span><span class=\"stat-val\">191100000928152</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Ocjena uzgojnog pregleda</span><span class=\"stat-val\">Vrlo dobar</span></div>"
+  ],
+  "hr/psi/kimmy.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pasmina</span><span class=\"stat-val\">Pomeranac</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Boja</span><span class=\"stat-val\">Orange Sable</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Spol</span><span class=\"stat-val\">Ženka</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Datum rođenja</span><span class=\"stat-val\">14. 02. 2025.</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Broj rodovnice</span><span class=\"stat-val\">HR 12633 POM</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Čip</span><span class=\"stat-val\">191100002324549</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Ocjena uzgojnog pregleda</span><span class=\"stat-val\">Vrlo dobar</span></div>"
+  ],
+  "hr/psi/masa.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pasmina</span><span class=\"stat-val\">Pomeranac</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Boja</span><span class=\"stat-val\">Crna s paležom</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Spol</span><span class=\"stat-val\">Ženka</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Datum rođenja</span><span class=\"stat-val\">03. 05. 2020.</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Broj rodovnice</span><span class=\"stat-val\">HR 11407 POM</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Čip</span><span class=\"stat-val\">643097200000455</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Ocjena uzgojnog pregleda</span><span class=\"stat-val\">Vrlo dobar</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Izv. br. rod.</span><span class=\"stat-val\">RKF 6003513</span></div>"
+  ],
+  "hr/psi/mo.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pasmina</span><span class=\"stat-val\">Pomeranac</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Boja</span><span class=\"stat-val\">Krem</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Spol</span><span class=\"stat-val\">Ženka</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Datum rođenja</span><span class=\"stat-val\">02. 05. 2022.</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Broj rodovnice</span><span class=\"stat-val\">HR 11795 POM</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Čip</span><span class=\"stat-val\">—</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Ocjena uzgojnog pregleda</span><span class=\"stat-val\">Odličan</span></div>"
+  ],
+  "hr/psi/olea.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pasmina</span><span class=\"stat-val\">Kavalir King Charles španijel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Boja</span><span class=\"stat-val\">Blenheim</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Spol</span><span class=\"stat-val\">Ženka</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Datum rođenja</span><span class=\"stat-val\">04. 04. 2019.</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Broj rodovnice</span><span class=\"stat-val\">HR 11432 KKS</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Čip</span><span class=\"stat-val\">203098100438851</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Ocjena uzgojnog pregleda</span><span class=\"stat-val\">Vrlo dobar</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Izv. br. rod.</span><span class=\"stat-val\">CMKU 16553/19</span></div>"
+  ],
+  "hr/psi/pegas.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pasmina</span><span class=\"stat-val\">Kavalir King Charles španijel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Boja</span><span class=\"stat-val\">Tricolor</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Spol</span><span class=\"stat-val\">Mužjak</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Datum rođenja</span><span class=\"stat-val\">17. 04. 2011.</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Broj rodovnice</span><span class=\"stat-val\">—</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Čip</span><span class=\"stat-val\">900182000024603</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Ocjena uzgojnog pregleda</span><span class=\"stat-val\">—</span></div>"
+  ],
+  "hr/psi/quara.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pasmina</span><span class=\"stat-val\">Kavalir King Charles španijel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Boja</span><span class=\"stat-val\">Blenheim</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Spol</span><span class=\"stat-val\">Ženka</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Datum rođenja</span><span class=\"stat-val\">28. 03. 2006.</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Broj rodovnice</span><span class=\"stat-val\">—</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Čip</span><span class=\"stat-val\">191100000102250</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Ocjena uzgojnog pregleda</span><span class=\"stat-val\">—</span></div>"
+  ],
+  "hr/psi/tomo.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pasmina</span><span class=\"stat-val\">Pomeranac</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Boja</span><span class=\"stat-val\">Narančasta</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Spol</span><span class=\"stat-val\">Mužjak</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Datum rođenja</span><span class=\"stat-val\">25. 02. 2018.</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Broj rodovnice</span><span class=\"stat-val\">HR 10887 POM</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Čip</span><span class=\"stat-val\">643099100020467</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Ocjena uzgojnog pregleda</span><span class=\"stat-val\">Odličan</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Izv. br. rod.</span><span class=\"stat-val\">RKF 5439880</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Titule</span><span class=\"stat-val\">R.CACIB, CH-BIH, 4xCAC, R.CAC</span></div>"
+  ],
+  "hr/psi/wendy.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pasmina</span><span class=\"stat-val\">Kavalir King Charles španijel</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Boja</span><span class=\"stat-val\">Blenheim</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Spol</span><span class=\"stat-val\">Ženka</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Datum rođenja</span><span class=\"stat-val\">20. 10. 2023.</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Broj rodovnice</span><span class=\"stat-val\">HR 11803 KKS</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Čip</span><span class=\"stat-val\">953010006781300</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Ocjena uzgojnog pregleda</span><span class=\"stat-val\">Odličan</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Izv. br. rod.</span><span class=\"stat-val\">CMKU 20053/23</span></div>"
+  ],
+  "hr/psi/zywoo.html": [
+    "<div class=\"stat-row\"><span class=\"stat-key\">Pasmina</span><span class=\"stat-val\">Counter-Strike 2</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Boja</span><span class=\"stat-val\">Vitality žuta</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Spol</span><span class=\"stat-val\"> Mužjak</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Datum rođenja</span><span class=\"stat-val\">09. 04. 2000.</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Država</span><span class=\"stat-val\"> Francuska</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Tim</span><span class=\"stat-val\">Team Vitality</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">FACEIT ID</span><span class=\"stat-val\">ZywOo</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Nagradni fond</span><span class=\"stat-val\">$1.848.326</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Svjetski rang</span><span class=\"stat-val\" style=\"color:#FFE500;font-weight:700\">#1 (2025.)</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Naslovi</span><span class=\"stat-val\">5× #1 Svijet</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Majori</span><span class=\"stat-val\">3× pobjednik + 3× MVP</span></div>",
+    "<div class=\"stat-row\"><span class=\"stat-key\">Trofeja</span><span class=\"stat-val\">32</span></div>"
+  ],
+  "en/litter-a.html": "37a469481dc7e614de2c7e154229be45eeeb02d92ec6d64b84b2d7344ab06e81",
+  "en/litter-b.html": "55457dccd9fa377262b1e7574468b1547139f29643ed16f21d71577ee9d2c237",
+  "en/litter-c.html": "563e0d33da968ba8ba8deeb828df817fb78ed36e3017898d2822bcbd52a12a6f",
+  "en/litter-d.html": "e58171b03fdeeb83dba8472b2232ab5b1c91f76cc85af6a993ea6ea5607340c5",
+  "en/litter-e.html": "a5f8753d051760c2a83e6f5031a00f22d3302cc7356ac7b147955e91fd674588",
+  "en/litter-f.html": "270a6d380ab51b269a6195c0f6044b0895394acf2b68d1440e511a552f5b28a5",
+  "en/litter-g.html": "6886468fe45aaa74a5a5ed5bbc01c4f57144fdb351d5d9b0259f526be3c02f7c",
+  "en/litter-h.html": "945a8c4f3ac611b76094ceaa560cc760fb9abd12cc92f845e29eeba22ec0d1ac",
+  "hr/leglo-a.html": "86370fdd064f23623521dd6002578d5096ef9e09721946a0b93cf05d7a94140f",
+  "hr/leglo-b.html": "4204ae81c1c7dd6d3882e70361d6b11b691ae2467a2231441d9c6d0aed6c0697",
+  "hr/leglo-c.html": "03dd0f28567930988797c53e6888fac782691fc390c174c1236f4b71acc5dfe6",
+  "hr/leglo-d.html": "6f3d567c9831ccc0f8c7640f2d4d154deebc9c35f840b041f514f3bb0ead713f",
+  "hr/leglo-e.html": "b75d95e50c0356100a4f59ec65a2be53f9e3f487b600fcb0fdb64aeb9675be11",
+  "hr/leglo-f.html": "b25b4645b489b208f3edc929e16f8d89b848bd1b5e5707f939cacee1fa6c0fb7",
+  "hr/leglo-g.html": "388bc3eca9389a95d3cff693b16d446768543b9e66935049fb3aebd23fd189b0",
+  "hr/leglo-h.html": "7671f5995a3ee08317c4379a45c4632cc5fe4803a74783cd032f5e04bf131691"
+}

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../../images/index/favicon.svg?v=rounded1" sizes="any">
+  <link rel="apple-touch-icon" href="../../images/index/logotransparent.png">
+  <meta name="theme-color" content="#0D1B2A">
+  <link rel="stylesheet" href="../../css/style.css?v=f77b1a05ad28">
+  <style>
+    /* stat bars */
+    .stat-bar-grid { display: flex; flex-direction: column; gap: 1rem; }
+    .stat-bar-item { display: grid; grid-template-columns: 130px 1fr 60px; align-items: center; gap: 0.75rem; }
+    .stat-bar-label { font-size: 0.82rem; color: var(--cream-dark); font-weight: 500; }
+    .stat-bar-track { height: 8px; background: rgba(255,255,255,0.08); border-radius: 4px; overflow: hidden; }
+    .stat-bar-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--gold), #FFE500); }
+    .stat-bar-fill.elite { background: linear-gradient(90deg, #00c853, #69f0ae); }
+    .stat-bar-fill.low   { background: linear-gradient(90deg, #e53935, #ef9a9a); }
+    .stat-bar-value { font-size: 0.8rem; font-weight: 700; color: var(--gold); text-align: right; }
+
+    .rating-hero {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      background: rgba(255, 229, 0, 0.05);
+      border: 1px solid rgba(255, 229, 0, 0.2);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .rating-number { font-size: 3rem; font-weight: 900; color: #FFE500; font-family: var(--font-serif); line-height: 1; text-shadow: 0 0 20px rgba(255,229,0,0.4); }
+    .rating-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 0.2rem; }
+    .rating-badge { background: rgba(0, 200, 83, 0.15); border: 1px solid rgba(0, 200, 83, 0.4); color: #69f0ae; border-radius: 6px; padding: 4px 10px; font-size: 0.75rem; font-weight: 700; }
+
+    .trophy-list { display: flex; flex-direction: column; gap: 0.6rem; }
+    .trophy-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.65rem 0.9rem;
+      background: rgba(212,175,55,0.05);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 6px 6px 0;
+      font-size: 0.84rem;
+      color: var(--cream-dark);
+    }
+    .trophy-item .trophy-icon { font-size: 1.1rem; flex-shrink: 0; }
+    .trophy-item .trophy-year { font-size: 0.72rem; color: var(--text-muted); margin-left: auto; white-space: nowrap; }
+    .trophy-item.gold-trophy { border-left-color: #FFE500; background: rgba(255,229,0,0.06); }
+    .trophy-section-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      margin: 1.25rem 0 0.5rem;
+    }
+
+    .secret-banner {
+      background: linear-gradient(135deg, rgba(255,229,0,0.08), rgba(0,163,224,0.08));
+      border: 1px dashed rgba(255,229,0,0.35);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+      font-style: italic;
+    }
+  </style>
+  
+    <title>ZywOo - Mathieu Herbaut - Uzgajivačnica Matej's Angels</title>
+  <meta name="description" content="Upoznajte psa ZywOo iz uzgajivačnice Matej’s Angels u Premanturi. Pogledajte rodovnik, zdravstvene podatke, fotografije i izložbene rezultate.">
+  <link rel="canonical" href="https://matejsangels.com/hr/psi/zywoo">
+  <link rel="alternate" hreflang="en" href="https://matejsangels.com/en/dogs/zywoo">
+  <link rel="alternate" hreflang="hr" href="https://matejsangels.com/hr/psi/zywoo">
+  <link rel="alternate" hreflang="x-default" href="https://matejsangels.com/en/dogs/zywoo">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Matej’s Angels">
+  <meta property="og:title" content="ZywOo - Mathieu Herbaut - Uzgajivačnica Matej's Angels">
+  <meta property="og:description" content="Upoznajte psa ZywOo iz uzgajivačnice Matej’s Angels u Premanturi. Pogledajte rodovnik, zdravstvene podatke, fotografije i izložbene rezultate.">
+  <meta property="og:url" content="https://matejsangels.com/hr/psi/zywoo">
+  <meta property="og:image" content="https://matejsangels.com/images/index/logo%20transparent2.png">
+  <meta property="og:image:alt" content="Matej’s Angels kennel logo">
+  <meta property="og:locale" content="hr_HR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ZywOo - Mathieu Herbaut - Uzgajivačnica Matej's Angels">
+  <meta name="twitter:description" content="Upoznajte psa ZywOo iz uzgajivačnice Matej’s Angels u Premanturi. Pogledajte rodovnik, zdravstvene podatke, fotografije i izložbene rezultate.">
+  <meta name="twitter:image" content="https://matejsangels.com/images/index/logo%20transparent2.png">
+  <script type="application/ld+json" id="site-seo">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://matejsangels.com/#organization", "name": "Matej’s Angels", "url": "https://matejsangels.com/", "logo": "https://matejsangels.com/images/index/logotransparent.png", "email": "sanjaimatej@gmail.com", "telephone": "+385955152150", "address": {"@type": "PostalAddress", "streetAddress": "Selo Varoš 70 D", "addressLocality": "Premantura", "postalCode": "52100", "addressCountry": "HR"}, "sameAs": ["https://www.facebook.com/matejsangels/"]}, {"@type": "WebSite", "@id": "https://matejsangels.com/#website", "url": "https://matejsangels.com/", "name": "Matej’s Angels", "inLanguage": ["en", "hr"], "publisher": {"@id": "https://matejsangels.com/#organization"}}, {"@type": "WebPage", "@id": "https://matejsangels.com/hr/psi/zywoo#webpage", "url": "https://matejsangels.com/hr/psi/zywoo", "name": "ZywOo - Mathieu Herbaut - Uzgajivačnica Matej's Angels", "description": "Upoznajte psa ZywOo iz uzgajivačnice Matej’s Angels u Premanturi. Pogledajte rodovnik, zdravstvene podatke, fotografije i izložbene rezultate.", "inLanguage": "hr", "isPartOf": {"@id": "https://matejsangels.com/#website"}}]}</script>
+</head>
+<body>
+  {{header}}
+
+  <div class="page-content">
+    <section class="section-mid">
+      <div class="container">
+        <div class="secret-banner">
+             <strong style="color:var(--gold)">STROGO TAJNO</strong>   : Pronašao/la si skrivenog stanara uzgajivačnice. Nikome ne govori.  
+        </div>
+
+        <div class="dog-profile-grid">
+<div class="dog-info-header">
+              <span class="dog-breed-tag">Counter-Strike 2, Profesionalni strijelac i AWPer</span>
+              <h1 class="dog-full-name">Mathieu Herbaut</h1>
+              <p class="dog-call-name">"ZywOo"</p>
+              <p style="margin-top:1rem;color:var(--cream-dark)">
+                Izniman primjerak francuske gaming loze, ZywOo dominira globalnom kompetitivnom scenom od debitiranja 2019. godine. Poznat po nenadmašnoj vatrenoši i elitnim AWP instinktima, dosljedno se rangira kao broj jedan na svijetu. Rijedak trostruki Major prvak i petostruki svjetski #1, pravi Archie Counter-Strikea.
+              </p>
+            </div>
+          <div class="dog-profile-sidebar">
+            <div class="dog-img-frame">
+              <img src="../../images/dogs/zywoo/Zywoo_in_2022_(cropped).jpg" alt="ZywOo, Mathieu Herbaut">
+            </div>
+            <div class="dog-quick-stats">
+              <div class="stat-row"><span class="stat-key">Pasmina</span><span class="stat-val">Counter-Strike 2</span></div>
+              <div class="stat-row"><span class="stat-key">Boja</span><span class="stat-val">Vitality žuta</span></div>
+              <div class="stat-row"><span class="stat-key">Spol</span><span class="stat-val"> Mužjak</span></div>
+              <div class="stat-row"><span class="stat-key">Datum rođenja</span><span class="stat-val">09. 04. 2000.</span></div>
+              <div class="stat-row"><span class="stat-key">Država</span><span class="stat-val"> Francuska</span></div>
+              <div class="stat-row"><span class="stat-key">Tim</span><span class="stat-val">Team Vitality</span></div>
+              <div class="stat-row"><span class="stat-key">FACEIT ID</span><span class="stat-val">ZywOo</span></div>
+              <div class="stat-row"><span class="stat-key">Nagradni fond</span><span class="stat-val">$1.848.326</span></div>
+              <div class="stat-row"><span class="stat-key">Svjetski rang</span><span class="stat-val" style="color:#FFE500;font-weight:700">#1 (2025.)</span></div>
+              <div class="stat-row"><span class="stat-key">Naslovi</span><span class="stat-val">5× #1 Svijet</span></div>
+              <div class="stat-row"><span class="stat-key">Majori</span><span class="stat-val">3× pobjednik + 3× MVP</span></div>
+              <div class="stat-row"><span class="stat-key">Trofeja</span><span class="stat-val">32</span></div>
+            </div>
+          </div>
+
+          <div>
+            
+
+            <div class="dog-tabs">
+              <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="stats">Statistike</button>
+                <button class="tab-btn" data-tab="trofeje">Trofeje</button>
+                <button class="tab-btn" data-tab="rangovi">Rangovi</button>
+              </div>
+
+              <!-- STATISTIKE TAB -->
+              <div class="tab-panel active" id="tab-stats">
+                <div class="rating-hero">
+                  <div>
+                    <div class="rating-number">1.35</div>
+                    <div class="rating-label">HLTV Rating 3.0, Zadnja 3 mjeseca, 57 mapa</div>
+                  </div>
+                  <div style="display:flex;flex-direction:column;gap:0.4rem">
+                    <span class="rating-badge"> Top 5%</span>
+                    <span class="rating-badge">99. percentila</span>
+                  </div>
+                </div>
+
+                <p class="text-muted italic" style="margin-bottom:1.25rem;font-size:0.82rem">Pregled performansi, HLTV procjena</p>
+
+                <div class="stat-bar-grid">
+                  <div class="stat-bar-item">
+                    <div class="stat-bar-label">Vatrenost</div>
+                    <div class="stat-bar-track"><div class="stat-bar-fill elite" style="width:98%"></div></div>
+                    <div class="stat-bar-value" style="color:#69f0ae">98/100</div>
+                  </div>
+                  <div class="stat-bar-item">
+                    <div class="stat-bar-label">Snajperstvo</div>
+                    <div class="stat-bar-track"><div class="stat-bar-fill elite" style="width:90%"></div></div>
+                    <div class="stat-bar-value" style="color:#69f0ae">90/100</div>
+                  </div>
+                  <div class="stat-bar-item">
+                    <div class="stat-bar-label">Otvaranje</div>
+                    <div class="stat-bar-track"><div class="stat-bar-fill" style="width:84%"></div></div>
+                    <div class="stat-bar-value">84/100</div>
+                  </div>
+                  <div class="stat-bar-item">
+                    <div class="stat-bar-label">Clutchevi</div>
+                    <div class="stat-bar-track"><div class="stat-bar-fill" style="width:80%"></div></div>
+                    <div class="stat-bar-value">80/100</div>
+                  </div>
+                  <div class="stat-bar-item">
+                    <div class="stat-bar-label">Korisnost</div>
+                    <div class="stat-bar-track"><div class="stat-bar-fill" style="width:59%"></div></div>
+                    <div class="stat-bar-value">59/100</div>
+                  </div>
+                  <div class="stat-bar-item">
+                    <div class="stat-bar-label">Trade ubojstva</div>
+                    <div class="stat-bar-track"><div class="stat-bar-fill" style="width:56%"></div></div>
+                    <div class="stat-bar-value">56/100</div>
+                  </div>
+                  <div class="stat-bar-item">
+                    <div class="stat-bar-label">Ulazak (Entry)</div>
+                    <div class="stat-bar-track"><div class="stat-bar-fill low" style="width:31%"></div></div>
+                    <div class="stat-bar-value" style="color:#ef9a9a">31/100</div>
+                  </div>
+                </div>
+
+                <div class="health-grid" style="margin-top:2rem">
+                  <div class="health-card">
+                    <p class="health-test">Pobjede na Majorima</p>
+                    <p class="health-result clear">3 × Major pobjednik</p>
+                    <p class="health-date">HLTV, 2022.–2024.</p>
+                  </div>
+                  <div class="health-card">
+                    <p class="health-test">Major MVP nagrade</p>
+                    <p class="health-result clear">3 × Major MVP</p>
+                    <p class="health-date">HLTV verificirano</p>
+                  </div>
+                  <div class="health-card">
+                    <p class="health-test">Svjetski #1 rangovi</p>
+                    <p class="health-result clear">5 × Najbolji na izložbi</p>
+                    <p class="health-date">'19, '20, '23, '25 (+više)</p>
+                  </div>
+                </div>
+
+                <p style="margin-top:1.5rem;font-size:0.8rem;color:var(--text-muted);font-style:italic">Statistike preuzete s HLTV.org. Šape nisu uključene u prikupljanje podataka.</p>
+              </div>
+
+              <!-- TROFEJE TAB -->
+              <div class="tab-panel" id="tab-trofeje">
+                <p class="text-muted italic" style="margin-bottom:1.5rem;font-size:0.82rem">Ukupno 32 trofeja, Odabrani vrhunci</p>
+
+                <p class="trophy-section-label"> Major prvenstava</p>
+                <div class="trophy-list">
+                  <div class="trophy-item gold-trophy">
+
+                    <span>Major prvak + MVP</span>
+                    <span class="trophy-year">'24</span>
+                  </div>
+                  <div class="trophy-item gold-trophy">
+
+                    <span>Major prvak + MVP</span>
+                    <span class="trophy-year">'23</span>
+                  </div>
+                  <div class="trophy-item gold-trophy">
+
+                    <span>Major prvak + MVP</span>
+                    <span class="trophy-year">'22</span>
+                  </div>
+                </div>
+
+                <p class="trophy-section-label"> Odabrane turnirske pobjede</p>
+                <div class="trophy-list">
+                  <div class="trophy-item">
+
+                    <span>BLAST Rivals 2026. Season 1</span>
+                    <span class="trophy-year">'26</span>
+                  </div>
+                  <div class="trophy-item">
+
+                    <span>Turnirska pobjeda × 3</span>
+                    <span class="trophy-year">'25</span>
+                  </div>
+                  <div class="trophy-item">
+
+                    <span>Turnirska pobjeda</span>
+                    <span class="trophy-year">'24</span>
+                  </div>
+                  <div class="trophy-item">
+
+                    <span>Turnirska pobjeda × 4</span>
+                    <span class="trophy-year">'23</span>
+                  </div>
+                  <div class="trophy-item">
+
+                    <span>BLAST Premier Fall 2020. Finals</span>
+                    <span class="trophy-year">'20</span>
+                  </div>
+                  <div class="trophy-item">
+
+                    <span>IEM Beijing-Haidian 2020. Europe</span>
+                    <span class="trophy-year">'20</span>
+                  </div>
+                  <div class="trophy-item">
+
+                    <span>cs_summit 4</span>
+                    <span class="trophy-year">'19</span>
+                  </div>
+                </div>
+
+                <p class="trophy-section-label"> Svjetski #1 izložbeni ring</p>
+                <div class="trophy-list">
+                  <div class="trophy-item gold-trophy"><span>HLTV Svjetski #1 igrač</span><span class="trophy-year">'25</span></div>
+                  <div class="trophy-item"><span>HLTV Svjetski #3 igrač</span><span class="trophy-year">'24</span></div>
+                  <div class="trophy-item gold-trophy"><span>HLTV Svjetski #1 igrač</span><span class="trophy-year">'23</span></div>
+                  <div class="trophy-item"><span>HLTV Svjetski #2 igrač</span><span class="trophy-year">'22</span></div>
+                  <div class="trophy-item"><span>HLTV Svjetski #2 igrač</span><span class="trophy-year">'21</span></div>
+                  <div class="trophy-item gold-trophy"><span>HLTV Svjetski #1 igrač</span><span class="trophy-year">'20</span></div>
+                  <div class="trophy-item gold-trophy"><span>HLTV Svjetski #1 igrač</span><span class="trophy-year">'19</span></div>
+                </div>
+
+                <p style="margin-top:1.5rem;font-size:0.84rem;color:var(--text-muted);font-style:italic">Trofeje se čuvaju u zdjeli za hranu radi sigurnosti.</p>
+              </div>
+
+              <!-- RANGOVI TAB -->
+              <div class="tab-panel" id="tab-rangovi">
+                <p class="text-muted italic" style="margin-bottom:1.5rem;font-size:0.82rem">HLTV Top 20 godišnji rangovi, cijela karijera</p>
+
+                <div class="health-grid">
+                  <div class="health-card"><p class="health-test">Rang 2019.</p><p class="health-result clear">#1 Svijet</p><p class="health-date">Rookie godine + GOAT početak</p></div>
+                  <div class="health-card"><p class="health-test">Rang 2020.</p><p class="health-result clear">#1 Svijet</p><p class="health-date">Uzastopni #1</p></div>
+                  <div class="health-card"><p class="health-test">Rang 2021.</p><p class="health-result clear">#2 Svijet</p><p class="health-date">I dalje elita, samo je trebao dijeliti</p></div>
+                  <div class="health-card"><p class="health-test">Rang 2022.</p><p class="health-result clear">#2 Svijet</p><p class="health-date">Godina prvog Majora</p></div>
+                  <div class="health-card"><p class="health-test">Rang 2023.</p><p class="health-result clear">#1 Svijet</p><p class="health-date">2. Major. Natrag na vrh.</p></div>
+                  <div class="health-card"><p class="health-test">Rang 2024.</p><p class="health-result clear">#3 Svijet</p><p class="health-date">Svejedno osvojio Major</p></div>
+                  <div class="health-card"><p class="health-test">Rang 2025.</p><p class="health-result clear">#1 Svijet</p><p class="health-date">Av.</p></div>
+                </div>
+
+                <div style="margin-top:1.75rem;padding:1rem 1.25rem;background:rgba(255,229,0,0.05);border:1px solid rgba(255,229,0,0.2);border-radius:8px">
+                  <p style="font-size:0.84rem;color:var(--cream-dark);font-family:var(--font-serif);font-style:italic;margin:0">
+                    "ZywOo nije samo igrač: on je fenomen. Pas koji ne juri loptu; lopta juri njega."
+                  </p>
+                  <p style="font-size:0.75rem;color:var(--text-muted);margin:0.6rem 0 0">Povjerenstvo za procjenu uzgajivačnice Matej's Angels, 2026.</p>
+                </div>
+
+                <p style="margin-top:1.5rem;font-size:0.84rem;color:var(--text-muted);font-style:italic">Rangovi potvrđeni od strane službenog uzgajivačkog kluba (HLTV.org).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{footer}}
+  </div>
+
+  <script src="../../js/main.js?v=bff93e750184"></script>
+</body>
+</html>

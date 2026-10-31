@@ -1,0 +1,114 @@
+{
+  "en-about": {
+    "en": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <img src=\"../images/index/logo%20transparent2.png\" alt=\"Matej's Angels\" class=\"hero-logo\">\n        <span class=\"hero-eyebrow\">Our story</span>\n        <h1>About <em>Matej's Angels</em></h1>\n        <p>Cavalier King Charles Spaniels and Pomeranians from our family kennel in Premantura, Croatia.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    },
+    "hr": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <img src=\"../images/index/logo%20transparent2.png\" alt=\"Matej's Angels\" class=\"hero-logo\">\n        <span class=\"hero-eyebrow\">Naša priča</span>\n        <h1>O <em>Matej's Angels</em></h1>\n        <p>Cavalier King Charles španijeli i pomeranci iz naše obiteljske uzgajivačnice u Premanturi.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    }
+  },
+  "en-care": {
+    "en": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Breed guide</span>\n        <h1>Care <em>guides</em></h1>\n        <p>Notes on everyday care for Cavaliers and Pomeranians, with the foods, grooming tools and products featured on our site.</p>\n        <div class=\"hero-actions\">\n          <a href=\"#cavaliers\" class=\"btn btn-primary\">Cavalier King Charles Spaniels</a>\n          <a href=\"#pomeranians\" class=\"btn btn-outline\">Pomeranians</a>\n        </div>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    },
+    "hr": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Vodič za pasmine</span>\n        <h1>Briga o <em>psima</em></h1>\n        <p>Vaša pitanja da biste svog Pomeranca ili Cavalier King Charles španijela održali sretnim, zdravim i u punom cvatu.</p>\n        <div class=\"hero-actions\">\n          <a href=\"#kavaliri\" class=\"btn btn-primary\">Cavalier King Charles španijeli</a>\n          <a href=\"#pomeranci\" class=\"btn btn-outline\">Pomeranci</a>\n        </div>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    }
+  },
+  "en-chronology": {
+    "en": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Our history</span>\n        <h1>Kennel <em>chronology</em></h1>\n        <p>The dogs and litters that have been part of our life over the years.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    },
+    "hr": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Naša povijest</span>\n        <h1>Kronologija <em>uzgajivačnice</em></h1>\n        <p>Psi i legla koji su kroz godine bili dio našeg života.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    }
+  },
+  "en-contact": {
+    "en": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Get in touch</span>\n        <h1>Contact <em>us</em></h1>\n        <p>Questions about our dogs or a litter? Get in touch.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    },
+    "hr": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Javite nam se</span>\n        <h1>Kontaktirajte <em>nas</em></h1>\n        <p>Imate pitanje o našim psima ili leglu? Javite nam se.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    }
+  },
+  "en-faq": {
+    "en": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Your questions</span>\n        <h1>Frequently asked <em>questions</em></h1>\n        <p>Can't find your answer? <a href=\"contact\" style=\"color:var(--gold);text-decoration:underline\">Contact us</a> and we'll be happy to help.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    },
+    "hr": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Vaša pitanja</span>\n        <h1>Često postavljana <em>pitanja</em></h1>\n        <p>Ne možete pronaći odgovor? <a href=\"kontakt\" style=\"color:var(--gold);text-decoration:underline\">Kontaktirajte nas</a> i rado ćemo vam pomoći.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    }
+  },
+  "en-gallery": {
+    "en": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Photos and memories</span>\n        <h1>Our <em>gallery</em></h1>\n        <p>Photographs from home, the show ring and our litter albums.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    },
+    "hr": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Fotografije i uspomene</span>\n        <h1>Naša <em>galerija</em></h1>\n        <p>Fotografije iz našeg doma, s izložbi i iz albuma legala.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    }
+  },
+  "en-litters": {
+    "en": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Litters A to H</span>\n        <h1>Our <em>litters</em></h1>\n        <p>Parents, dates and photographs from each of our litters.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    },
+    "hr": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Legla A do H</span>\n        <h1>Naša <em>legla</em></h1>\n        <p>Roditelji, datumi i fotografije naših legala.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    }
+  },
+  "en-news-archie-grand-prvak-hrvatske": {
+    "en": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">News</span>\n<h1>Archie is a Croatian grand champion</h1>\n      <p>Congratulations to owner Alina Te and Archie from all of us at Matej’s Angels.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    },
+    "hr": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Vijesti</span>\n        <h1>Archie je grand prvak Hrvatske</h1>\n        <p>Čestitke vlasnici Alini Te i Archieju od svih nas iz Matej’s Angelsa.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    }
+  },
+  "en-news-kimmy-breeding-evaluation": {
+    "en": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">News</span>\n        <h1>Kimmy has received her breeding approval</h1>\n        <p>Kimmy passed her breeding evaluation with a “Very good” rating and received her breeding approval.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    },
+    "hr": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Vijesti</span>\n        <h1>Kimmy je dobila uzgojnu dozvolu</h1>\n        <p>Kimmy je uspješno prošla uzgojni pregled s ocjenom „vrlo dobar” i dobila uzgojnu dozvolu.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    }
+  },
+  "en-news-litter-h": {
+    "en": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">News</span>\n        <h1>Litter H has arrived!</h1>\n        <p>Four Pomeranian girls, three orange sable and one black and tan, born on 30 May 2026 at Matej’s Angels.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    },
+    "hr": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Vijesti</span>\n        <h1>Stiglo je leglo H!</h1>\n        <p>Četiri ženke pomeranca, tri orange sable i jedna crna s paležom, rođene 30. svibnja 2026. u Matej’s Angelsu.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    }
+  },
+  "en-news-pomeranians": {
+    "en": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">News</span>\n        <h1>Pomeranians added to our breeding program</h1>\n        <p>Pomeranians have joined our breeding programme. We will share their news here.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    },
+    "hr": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Vijesti</span>\n        <h1>U uzgoj uključeni pomeranci</h1>\n        <p>U uzgoj su nam se pridružili pomeranci. Njihove ćemo novosti dijeliti ovdje.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    }
+  },
+  "en-news-wendy": {
+    "en": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">News</span>\n        <h1>Wendy received a top mark at her breeding evaluation in Rovinj</h1>\n        <p>Our Wendy, Verduras Malcriado de la Casa, received a top mark at the breeding evaluation show in Rovinj.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    },
+    "hr": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Vijesti</span>\n        <h1>Wendy je dobila peticu na uzgojnom pregledu u Rovinju</h1>\n        <p>Naša Wendy, Verduras Malcriado de la Casa, dobila je peticu na uzgojnom pregledu u Rovinju.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    }
+  },
+  "en-news": {
+    "en": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">News and stories</span>\n        <h1>Our <em>news</em></h1>\n        <p>News about our dogs, show results and litter updates.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    },
+    "hr": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Novosti i priče</span>\n        <h1>Naše <em>vijesti</em></h1>\n        <p>Novosti o našim psima, rezultati s izložbi i vijesti o leglima.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    }
+  },
+  "en-our-dogs": {
+    "en": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Meet the dogs</span>\n        <h1>Our <em>dogs</em></h1>\n        <p>Meet our dogs through their photographs, pedigrees and recorded results.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    },
+    "hr": {
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <span class=\"hero-eyebrow\">Upoznajte pse</span>\n        <h1>Naši <em>psi</em></h1>\n        <p>Upoznajte naše pse kroz fotografije, rodovnice i zabilježene rezultate.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+    }
+  }
+}

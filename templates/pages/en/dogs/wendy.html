@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../../images/index/favicon.svg?v=rounded1" sizes="any">
+  <link rel="apple-touch-icon" href="../../images/index/logotransparent.png">
+  <meta name="theme-color" content="#0D1B2A">
+  <link rel="stylesheet" href="../../css/style.css?v=f77b1a05ad28">
+  <style>
+    .ped-outer { overflow-x: auto; padding: 1.5rem 0 2rem; }
+    .ped-tree { display: inline-flex; align-items: stretch; min-height: 480px; }
+    .ped-entry { display: flex; align-items: center; }
+    .ped-entry-inner {
+      position: relative;
+      display: flex; align-items: center; justify-content: center;
+      padding-right: 52px; height: 100%;
+    }
+    .ped-card {
+      width: 215px; min-height: 100px; flex-shrink: 0;
+      background: var(--navy-mid); border: 1px solid var(--gold-muted);
+      border-radius: 8px; padding: 10px 12px;
+      display: flex; flex-direction: column; justify-content: center; gap: 7px;
+    }
+    .ped-card-role { font-size: 0.68rem; letter-spacing: .06em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+    .ped-card-name { font-size: 0.78rem; font-weight: 600; color: var(--cream); line-height: 1.3; }
+    .ped-card-reg  { font-size: 0.71rem; color: var(--text-muted); }
+    .ped-card-detail { font-size: 0.71rem; color: var(--text-muted); }
+    .ped-badges { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 4px; }
+    .ped-badge {
+      font-size: 0.6rem; font-weight: 700; letter-spacing: .04em;
+      color: var(--gold); border: 1px solid rgba(212,175,55,.45);
+      border-radius: 4px; padding: 2px 5px; background: rgba(212,175,55,.08);
+      white-space: nowrap;
+    }
+    .ped-badge-dna {
+      font-size: 0.6rem; color: var(--cream-dark);
+      border: 1px solid var(--gold-muted); border-radius: 4px; padding: 2px 5px;
+      background: rgba(255,255,255,.06); white-space: nowrap;
+    }
+    .ped-conn { position: absolute; right: 0; top: 0; bottom: 0; width: 52px; display: flex; }
+    .ped-conn-l { width: 50%; height: 100%; display: flex; align-items: flex-end; }
+    .ped-conn-l-line { width: 100%; height: 50%; border-top: 1px solid rgba(212,175,55,.35); }
+    .ped-conn-r { width: 50%; height: 50%; align-self: center;
+      border-top: 1px solid rgba(212,175,55,.35);
+      border-left: 1px solid rgba(212,175,55,.35);
+      border-bottom: 1px solid rgba(212,175,55,.35); }
+    .ped-children { display: flex; flex-direction: column; justify-content: space-around; height: 100%; gap: 10px; }
+    .ped-leaf { display: flex; align-items: center; padding: 5px 0; }
+  </style>
+
+    
+    <title>Wendy - Matej's Angels Kennel</title>
+  <meta name="description" content="Meet Wendy at Matej’s Angels kennel in Premantura, Croatia. View pedigree, health information, photos and show results.">
+  <link rel="canonical" href="https://matejsangels.com/en/dogs/wendy">
+  <link rel="alternate" hreflang="en" href="https://matejsangels.com/en/dogs/wendy">
+  <link rel="alternate" hreflang="hr" href="https://matejsangels.com/hr/psi/wendy">
+  <link rel="alternate" hreflang="x-default" href="https://matejsangels.com/en/dogs/wendy">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Matej’s Angels">
+  <meta property="og:title" content="Wendy - Matej's Angels Kennel">
+  <meta property="og:description" content="Meet Wendy at Matej’s Angels kennel in Premantura, Croatia. View pedigree, health information, photos and show results.">
+  <meta property="og:url" content="https://matejsangels.com/en/dogs/wendy">
+  <meta property="og:image" content="https://matejsangels.com/images/index/logo%20transparent2.png">
+  <meta property="og:image:alt" content="Wendy">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Wendy - Matej's Angels Kennel">
+  <meta name="twitter:description" content="Meet Wendy at Matej’s Angels kennel in Premantura, Croatia. View pedigree, health information, photos and show results.">
+  <meta name="twitter:image" content="https://matejsangels.com/images/index/logo%20transparent2.png">
+  <script type="application/ld+json" id="site-seo">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://matejsangels.com/#organization", "name": "Matej’s Angels", "url": "https://matejsangels.com/", "logo": "https://matejsangels.com/images/index/logotransparent.png", "email": "sanjaimatej@gmail.com", "telephone": "+385955152150", "address": {"@type": "PostalAddress", "streetAddress": "Selo Varoš 70 D", "addressLocality": "Premantura", "postalCode": "52100", "addressCountry": "HR"}, "sameAs": ["https://www.facebook.com/matejsangels/"]}, {"@type": "WebSite", "@id": "https://matejsangels.com/#website", "url": "https://matejsangels.com/", "name": "Matej’s Angels", "inLanguage": ["en", "hr"], "publisher": {"@id": "https://matejsangels.com/#organization"}}, {"@type": "WebPage", "@id": "https://matejsangels.com/en/dogs/wendy#webpage", "url": "https://matejsangels.com/en/dogs/wendy", "name": "Wendy - Matej's Angels Kennel", "description": "Meet Wendy at Matej’s Angels kennel in Premantura, Croatia. View pedigree, health information, photos and show results.", "inLanguage": "en", "isPartOf": {"@id": "https://matejsangels.com/#website"}}]}</script>
+</head>
+<body>
+  {{header}}
+
+  <div class="page-content">
+    <section class="section-mid">
+      <div class="container">
+        <div class="dog-profile-grid">
+<div class="dog-info-header">
+              <span class="dog-breed-tag">Cavalier King Charles Spaniel</span>
+              <h1 class="dog-full-name">VERDURAS MALCRIADO DE LA CASA</h1>
+              <p class="dog-call-name">"Wendy"</p>
+              <p style="margin-top:1rem;color:var(--cream-dark)">Wendy is a Blenheim Cavalier King Charles Spaniel from the Malcriado de la Casa kennel. She received an Excellent breeding assessment; her DNA test results are available in the Health tab.</p>
+            </div>
+          <div class="dog-profile-sidebar">
+            <div class="dog-img-frame">
+              <img src="../../images/dogs/verduras/20250917_181915.jpg" alt="Wendy" style="width:100%;height:100%;object-fit:cover;border-radius:inherit">
+            </div>
+            <div class="dog-quick-stats">
+            <div class="stat-row"><span class="stat-key">Breed</span><span class="stat-val">Cavalier King Charles Spaniel</span></div>
+            <div class="stat-row"><span class="stat-key">Colour</span><span class="stat-val">Blenheim</span></div>
+            <div class="stat-row"><span class="stat-key">Sex</span><span class="stat-val">Female</span></div>
+            <div class="stat-row"><span class="stat-key">Date of birth</span><span class="stat-val">20 October 2023</span></div>
+            <div class="stat-row"><span class="stat-key">Pedigree number</span><span class="stat-val">HR 11803 KKS</span></div>
+            <div class="stat-row"><span class="stat-key">Microchip</span><span class="stat-val">953010006781300</span></div>
+            <div class="stat-row"><span class="stat-key">Breeding assessment</span><span class="stat-val">Excellent</span></div>
+            <div class="stat-row"><span class="stat-key">Original pedigree number</span><span class="stat-val">CMKU 20053/23</span></div>
+          </div>
+          </div>
+
+          <div>
+            
+
+            <div class="dog-tabs">
+              <div class="tabs-nav">
+<button class="tab-btn active" data-tab="health">Health</button>
+<button class="tab-btn" data-tab="pedigree">Pedigree</button>
+<button class="tab-btn" data-tab="gallery">Gallery</button>
+</div>
+
+              <!-- PEDIGREE TAB -->
+              <div class="tab-panel" id="tab-pedigree">
+                <p class="text-muted italic" style="margin-bottom:1.25rem">Paternal line, 4 generations, scroll right to see ancestors</p>
+                <div class="ped-outer">
+                  <div class="ped-tree">
+
+                    <!-- GEN 1: Father -->
+                    <div class="ped-entry">
+                      <div class="ped-entry-inner">
+                        <div class="ped-card">
+                          <div class="ped-card-role">Sire</div>
+                          <div class="ped-card-name">PASSIONATE KISSES SCARLETT TEAM</div>
+                          <div class="ped-card-reg">SPKP 4214, CMKU/CKC/18902/-22/21/23</div>
+                          <div class="ped-card-detail">Blenheim</div>
+                          <div class="ped-badges">
+                            <span class="ped-badge">CH-RO</span>
+                            <span class="ped-badge">2x CACIB</span>
+                            <span class="ped-badge">RES.CACIB</span>
+                            <span class="ped-badge">4x BOB</span>
+                            <span class="ped-badge">4x CAC-CR</span>
+                            <span class="ped-badge">CAC-HU</span>
+                            <span class="ped-badge">CAC-SK</span>
+                            <span class="ped-badge">5x CAJC</span>
+                            <span class="ped-badge-dna">PL 0/0</span>
+                            <span class="ped-badge-dna">DM N/N</span>
+                            <span class="ped-badge-dna">EF/CC N/N</span>
+                          </div>
+                        </div>
+                        <div class="ped-conn"><div class="ped-conn-l"><div class="ped-conn-l-line"></div></div><div class="ped-conn-r"></div></div>
+                      </div>
+
+                      <div class="ped-children">
+
+                        <!-- GEN 2: Grandfather -->
+                        <div class="ped-entry">
+                          <div class="ped-entry-inner">
+                            <div class="ped-card">
+                              <div class="ped-card-role">Grandsire</div>
+                              <div class="ped-card-name">PASCAVALE ADONIS</div>
+                              <div class="ped-card-reg">PKR.IX-85513, KC AV04877601</div>
+                              <div class="ped-card-detail">Blenheim</div>
+                              <div class="ped-badges">
+                                <span class="ped-badge-dna">PL 0/0</span>
+                                <span class="ped-badge-dna">EF/CC normal</span>
+                              </div>
+                            </div>
+                            <div class="ped-conn"><div class="ped-conn-l"><div class="ped-conn-l-line"></div></div><div class="ped-conn-r"></div></div>
+                          </div>
+
+                          <div class="ped-children">
+
+                            <div class="ped-entry">
+                              <div class="ped-entry-inner">
+                                <div class="ped-card">
+                                  <div class="ped-card-role">Great-Grandsire</div>
+                                  <div class="ped-card-name">PASCAVALE HUDSON AT LOVETRAC</div>
+                                  <div class="ped-card-reg">KCSB 3385DE</div>
+                                  <div class="ped-card-detail">Blenheim</div>
+                                  <div class="ped-badges"><span class="ped-badge">CH-GB</span></div>
+                                </div>
+                                <div class="ped-conn"><div class="ped-conn-l"><div class="ped-conn-l-line"></div></div><div class="ped-conn-r"></div></div>
+                              </div>
+                              <div class="ped-children">
+                                <div class="ped-leaf">
+                                  <div class="ped-card">
+                                    <div class="ped-card-role">Gg-Grandsire</div>
+                                    <div class="ped-card-name">LOVETRAC FERNANDO</div>
+                                    <div class="ped-card-reg">KC AT03472401</div>
+                                  </div>
+                                </div>
+                                <div class="ped-leaf">
+                                  <div class="ped-card">
+                                    <div class="ped-card-role">Gg-Granddam</div>
+                                    <div class="ped-card-name">PASCAVALE CARA</div>
+                                    <div class="ped-card-reg">KC AR00543102</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="ped-entry">
+                              <div class="ped-entry-inner">
+                                <div class="ped-card">
+                                  <div class="ped-card-role">Great-Granddam</div>
+                                  <div class="ped-card-name">ANGEL'S PRIDE YUST A MIRACLE</div>
+                                  <div class="ped-card-reg">KC AS0904546</div>
+                                  <div class="ped-card-detail">Blenheim</div>
+                                </div>
+                                <div class="ped-conn"><div class="ped-conn-l"><div class="ped-conn-l-line"></div></div><div class="ped-conn-r"></div></div>
+                              </div>
+                              <div class="ped-children">
+                                <div class="ped-leaf">
+                                  <div class="ped-card">
+                                    <div class="ped-card-role">Gg-Grandsire</div>
+                                    <div class="ped-card-name">PASCAVALO NATHAN</div>
+                                    <div class="ped-card-reg">KCSB 2473CX, KC AL01450406</div>
+                                    <div class="ped-badges"><span class="ped-badge">CH-GB</span></div>
+                                  </div>
+                                </div>
+                                <div class="ped-leaf">
+                                  <div class="ped-card">
+                                    <div class="ped-card-role">Gg-Granddam</div>
+                                    <div class="ped-card-name">ANGEL'S PRIDE ZINDERELIA</div>
+                                    <div class="ped-card-reg">VDH-VK 120337</div>
+                                    <div class="ped-badges"><span class="ped-badge">CH-D</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!-- GEN 2: Grandmother -->
+                        <div class="ped-entry">
+                          <div class="ped-entry-inner">
+                            <div class="ped-card">
+                              <div class="ped-card-role">Granddam</div>
+                              <div class="ped-card-name">DIAMOND HORTENSIA SCARLETT TEAM</div>
+                              <div class="ped-card-reg">SPKP 3873/21</div>
+                              <div class="ped-card-detail">Blenheim</div>
+                              <div class="ped-badges">
+                                <span class="ped-badge">2x CAC</span>
+                                <span class="ped-badge">2x Res.CAC</span>
+                                <span class="ped-badge-dna">EF/CC N/N</span>
+                              </div>
+                            </div>
+                            <div class="ped-conn"><div class="ped-conn-l"><div class="ped-conn-l-line"></div></div><div class="ped-conn-r"></div></div>
+                          </div>
+
+                          <div class="ped-children">
+
+                            <div class="ped-entry">
+                              <div class="ped-entry-inner">
+                                <div class="ped-card">
+                                  <div class="ped-card-role">Great-Grandsire</div>
+                                  <div class="ped-card-name">NOBEL DANCER'S GRAN TORINO</div>
+                                  <div class="ped-card-reg">SPKP 3051/15, VDH-CCD 5433</div>
+                                  <div class="ped-card-detail">Blenheim</div>
+                                  <div class="ped-badges">
+                                    <span class="ped-badge">CH-SK</span>
+                                    <span class="ped-badge">JCH-SK</span>
+                                    <span class="ped-badge-dna">EF/CC frei</span>
+                                    <span class="ped-badge-dna">PL 0/0</span>
+                                  </div>
+                                </div>
+                                <div class="ped-conn"><div class="ped-conn-l"><div class="ped-conn-l-line"></div></div><div class="ped-conn-r"></div></div>
+                              </div>
+                              <div class="ped-children">
+                                <div class="ped-leaf">
+                                  <div class="ped-card">
+                                    <div class="ped-card-role">Gg-Grandsire</div>
+                                    <div class="ped-card-name">AXL ROSE VOM WELFENHOF</div>
+                                    <div class="ped-card-reg">PKR.IX-58561, VDH-CCD 4038/11</div>
+                                    <div class="ped-badges"><span class="ped-badge">CH-PL</span></div>
+                                  </div>
+                                </div>
+                                <div class="ped-leaf">
+                                  <div class="ped-card">
+                                    <div class="ped-card-role">Gg-Granddam</div>
+                                    <div class="ped-card-name">BYERMOOR QUEENS GOLD</div>
+                                    <div class="ped-card-reg">VDH 5045/13, KC AP03749804</div>
+                                    <div class="ped-badges"><span class="ped-badge">CH-D</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="ped-entry">
+                              <div class="ped-entry-inner">
+                                <div class="ped-card">
+                                  <div class="ped-card-role">Great-Granddam</div>
+                                  <div class="ped-card-name">SANCTUARY OF LOVE SCARLETT TEAM</div>
+                                  <div class="ped-card-reg">SPKP 3636/19</div>
+                                  <div class="ped-card-detail">Blenheim</div>
+                                </div>
+                                <div class="ped-conn"><div class="ped-conn-l"><div class="ped-conn-l-line"></div></div><div class="ped-conn-r"></div></div>
+                              </div>
+                              <div class="ped-children">
+                                <div class="ped-leaf">
+                                  <div class="ped-card">
+                                    <div class="ped-card-role">Gg-Grandsire</div>
+                                    <div class="ped-card-name">SCOTLASS SUMMER MAGIC AT ARROWBIEN</div>
+                                    <div class="ped-card-reg">KC AU00020804</div>
+                                  </div>
+                                </div>
+                                <div class="ped-leaf">
+                                  <div class="ped-card">
+                                    <div class="ped-card-role">Gg-Granddam</div>
+                                    <div class="ped-card-name">AMATIVE AROMA SCARLETT TEAM</div>
+                                    <div class="ped-card-reg">SPKP 3148/16</div>
+                                    <div class="ped-card-detail">Výborná</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <p style="margin-top:1rem;font-size:0.8rem;color:var(--text-muted);font-style:italic">Paternal line through father <em>Passionate Kisses Scarlett team</em>.</p>
+
+                <h4 style="color:var(--gold);margin:1.75rem 0 .75rem;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em">Maternal Line, Mother</h4>
+                <div class="ped-outer"><div class="ped-tree">
+                  <div class="ped-entry"><div class="ped-entry-inner">
+                    <div class="ped-card">
+                      <div class="ped-card-role">Dam</div>
+                      <div class="ped-card-name">MARISOL MALCRIADO DE LA CASA</div>
+                      <div class="ped-card-reg">CMKU/CKC/15471/17/18</div>
+                      <div class="ped-card-detail">Blenheim</div>
+                    </div>
+                    <div class="ped-conn"><div class="ped-conn-l"><div class="ped-conn-l-line"></div></div><div class="ped-conn-r"></div></div>
+                  </div>
+                  <div class="ped-children">
+                    <div class="ped-entry"><div class="ped-entry-inner">
+                      <div class="ped-card">
+                        <div class="ped-card-role">Grandsire</div>
+                        <div class="ped-card-name">GINĖS MALCRIADO DE LA CASA</div>
+                        <div class="ped-card-reg">CMKU/CKC/12559/11/13</div>
+                        <div class="ped-card-detail">Black and tan</div>
+                        <div class="ped-badges">
+                          <span class="ped-badge">Č-CH</span>
+                          <span class="ped-badge">CH-RO</span>
+                          <span class="ped-badge">CACIB</span>
+                          <span class="ped-badge">2x Res.CACIB</span>
+                          <span class="ped-badge">BOB</span>
+                        </div>
+                      </div>
+                      <div class="ped-conn"><div class="ped-conn-l"><div class="ped-conn-l-line"></div></div><div class="ped-conn-r"></div></div>
+                    </div>
+                    <div class="ped-children">
+                      <div class="ped-entry"><div class="ped-entry-inner">
+                        <div class="ped-card">
+                          <div class="ped-card-role">Great-Grandsire</div>
+                          <div class="ped-card-name">GERONIMO LEMNA MINOR</div>
+                          <div class="ped-card-reg">SPKP 2410/11</div>
+                          <div class="ped-card-detail">Tricolor</div>
+                        </div>
+                        <div class="ped-conn"><div class="ped-conn-l"><div class="ped-conn-l-line"></div></div><div class="ped-conn-r"></div></div>
+                      </div>
+                      <div class="ped-children">
+                        <div class="ped-leaf"><div class="ped-card"><div class="ped-card-role">Gg-Grandsire</div><div class="ped-card-name">GREYSTOKE PERI BIELY DÉMON</div><div class="ped-card-reg">SPKP 2116/08</div><div class="ped-badges"><span class="ped-badge">CH-CZ</span></div></div></div>
+                        <div class="ped-leaf"><div class="ped-card"><div class="ped-card-role">Gg-Granddam</div><div class="ped-card-name">EBONY ROSE MERLIN BOHEMIA</div><div class="ped-card-reg">SPKP 2109/09 (CMKU/CKC/8822/06)</div><div class="ped-card-detail">Vel.dobrá</div></div></div>
+                      </div></div>
+                      <div class="ped-entry"><div class="ped-entry-inner">
+                        <div class="ped-card">
+                          <div class="ped-card-role">Great-Granddam</div>
+                          <div class="ped-card-name">DIABLA MALCRIADO DE LA CASA</div>
+                          <div class="ped-card-reg">CMKU/CKC/10959/09/11</div>
+                          <div class="ped-card-detail">Black and tan</div>
+                        </div>
+                        <div class="ped-conn"><div class="ped-conn-l"><div class="ped-conn-l-line"></div></div><div class="ped-conn-r"></div></div>
+                      </div>
+                      <div class="ped-children">
+                        <div class="ped-leaf"><div class="ped-card"><div class="ped-card-role">Gg-Grandsire</div><div class="ped-card-name">BRILL BLACK Z HRADU DOUBRAVKA</div><div class="ped-card-reg">CMKU/CKC/8404/05/06</div><div class="ped-badges"><span class="ped-badge">CH-BiH</span></div></div></div>
+                        <div class="ped-leaf"><div class="ped-card"><div class="ped-card-role">Gg-Granddam</div><div class="ped-card-name">LADY ANN VANESSA ATALANTA</div><div class="ped-card-reg">CMKU/CKC/8714/05/07</div><div class="ped-card-detail">4xRes.CAC</div></div></div>
+                      </div></div>
+                    </div></div>
+                    <div class="ped-entry"><div class="ped-entry-inner">
+                      <div class="ped-card">
+                        <div class="ped-card-role">Granddam</div>
+                        <div class="ped-card-name">HAGRIPA MALCRIADO DE LA CASA</div>
+                        <div class="ped-card-reg">CMKU/CKC/12627/12/13</div>
+                        <div class="ped-card-detail">Blenheim</div>
+                      </div>
+                      <div class="ped-conn"><div class="ped-conn-l"><div class="ped-conn-l-line"></div></div><div class="ped-conn-r"></div></div>
+                    </div>
+                    <div class="ped-children">
+                      <div class="ped-entry"><div class="ped-entry-inner">
+                        <div class="ped-card">
+                          <div class="ped-card-role">Great-Grandsire</div>
+                          <div class="ped-card-name">PERCIVAL TWAI Z CÍSAŘSKÉHO MLÝ NA</div>
+                          <div class="ped-card-reg">CMKU/CKC/7228/03/05</div>
+                          <div class="ped-badges"><span class="ped-badge">C.I.B.</span><span class="ped-badge">GR.CH-SK</span><span class="ped-badge">2x Klub.Ch</span><span class="ped-badge">CH-CZ</span><span class="ped-badge">CH-SK</span></div>
+                        </div>
+                        <div class="ped-conn"><div class="ped-conn-l"><div class="ped-conn-l-line"></div></div><div class="ped-conn-r"></div></div>
+                      </div>
+                      <div class="ped-children">
+                        <div class="ped-leaf"><div class="ped-card"><div class="ped-card-role">Gg-Grandsire</div><div class="ped-card-name">STONEHILL'S WEST SIDE STORY</div><div class="ped-card-reg">SHSB/LOS 565823 (CMKU/CKC/4599/-98/98/99)</div><div class="ped-card-detail">2xCAC CZ</div></div></div>
+                        <div class="ped-leaf"><div class="ped-card"><div class="ped-card-role">Gg-Granddam</div><div class="ped-card-name">AWARA TWAI Z CÍSAŘSKÉHO MLÝ NA</div><div class="ped-card-reg">CMKU/CKC/5303/99/00</div><div class="ped-badges"><span class="ped-badge">CH-CZ</span></div></div></div>
+                      </div></div>
+                      <div class="ped-entry"><div class="ped-entry-inner">
+                        <div class="ped-card">
+                          <div class="ped-card-role">Great-Granddam</div>
+                          <div class="ped-card-name">LADY ANN VANESSA ATALANTA</div>
+                          <div class="ped-card-reg">CMKU/CKC/8714/05/07</div>
+                        </div>
+                        <div class="ped-conn"><div class="ped-conn-l"><div class="ped-conn-l-line"></div></div><div class="ped-conn-r"></div></div>
+                      </div>
+                      <div class="ped-children">
+                        <div class="ped-leaf"><div class="ped-card"><div class="ped-card-role">Gg-Grandsire</div><div class="ped-card-name">FLICK BRNO-FROST</div><div class="ped-card-reg">CMKU/CKC/5460/00/02</div><div class="ped-card-detail">Výborná</div></div></div>
+                        <div class="ped-leaf"><div class="ped-card"><div class="ped-card-role">Gg-Granddam</div><div class="ped-card-name">FÄLLDIN TWAI Z CISÁŘSKÉHO MLÝ NA</div><div class="ped-card-reg">CMKU/CKC/6094/01/02</div><div class="ped-card-detail">CACIB</div></div></div>
+                      </div></div>
+                    </div></div>
+                  </div></div>
+                </div></div>
+
+                <p style="margin-top:1rem;font-size:0.8rem;color:var(--text-muted);font-style:italic">Pedigree sourced from official kennel records.</p>
+              </div>
+
+              <!-- HEALTH TAB -->
+              <div class="tab-panel active" id="tab-health">
+                <div class="health-grid">
+                  <div class="health-card"><p class="health-test">HUU, Hyperuricosuria</p><p class="health-result clear">Clear</p><p class="health-date">AnimaLabs, 25 November 2024</p></div>
+                  <div class="health-card"><p class="health-test">Macrothrombocytopenia</p><p class="health-result clear">Clear</p><p class="health-date">AnimaLabs, 25 November 2024</p></div>
+                  <div class="health-card"><p class="health-test">MH, Malignant Hyperthermia</p><p class="health-result clear">Clear</p><p class="health-date">AnimaLabs, 25 November 2024</p></div>
+                  <div class="health-card"><p class="health-test">CKCS-MD, Muscular Dystrophy</p><p class="health-result clear">Healthy, Non-Carrier</p><p class="health-date">AnimaLabs, 25 November 2024</p></div>
+                  <div class="health-card"><p class="health-test">CCS, Dry Eye Curly Coat Syndrome</p><p class="health-result clear">Clear</p><p class="health-date">AnimaLabs, 25 November 2024</p></div>
+                  <div class="health-card"><p class="health-test">EFS, Episodic Falling Syndrome</p><p class="health-result clear">Clear</p><p class="health-date">AnimaLabs, 25 November 2024</p></div>
+                  <div class="health-card"><p class="health-test">MDR1, Multidrug Resistance</p><p class="health-result clear">Clear</p><p class="health-date">AnimaLabs, 25 November 2024</p></div>
+                  <div class="health-card"><p class="health-test">XANTII, Xanthinuria Type II</p><p class="health-result clear">Clear</p><p class="health-date">AnimaLabs, 25 November 2024</p></div>
+                  <div class="health-card"><p class="health-test">MCAD Deficiency</p><p class="health-result clear">Clear</p><p class="health-date">AnimaLabs, 25 November 2024</p></div>
+                </div>
+                <p style="margin-top:1.5rem;font-size:0.84rem;color:var(--text-muted);font-style:italic">Certificates available upon request.</p>
+              </div>
+
+              <!-- GALLERY TAB -->
+              <div class="tab-panel" id="tab-gallery"><p class="text-muted italic" style="margin-bottom:1.5rem">Click any photo to enlarge</p><div class="gallery-grid"><div class="gallery-item" data-caption="1"><img src="../../images/dogs/verduras/1.webp" alt="Photo 1" loading="lazy"><div class="gallery-overlay"><span class="gallery-overlay-icon" aria-hidden="true">⊕</span></div></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section></div>
+    
+    <div class="lightbox" id="lightbox" role="dialog">
+      <button class="lightbox-close" id="lb-close">×</button>
+      <button class="lightbox-btn" id="lb-prev">‹</button>
+      <div class="lightbox-inner"><img id="lb-img" src="" alt=""><p class="lightbox-caption" id="lb-caption"></p></div>
+      <button class="lightbox-btn" id="lb-next">›</button>
+    </div>
+    {{footer}}
+  
+
+  <script src="../../js/main.js?v=bff93e750184"></script>
+</body>
+</html>

@@ -1,0 +1,6250 @@
+{
+  "images/index/logo transparent2.png": {
+    "width": 2000,
+    "height": 1500
+  },
+  "images/gallery/20260405_204945.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/45f26e565afe0bf4-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/45f26e565afe0bf4-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/45f26e565afe0bf4-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20250908_204550.jpg": {
+    "width": 1704,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/0a27e669207ae6a2-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/0a27e669207ae6a2-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/0a27e669207ae6a2-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20250905_163548.jpg": {
+    "width": 1704,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/dda22eadc964188f-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/dda22eadc964188f-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/dda22eadc964188f-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20260405_204948.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/94bff6eacf76ca7c-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/94bff6eacf76ca7c-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/94bff6eacf76ca7c-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/care/HYPONICHypoallergenicShampoo_ForDogs_Volumizing_300ml.webp": {
+    "width": 500,
+    "height": 500
+  },
+  "images/care/brush.jpg": {
+    "width": 447,
+    "height": 447
+  },
+  "images/care/comb.jpg": {
+    "width": 447,
+    "height": 447
+  },
+  "images/care/scissors.jpg": {
+    "width": 447,
+    "height": 447
+  },
+  "images/care/hair trimmer.webp": {
+    "width": 720,
+    "height": 720
+  },
+  "images/care/waterless shampoo.jpg": {
+    "width": 404,
+    "height": 1000
+  },
+  "images/care/teeth brush.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "images/care/nail clipper.jpg": {
+    "width": 447,
+    "height": 447
+  },
+  "images/care/nail grinder.webp": {
+    "width": 1094,
+    "height": 1446
+  },
+  "images/care/josera kibble.jpg": {
+    "width": 600,
+    "height": 900
+  },
+  "images/care/royal canine kibble puppy.jpg": {
+    "width": 251,
+    "height": 201
+  },
+  "images/care/harness.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "images/care/flexi.jpg": {
+    "width": 1500,
+    "height": 1403
+  },
+  "images/care/1753218178-frontline-combo-spot-on-s-protiv-buha-i-krpelja-za-pse-2-10-kg-1-pipeta.jpg": {
+    "width": 300,
+    "height": 300
+  },
+  "images/care/HPOE_Lavender_XL_Dog_Pad_1300x1300.webp": {
+    "width": 1300,
+    "height": 1300
+  },
+  "images/care/dentastix.jpg": {
+    "width": 447,
+    "height": 447
+  },
+  "images/care/treats.webp": {
+    "width": 1000,
+    "height": 1000
+  },
+  "images/gallery/Screenshot_20250320_220241_Photos.jpg": {
+    "width": 1437,
+    "height": 1078,
+    "variants": [
+      {
+        "path": "images/responsive/0e025c15a1e149bf-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/0e025c15a1e149bf-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/gallery/IMG_20211008_135535.jpg": {
+    "width": 2448,
+    "height": 3264,
+    "variants": [
+      {
+        "path": "images/responsive/2eb58a08e97ee2f8-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/2eb58a08e97ee2f8-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/2eb58a08e97ee2f8-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/IMG_20210904_194838.jpg": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/c81b5c886d7f0dbc-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/c81b5c886d7f0dbc-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/c81b5c886d7f0dbc-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/FB_IMG_1694803197069.jpg": {
+    "width": 788,
+    "height": 768
+  },
+  "images/gallery/20250827_143607.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/f9c41b91ab839908-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/f9c41b91ab839908-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/f9c41b91ab839908-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20250819_233719.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/24c90b23ebf9bd2a-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/24c90b23ebf9bd2a-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/24c90b23ebf9bd2a-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20250819_141723.jpg": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/7d73d8f51ac7ae0a-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/7d73d8f51ac7ae0a-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/7d73d8f51ac7ae0a-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20250315_141136~2.jpg": {
+    "width": 1635,
+    "height": 1226,
+    "variants": [
+      {
+        "path": "images/responsive/a48b54d263dd61e7-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/a48b54d263dd61e7-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/a48b54d263dd61e7-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20250312_091028.jpg": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/34c47424951dd2dc-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/34c47424951dd2dc-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/34c47424951dd2dc-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20240824_194753.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/83cf1d999d79bc2b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/83cf1d999d79bc2b-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/83cf1d999d79bc2b-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20230627_140118.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/1d537c4b31a51891-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/1d537c4b31a51891-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/1d537c4b31a51891-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20220220_141040.jpg": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/61574d05926a20dd-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/61574d05926a20dd-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/61574d05926a20dd-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20211125_125341.jpg": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/3680def1a1fdccad-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/3680def1a1fdccad-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/3680def1a1fdccad-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20240409_170127.jpg": {
+    "width": 1704,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/da4d76d71b58bdda-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/da4d76d71b58bdda-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/da4d76d71b58bdda-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20241027_093658.jpg": {
+    "width": 1704,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/4d462479efeb2dd3-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4d462479efeb2dd3-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/4d462479efeb2dd3-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20250905_163554.jpg": {
+    "width": 1704,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/6cdedab342f4e9b8-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6cdedab342f4e9b8-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/6cdedab342f4e9b8-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20251118_123047.jpg": {
+    "width": 959,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/cc52f5dcb69e9759-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "images/gallery/20251122_131310.jpg": {
+    "width": 1704,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/6cbd7a3c6d2f0b7d-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6cbd7a3c6d2f0b7d-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/6cbd7a3c6d2f0b7d-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20251219_181642.jpg": {
+    "width": 1704,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/33f6dc8d72911f61-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/33f6dc8d72911f61-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/33f6dc8d72911f61-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20260221_163354.jpg": {
+    "width": 959,
+    "height": 1278
+  },
+  "images/gallery/20260315_151829.jpg": {
+    "width": 959,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/d511ed175fa48579-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "images/gallery/20260607_182428.jpg": {
+    "width": 1704,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/73c0edeb0042ed3c-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/73c0edeb0042ed3c-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/73c0edeb0042ed3c-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/IMG_20190531_111413.jpg": {
+    "width": 957,
+    "height": 1276,
+    "variants": [
+      {
+        "path": "images/responsive/770acd27ac409919-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "images/gallery/IMG_20190725_161151.jpg": {
+    "width": 957,
+    "height": 1276,
+    "variants": [
+      {
+        "path": "images/responsive/5b5d021aa5c3409c-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "images/gallery/IMG_20191012_144105.jpg": {
+    "width": 1278,
+    "height": 959,
+    "variants": [
+      {
+        "path": "images/responsive/676d76ac25ebd06b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/676d76ac25ebd06b-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/dogs/hella/hella1.jpg": {
+    "width": 2048,
+    "height": 1362,
+    "variants": [
+      {
+        "path": "images/responsive/649fa97b4030feb5-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/649fa97b4030feb5-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/649fa97b4030feb5-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/archie/472491531_614494177782038_5051369013346440614_n.jpg": {
+    "width": 1170,
+    "height": 1558,
+    "variants": [
+      {
+        "path": "images/responsive/e59d4ea894778b1e-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/e59d4ea894778b1e-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/a/03-10-2021/adam_profil.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/787a4a0ca79162f4-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/787a4a0ca79162f4-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/787a4a0ca79162f4-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/03-10-2021/atila_profil.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/4d15e0b984b06567-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4d15e0b984b06567-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/4d15e0b984b06567-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/03-10-2021/axel_profil.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/4fa285b1b8d94a74-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4fa285b1b8d94a74-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/4fa285b1b8d94a74-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/03-10-2021/astra_profil.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/930471a99acb0375-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/930471a99acb0375-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/930471a99acb0375-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/03-10-2021/aria_profil.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/7a3c282a05191e4b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/7a3c282a05191e4b-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/7a3c282a05191e4b-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/03-10-2021/anemona_profil.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/8f0d18cc6406b613-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/8f0d18cc6406b613-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/8f0d18cc6406b613-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/03-10-2021/azalea_profil.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/c4faec5eb2f07a27-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/c4faec5eb2f07a27-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/c4faec5eb2f07a27-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/03-10-2021/adam_glava.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/25c16a85099216cc-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/25c16a85099216cc-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/25c16a85099216cc-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/03-10-2021/anemona_glava.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/11e5471928b64003-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/11e5471928b64003-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/11e5471928b64003-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/03-10-2021/aria_glava.webp": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/litters/a/03-10-2021/astra_glava.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/a74e29a4967ee967-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/a74e29a4967ee967-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/a74e29a4967ee967-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/03-10-2021/atila_glava.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/001ae2cde85c86de-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/001ae2cde85c86de-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/001ae2cde85c86de-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/03-10-2021/axel_glava.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/be0e3e0e385c3924-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/be0e3e0e385c3924-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/be0e3e0e385c3924-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/03-10-2021/azalea_glava.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/0ab61b648836ed68-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/0ab61b648836ed68-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/0ab61b648836ed68-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/03-10-2021/glava.webp": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/litters/a/03-10-2021/profil.webp": {
+    "width": 2048,
+    "height": 1536
+  },
+  "images/litters/a/21-09-2021/adam glava.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/6fcb03dd8e9c75ef-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6fcb03dd8e9c75ef-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/6fcb03dd8e9c75ef-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/21-09-2021/anemona glava.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/b4339eb67c611d73-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/b4339eb67c611d73-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/b4339eb67c611d73-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/21-09-2021/aria glava.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/6078f8774cc34ff8-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6078f8774cc34ff8-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/6078f8774cc34ff8-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/21-09-2021/astra glava.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/b14b186692e97c81-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/b14b186692e97c81-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/b14b186692e97c81-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/21-09-2021/atila glava.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/f9e4b6badc04b04a-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/f9e4b6badc04b04a-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/f9e4b6badc04b04a-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/21-09-2021/axel david glava.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/f31d197d32a00683-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/f31d197d32a00683-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/f31d197d32a00683-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/21-09-2021/azalea glava.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/8727e71d6b55edfe-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/8727e71d6b55edfe-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/8727e71d6b55edfe-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/21-09-2021/svi tijelo.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/fea1da2efe9024d9-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/fea1da2efe9024d9-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/fea1da2efe9024d9-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/a/now/anemona zagreb 07 11 2021.jpg": {
+    "width": 708,
+    "height": 944
+  },
+  "images/dogs/lexa/469416236_592869419944514_3018993802037297388_n.jpg": {
+    "width": 590,
+    "height": 589
+  },
+  "images/litters/b/07-01-2022/barry_profil.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/b9a6e666fddede73-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/b9a6e666fddede73-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/b9a6e666fddede73-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/07-01-2022/bettany_profil.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/4b7cec4679deb74a-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4b7cec4679deb74a-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/4b7cec4679deb74a-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/07-01-2022/bowie_profil.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/6ed3ec03698e00cf-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6ed3ec03698e00cf-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/6ed3ec03698e00cf-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/07-01-2022/brinn_profil.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/71efe24cd988e986-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/71efe24cd988e986-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/71efe24cd988e986-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/05-02-2022/bowie1.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/a4f227086777b54d-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/a4f227086777b54d-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/a4f227086777b54d-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/05-02-2022/bowie2.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/f79d7d4fea34c6f1-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/f79d7d4fea34c6f1-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/f79d7d4fea34c6f1-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/05-02-2022/bowie3.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/3999b742527b4adb-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/3999b742527b4adb-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/3999b742527b4adb-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/05-02-2022/bowie4.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/158cda885689009a-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/158cda885689009a-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/158cda885689009a-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/05-02-2022/brinn1.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/39bc1e4e8385c6ee-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/39bc1e4e8385c6ee-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/39bc1e4e8385c6ee-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/05-02-2022/brinn2.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/74d76f69c8d9194c-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/74d76f69c8d9194c-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/74d76f69c8d9194c-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/05-02-2022/brinn3.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/139c2ba96708ad6a-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/139c2ba96708ad6a-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/139c2ba96708ad6a-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/05-02-2022/brinn4.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/d509d20b84e5f412-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/d509d20b84e5f412-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/d509d20b84e5f412-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/18-01-2022/barry_glava1.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/723e2af05c0a9ae6-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/723e2af05c0a9ae6-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/723e2af05c0a9ae6-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/18-01-2022/barry_glava2.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/c9a023ddb8e94eec-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/c9a023ddb8e94eec-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/c9a023ddb8e94eec-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/18-01-2022/barry_profil.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/e11bf716b1ab4b5b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/e11bf716b1ab4b5b-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/e11bf716b1ab4b5b-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/18-01-2022/bettany_glava.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/0bdf8cad5d75649d-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/0bdf8cad5d75649d-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/0bdf8cad5d75649d-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/18-01-2022/bettany_profill.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/d8f289ef0b3bb24d-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/d8f289ef0b3bb24d-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/d8f289ef0b3bb24d-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/18-01-2022/bowie_glava.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/c6f12a3fec1f56c5-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/c6f12a3fec1f56c5-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/c6f12a3fec1f56c5-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/18-01-2022/bowie_profil.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/294e50852c41a641-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/294e50852c41a641-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/294e50852c41a641-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/18-01-2022/brinn_glava.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/161be8cd18d1b0ee-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/161be8cd18d1b0ee-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/161be8cd18d1b0ee-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/18-01-2022/brinn_glava_prava.jpg.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/395556432fd1c4b1-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/395556432fd1c4b1-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/395556432fd1c4b1-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/18-01-2022/brinn_profil.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/f2bd672185a90c5b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/f2bd672185a90c5b-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/f2bd672185a90c5b-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/18-01-2022/svi_glava_kolaz_2.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/6a504d5719b7f400-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6a504d5719b7f400-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/6a504d5719b7f400-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/18-01-2022/svi_glava_kolaz_3.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/44e6bbe60ae778b7-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/44e6bbe60ae778b7-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/44e6bbe60ae778b7-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/07-01-2022/barry_glava.webp": {
+    "width": 2048,
+    "height": 1536
+  },
+  "images/litters/b/07-01-2022/bettany_glava.webp": {
+    "width": 2048,
+    "height": 1536
+  },
+  "images/litters/b/07-01-2022/bowie_glava.webp": {
+    "width": 2048,
+    "height": 1536
+  },
+  "images/litters/b/07-01-2022/brinn_glava.webp": {
+    "width": 2048,
+    "height": 1536
+  },
+  "images/litters/b/07-01-2022/sve_imenovani.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/048ace4f8f27bc5d-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/048ace4f8f27bc5d-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/048ace4f8f27bc5d-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/07-01-2022/svi.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/ddccfe046c0e4255-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/ddccfe046c0e4255-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/ddccfe046c0e4255-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/07-01-2022/svi_1.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/1266e3e9e9f89938-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/1266e3e9e9f89938-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/1266e3e9e9f89938-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/b/now/brinn slovenija 16 03 2022.jpg": {
+    "width": 958,
+    "height": 719,
+    "variants": [
+      {
+        "path": "images/responsive/3a9c4acc389f9a2a-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "images/litters/b/now/bowie zagreb 20  03 2022.jpg": {
+    "width": 958,
+    "height": 719
+  },
+  "images/dogs/charlie/charlie1.jpg": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/6873b80ddabd4b24-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6873b80ddabd4b24-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/6873b80ddabd4b24-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/caleb1.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/d4867e7527accbcb-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/d4867e7527accbcb-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/d4867e7527accbcb-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/cameron1.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/8dd841d2ab140e98-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/8dd841d2ab140e98-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/8dd841d2ab140e98-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/clooney1.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/f83cd62368cb2cfe-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/f83cd62368cb2cfe-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/f83cd62368cb2cfe-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-04-2022/20220430_152624.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/32841e3df28520b5-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/32841e3df28520b5-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/32841e3df28520b5-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-04-2022/20220430_152708.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/4ab95227f87fa5d6-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4ab95227f87fa5d6-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/4ab95227f87fa5d6-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-04-2022/20220430_152728.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/ea9aa63820ce1c78-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/ea9aa63820ce1c78-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/ea9aa63820ce1c78-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-04-2022/20220430_152749.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/49aeb49de6d44210-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/49aeb49de6d44210-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/49aeb49de6d44210-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-04-2022/20220430_152759.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/ad97e5f5b2bbc15c-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/ad97e5f5b2bbc15c-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/ad97e5f5b2bbc15c-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/13-04-2022/20220413_191443.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/288ec0e0b792b34f-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/288ec0e0b792b34f-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/288ec0e0b792b34f-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/13-04-2022/20220413_191537.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/2805fb280e436da6-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/2805fb280e436da6-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/2805fb280e436da6-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/13-04-2022/20220413_191847.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/4f46a3cf4e12d238-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4f46a3cf4e12d238-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/4f46a3cf4e12d238-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/13-04-2022/20220413_192301.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/22b78b099605a215-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/22b78b099605a215-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/22b78b099605a215-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/13-04-2022/20220413_192517.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/fc03448b6f98c78c-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/fc03448b6f98c78c-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/fc03448b6f98c78c-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/13-04-2022/20220413_192549.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/d5ba058a23768332-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/d5ba058a23768332-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/d5ba058a23768332-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/13-04-2022/20220413_192741.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/e75c66f4d3c5f003-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/e75c66f4d3c5f003-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/e75c66f4d3c5f003-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/13-04-2022/20220413_193906.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/8126a5a42e26abbb-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/8126a5a42e26abbb-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/8126a5a42e26abbb-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/13-04-2022/20220413_193932.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/18423820539033c7-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/18423820539033c7-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/18423820539033c7-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/13-04-2022/20220413_194052.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/ff3ab25fa6bdbd07-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/ff3ab25fa6bdbd07-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/ff3ab25fa6bdbd07-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/13-04-2022/20220413_194103.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/6996749996963269-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6996749996963269-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/6996749996963269-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/13-04-2022/20220413_194316.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/8e5f531aa7b53c5b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/8e5f531aa7b53c5b-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/8e5f531aa7b53c5b-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/13-04-2022/20220413_194332.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/7c8731206cf96103-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/7c8731206cf96103-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/7c8731206cf96103-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/1najastuku.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/de797ab501a0d841-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/de797ab501a0d841-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/de797ab501a0d841-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/2narucniku.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/c9781ac2e58dba78-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/c9781ac2e58dba78-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/c9781ac2e58dba78-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/caleb2.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/4e4bc43215327987-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4e4bc43215327987-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/4e4bc43215327987-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/caleb3.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/ad39b5084064f131-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/ad39b5084064f131-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/ad39b5084064f131-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/cameron2.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/79e44b53debcc838-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/79e44b53debcc838-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/79e44b53debcc838-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/cameron3.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/6b8d0faeebc01ec5-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6b8d0faeebc01ec5-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/6b8d0faeebc01ec5-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/clooney2.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/a8138a3363892974-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/a8138a3363892974-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/a8138a3363892974-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/clooney3.jpg": {
+    "width": 2048,
+    "height": 1182,
+    "variants": [
+      {
+        "path": "images/responsive/1c0457d944e27f7d-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/1c0457d944e27f7d-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/1c0457d944e27f7d-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/krajmame.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/6d8a5257aeb82e9d-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6d8a5257aeb82e9d-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/6d8a5257aeb82e9d-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/najastuku.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/a9b2075e88c1ee90-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/a9b2075e88c1ee90-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/a9b2075e88c1ee90-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/profil.jpg": {
+    "width": 2048,
+    "height": 2022,
+    "variants": [
+      {
+        "path": "images/responsive/4cbddae065fd4acd-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4cbddae065fd4acd-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/4cbddae065fd4acd-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/rucnik.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/679228a6ea83b783-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/679228a6ea83b783-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/679228a6ea83b783-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/samamom.jpg": {
+    "width": 1778,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/21ea013939867a0b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/21ea013939867a0b-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/21ea013939867a0b-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/30-03-2022/svinarucniku.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/03a68ff5ef2d3b7a-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/03a68ff5ef2d3b7a-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/03a68ff5ef2d3b7a-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/c/now/caleb slovenija 26 5 2022.jpg": {
+    "width": 958,
+    "height": 719
+  },
+  "images/litters/c/now/clooney kostrena 27 5 2022.jpg": {
+    "width": 958,
+    "height": 719
+  },
+  "images/litters/d/30-03-2023/dali.webp": {
+    "width": 740,
+    "height": 862
+  },
+  "images/litters/d/30-03-2023/dante.webp": {
+    "width": 740,
+    "height": 859
+  },
+  "images/litters/d/30-03-2023/david.webp": {
+    "width": 740,
+    "height": 860
+  },
+  "images/litters/d/30-03-2023/doc.webp": {
+    "width": 740,
+    "height": 861
+  },
+  "images/litters/d/30-03-2023/daisy.webp": {
+    "width": 739,
+    "height": 861
+  },
+  "images/litters/d/02-05-2023/dante1.webp": {
+    "width": 1152,
+    "height": 865,
+    "variants": [
+      {
+        "path": "images/responsive/c096abdba6525dc4-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/c096abdba6525dc4-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/d/02-05-2023/dante2.webp": {
+    "width": 1152,
+    "height": 863
+  },
+  "images/litters/d/02-05-2023/dante3.webp": {
+    "width": 1152,
+    "height": 863,
+    "variants": [
+      {
+        "path": "images/responsive/1bf129aad8f6566b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/1bf129aad8f6566b-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/d/02-05-2023/dante4.webp": {
+    "width": 1151,
+    "height": 865,
+    "variants": [
+      {
+        "path": "images/responsive/a3d80edf7b5a5a27-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/a3d80edf7b5a5a27-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/d/19-04-2023/daisy1.webp": {
+    "width": 739,
+    "height": 863
+  },
+  "images/litters/d/19-04-2023/daisy2.webp": {
+    "width": 740,
+    "height": 862
+  },
+  "images/litters/d/19-04-2023/dali1.webp": {
+    "width": 737,
+    "height": 861
+  },
+  "images/litters/d/19-04-2023/dali2.webp": {
+    "width": 739,
+    "height": 861
+  },
+  "images/litters/d/19-04-2023/dante1.webp": {
+    "width": 739,
+    "height": 861
+  },
+  "images/litters/d/19-04-2023/dante2.webp": {
+    "width": 739,
+    "height": 861
+  },
+  "images/litters/d/19-04-2023/david1.webp": {
+    "width": 1152,
+    "height": 862
+  },
+  "images/litters/d/19-04-2023/david2.webp": {
+    "width": 1152,
+    "height": 863
+  },
+  "images/litters/d/19-04-2023/david3.webp": {
+    "width": 1150,
+    "height": 864
+  },
+  "images/litters/d/19-04-2023/david4.webp": {
+    "width": 1151,
+    "height": 863,
+    "variants": [
+      {
+        "path": "images/responsive/2cb05d354ea88f1d-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/2cb05d354ea88f1d-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/d/19-04-2023/david5.webp": {
+    "width": 575,
+    "height": 768
+  },
+  "images/litters/d/19-04-2023/david6.webp": {
+    "width": 1151,
+    "height": 863
+  },
+  "images/litters/d/19-04-2023/david7.webp": {
+    "width": 1152,
+    "height": 863
+  },
+  "images/litters/d/19-04-2023/doc1.webp": {
+    "width": 575,
+    "height": 768
+  },
+  "images/litters/d/19-04-2023/doc2.webp": {
+    "width": 1152,
+    "height": 863
+  },
+  "images/litters/d/19-04-2023/doc3.webp": {
+    "width": 1153,
+    "height": 862
+  },
+  "images/litters/d/19-04-2023/doc4.webp": {
+    "width": 1149,
+    "height": 862
+  },
+  "images/litters/d/19-04-2023/doc5.webp": {
+    "width": 1153,
+    "height": 863
+  },
+  "images/litters/d/19-04-2023/doc6.webp": {
+    "width": 1151,
+    "height": 864
+  },
+  "images/litters/d/now/david zagreb 28 05 2023.jpg": {
+    "width": 958,
+    "height": 719,
+    "variants": [
+      {
+        "path": "images/responsive/255d135255ba66de-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "images/dogs/aria/Snimka zaslona 2026-06-25 170201.webp": {
+    "width": 487,
+    "height": 400
+  },
+  "images/litters/e/02-03-2024/edo_profil.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/6c1e92012db8fa49-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6c1e92012db8fa49-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/elise_profil.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/310ca790aa1bd72d-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/310ca790aa1bd72d-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/elton_profil.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/49d2a735e21eb002-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/49d2a735e21eb002-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/eros_profil.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/d13165af28e8d6ed-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/d13165af28e8d6ed-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/edo1.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/c33aae04243f746a-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/c33aae04243f746a-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/edo2.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/c4267f9399c0b7fa-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/c4267f9399c0b7fa-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/edo3.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/775f9ebbad8aa8ac-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/775f9ebbad8aa8ac-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/edo4.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/8d7554bce54ea0c2-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/8d7554bce54ea0c2-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/edo5.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/512326e2b55af510-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/512326e2b55af510-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/edo6.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/9021892b6a5ce20d-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/9021892b6a5ce20d-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/edo7.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/20222eaf3a8c0fc8-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/20222eaf3a8c0fc8-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/edo8.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/32d3b000f5c95923-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/32d3b000f5c95923-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/elise1.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/1aab82015f73c4f5-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/1aab82015f73c4f5-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/elise2.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/1fcfe5bb6bc10719-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/1fcfe5bb6bc10719-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/elise3.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/74f3a7af57ad013a-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/74f3a7af57ad013a-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/elise4.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/0b2c4136047c72fe-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/0b2c4136047c72fe-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/elise5.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/a34b921e7408852a-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/a34b921e7408852a-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/elise6.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/0321c08337936c51-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/0321c08337936c51-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/elise7.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/11b4ac7b6c70af11-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/11b4ac7b6c70af11-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/elise8.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/73ee5be5a2008b4d-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/73ee5be5a2008b4d-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/22-03-2024/elton.jpg": {
+    "width": 733,
+    "height": 861,
+    "variants": [
+      {
+        "path": "images/responsive/73234fff4479f5d4-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/edo_glava.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/0673db145686aae7-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/0673db145686aae7-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/edo_leda.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/96fe27d338d7cc6b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/96fe27d338d7cc6b-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/edo_profil.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/e4c2ab093989a8fa-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/e4c2ab093989a8fa-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/edo_profil2.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/0e29d9686a9d4e7e-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/0e29d9686a9d4e7e-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/edo_profil3.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/7caf8566577f2e75-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/7caf8566577f2e75-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/elise_glava.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/4d67c2a820719204-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4d67c2a820719204-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/elise_igranje.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/fe3f5f34c12a567e-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/fe3f5f34c12a567e-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/elise_leda.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/6c96f3f351c2f575-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6c96f3f351c2f575-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/elise_profil.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/940450f880b8a085-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/940450f880b8a085-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/elise_profil2.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/06e2061c08c41e88-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/06e2061c08c41e88-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/elton_glava.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/56e6ddd98b5bab3c-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/56e6ddd98b5bab3c-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/elton_glava2.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/904160ca11f7011a-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/904160ca11f7011a-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/elton_igranje.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/f743f4f34900a107-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/f743f4f34900a107-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/elton_profil.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/5d1dae8f711b10ca-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/5d1dae8f711b10ca-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/elton_profil2.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/cad46e24e3424787-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/cad46e24e3424787-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/eros_1.jpg": {
+    "width": 703,
+    "height": 827,
+    "variants": [
+      {
+        "path": "images/responsive/2f21b56b781cc660-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/eros_2.jpg": {
+    "width": 702,
+    "height": 826,
+    "variants": [
+      {
+        "path": "images/responsive/582dfa28adf68895-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "images/litters/e/15-03-2024/svi.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/b800d83f6bb2f354-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/b800d83f6bb2f354-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/edo_glava.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/44e1dd09b94ec023-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/44e1dd09b94ec023-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/edo_glava2.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/82ca8b42f102caa8-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/82ca8b42f102caa8-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/edo_leda.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/856a2d0d65e90390-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/856a2d0d65e90390-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/elise_glava.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/101a03f2e27e6531-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/101a03f2e27e6531-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/elise_leda.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/b2dfe14f07ed2924-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/b2dfe14f07ed2924-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/elise_profil2.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/f118a5b941c4150a-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/f118a5b941c4150a-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/elton_glava.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/162f2d84cdbb06d8-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/162f2d84cdbb06d8-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/elton_leda.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/1c3b3aa7632809d3-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/1c3b3aa7632809d3-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/elton_profil2.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/36bb7f4b3970aa17-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/36bb7f4b3970aa17-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/eros_glava.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/6ea121898985c62e-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6ea121898985c62e-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/eros_leda.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/17ed1cf542b32f43-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/17ed1cf542b32f43-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/eros_profil2.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/ca02d95ba9564771-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/ca02d95ba9564771-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/kolaz_glava.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/4bc32fbe9a435d9c-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4bc32fbe9a435d9c-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/02-03-2024/svi1.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/4b4b051f15d286b6-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4b4b051f15d286b6-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/e/20-02-2024/edo_glava-min.webp": {
+    "width": 1536,
+    "height": 2048
+  },
+  "images/litters/e/20-02-2024/edo_leda-min.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/a8c5dccc5b5a42c4-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/a8c5dccc5b5a42c4-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/a8c5dccc5b5a42c4-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/e/20-02-2024/edo_profil-min.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/87c1484c7c9e62fb-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/87c1484c7c9e62fb-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/87c1484c7c9e62fb-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/e/20-02-2024/elise_glava-min.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/c8aa262418030841-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/c8aa262418030841-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/c8aa262418030841-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/e/20-02-2024/elise_leda-min.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/40ccfd980b5aaeee-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/40ccfd980b5aaeee-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/40ccfd980b5aaeee-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/e/20-02-2024/elise_profil-min.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/6ecce25b4d69cde2-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6ecce25b4d69cde2-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/6ecce25b4d69cde2-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/e/20-02-2024/elton_glava-min.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/29da70ec7e3a6da8-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/29da70ec7e3a6da8-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/29da70ec7e3a6da8-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/e/20-02-2024/elton_leda-min.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/d02fbf7f514d30c6-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/d02fbf7f514d30c6-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/d02fbf7f514d30c6-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/e/20-02-2024/elton_profil-min.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/b15ce8c9bb6c5977-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/b15ce8c9bb6c5977-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/b15ce8c9bb6c5977-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/e/20-02-2024/eros_glava-min.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/0515cdf86baae6e7-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/0515cdf86baae6e7-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/0515cdf86baae6e7-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/e/20-02-2024/eros_leda-min.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/15327078497d8fc0-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/15327078497d8fc0-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/15327078497d8fc0-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/e/20-02-2024/eros_profil-min.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/fd39d361695eb103-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/fd39d361695eb103-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/fd39d361695eb103-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/e/20-02-2024/glava_svi-min.webp": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/99cc0315659e6a77-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/99cc0315659e6a77-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/99cc0315659e6a77-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/e/20-02-2024/svi1-min.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/56bebce9b3e6c752-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/56bebce9b3e6c752-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/56bebce9b3e6c752-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/e/20-02-2024/svi2-min.webp": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/ca70a374c64af2d7-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/ca70a374c64af2d7-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/ca70a374c64af2d7-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/e/now/elton rijeka 20 4 2024.jpg": {
+    "width": 958,
+    "height": 719
+  },
+  "images/litters/f/05-10-2024/freddy10@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/1a493022e56724ea-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/1a493022e56724ea-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/05-10-2024/freddy11@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/562dd356a848eb51-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/562dd356a848eb51-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/05-10-2024/freddy12@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/841d8c0db6ef1f40-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/841d8c0db6ef1f40-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/05-10-2024/freddy13@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/82f206b9b46abc8b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/82f206b9b46abc8b-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/05-10-2024/freddy14@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/08cee3e0e929d934-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/08cee3e0e929d934-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/05-10-2024/freddy15@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/55e74a003c3ae3b0-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/55e74a003c3ae3b0-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/05-10-2024/freddy1@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/87d97097b670fabb-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/87d97097b670fabb-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/05-10-2024/freddy2@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/cccbaa7757ae5b42-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/cccbaa7757ae5b42-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/05-10-2024/freddy3@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/4a907b5da21be2d6-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4a907b5da21be2d6-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/05-10-2024/freddy4@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/3879fae706f679c0-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/3879fae706f679c0-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/05-10-2024/freddy5@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/b20ce3653e771d11-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/b20ce3653e771d11-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/05-10-2024/freddy6@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/038443270151b781-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/038443270151b781-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/05-10-2024/freddy7@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/f011fd65a482db09-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/f011fd65a482db09-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/05-10-2024/freddy8@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/922777fe6dd2d926-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/922777fe6dd2d926-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/05-10-2024/freddy9@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/af0d33a9ef9cdbe1-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/af0d33a9ef9cdbe1-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/filotea 1@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/994bee462512f542-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/994bee462512f542-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/filotea 2@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/e9a82627b8dffc5b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/e9a82627b8dffc5b-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/filotea 3@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/f10e380072d1d765-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/f10e380072d1d765-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/filotea 4@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/13106c7833ec8127-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/13106c7833ec8127-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/filotea 5@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/68c30248aa2558cf-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/68c30248aa2558cf-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/finn 1@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/034de64d67b3a9f3-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/034de64d67b3a9f3-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/finn 2@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/0ae47c3be19cf28e-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/0ae47c3be19cf28e-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/finn 3@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/e1b6ce87d16bfd08-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/e1b6ce87d16bfd08-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/finn 4@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/ae45e4da3ff1003b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/ae45e4da3ff1003b-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/finn 5@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/cbc50d60ccdce390-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/cbc50d60ccdce390-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/freddy 1@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/e53639e287f2d5d9-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/e53639e287f2d5d9-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/freddy 2@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/46af97e96d1a1247-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/46af97e96d1a1247-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/freddy 3@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/fb9e3d51654666f1-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/fb9e3d51654666f1-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/freddy 4@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/80b668cb6bbbfb5f-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/80b668cb6bbbfb5f-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/freddy 5@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/c601b4b11e7f3dc7-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/c601b4b11e7f3dc7-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/svi@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/eac7b94f3398bfe2-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/eac7b94f3398bfe2-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/25-09-2024/troje@0.25x.jpg": {
+    "width": 1152,
+    "height": 864,
+    "variants": [
+      {
+        "path": "images/responsive/619bdb34e33adf23-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/619bdb34e33adf23-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/litters/f/08-09-2024/filotea1.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/5854a75a9c643e4c-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/5854a75a9c643e4c-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/5854a75a9c643e4c-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/08-09-2024/filotea2.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/95fa9319789ce9d9-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/95fa9319789ce9d9-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/95fa9319789ce9d9-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/08-09-2024/filotea3.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/060a6675dc4023e1-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/060a6675dc4023e1-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/060a6675dc4023e1-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/08-09-2024/filotea4.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/8587ab47524873b6-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/8587ab47524873b6-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/8587ab47524873b6-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/08-09-2024/finn1.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/8e2029b83e56c537-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/8e2029b83e56c537-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/8e2029b83e56c537-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/08-09-2024/finn2.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/5caf97bbcb95b36e-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/5caf97bbcb95b36e-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/5caf97bbcb95b36e-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/08-09-2024/finn3.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/c4c35d98812d83b7-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/c4c35d98812d83b7-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/c4c35d98812d83b7-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/08-09-2024/finn4.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/05b0ce1029a599ca-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/05b0ce1029a599ca-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/05b0ce1029a599ca-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/08-09-2024/freddy1.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/eb46d9b0cc2ecfbd-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/eb46d9b0cc2ecfbd-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/eb46d9b0cc2ecfbd-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/08-09-2024/freddy2.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/20057fecf782c6de-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/20057fecf782c6de-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/20057fecf782c6de-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/08-09-2024/freddy3.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/1b3bfd985fcbdb45-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/1b3bfd985fcbdb45-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/1b3bfd985fcbdb45-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/08-09-2024/freddy4.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/a9a15dad0f1aac31-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/a9a15dad0f1aac31-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/a9a15dad0f1aac31-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/08-09-2024/svi1.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/f465b5dc111323e8-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/f465b5dc111323e8-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/f465b5dc111323e8-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/08-09-2024/svi2.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/3a5e6452d08c21b8-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/3a5e6452d08c21b8-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/3a5e6452d08c21b8-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/08-09-2024/svi3.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/74150db4207b5f17-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/74150db4207b5f17-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/74150db4207b5f17-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_194748.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/e32e80a9d8028cf5-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/e32e80a9d8028cf5-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/e32e80a9d8028cf5-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_194750.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/d1d755d01554085f-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/d1d755d01554085f-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/d1d755d01554085f-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_194753.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/83cf1d999d79bc2b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/83cf1d999d79bc2b-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/83cf1d999d79bc2b-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_195009.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/d1c3535c69a85cec-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/d1c3535c69a85cec-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/d1c3535c69a85cec-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_195200.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/283dc4e33968ea6c-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/283dc4e33968ea6c-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/283dc4e33968ea6c-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_195218.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/ea9a73372a88f3ca-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/ea9a73372a88f3ca-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/ea9a73372a88f3ca-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_195309.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/c826bfbe63d7c648-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/c826bfbe63d7c648-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/c826bfbe63d7c648-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_195634.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/66599775611f8a04-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/66599775611f8a04-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/66599775611f8a04-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_195732.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/8515c320faf03537-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/8515c320faf03537-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/8515c320faf03537-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_195956.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/8e403542dec0a149-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/8e403542dec0a149-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/8e403542dec0a149-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_200005.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/59722373207b95b7-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/59722373207b95b7-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/59722373207b95b7-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_200033.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/4880980b922c116f-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4880980b922c116f-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/4880980b922c116f-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_200204.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/932e52ae9b5613a3-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/932e52ae9b5613a3-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/932e52ae9b5613a3-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_200324.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/32012c5002654c96-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/32012c5002654c96-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/32012c5002654c96-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_200539.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/33d01ed1bd46b109-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/33d01ed1bd46b109-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/33d01ed1bd46b109-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_200549.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/8371a5ceccb52920-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/8371a5ceccb52920-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/8371a5ceccb52920-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_200710.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/efaa98463ef86be5-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/efaa98463ef86be5-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/efaa98463ef86be5-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_200711.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/1a0d460e2b754715-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/1a0d460e2b754715-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/1a0d460e2b754715-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_200718.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/5f60791b10008de6-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/5f60791b10008de6-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/5f60791b10008de6-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/24-08-2024/20240824_200813.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/701f1bd73933f5de-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/701f1bd73933f5de-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/701f1bd73933f5de-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/now/finn valbandon11 10 2024 .jpg": {
+    "width": 783,
+    "height": 1600
+  },
+  "images/litters/f/now/fiorino pula 12 10 2024.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/d304ab770958a247-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/d304ab770958a247-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/d304ab770958a247-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/now/filotea split 12 10 2024.jpg": {
+    "width": 4000,
+    "height": 3000,
+    "variants": [
+      {
+        "path": "images/responsive/d3711f5fbef3a8dc-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/d3711f5fbef3a8dc-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/d3711f5fbef3a8dc-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/now/freya osijek 12 10 2024.jpg": {
+    "width": 4000,
+    "height": 3000,
+    "variants": [
+      {
+        "path": "images/responsive/801512ff5a0a7009-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/801512ff5a0a7009-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/801512ff5a0a7009-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/now/faye split 13 10 2024.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/1435229332ecd923-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/1435229332ecd923-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/1435229332ecd923-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/now/freddy zagreb 13 10 2024.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/bcd5e2cbeb18d5d9-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/bcd5e2cbeb18d5d9-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/bcd5e2cbeb18d5d9-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/now/felicia zagreb 20 10 2024.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/eaae8c42a9bef78c-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/eaae8c42a9bef78c-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/eaae8c42a9bef78c-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/f/now/fiona zadar 26 10 2024.jpg": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/cc4800adee33626e-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/cc4800adee33626e-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/cc4800adee33626e-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/dali/Snimka zaslona 2026-06-25 170112.webp": {
+    "width": 768,
+    "height": 828
+  },
+  "images/litters/g/04-03-2026/20260304_153647.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/51b702a6f0fcba49-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/51b702a6f0fcba49-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/51b702a6f0fcba49-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/04-03-2026/20260304_153650.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/cce337644919c883-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/cce337644919c883-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/cce337644919c883-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/04-03-2026/20260304_153700.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/b0fe35664a82d5e6-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/b0fe35664a82d5e6-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/b0fe35664a82d5e6-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/04-03-2026/20260304_153735.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/f7494fd1963767b9-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/f7494fd1963767b9-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/f7494fd1963767b9-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/04-03-2026/20260304_153756.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/88c16e8ac449f6b6-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/88c16e8ac449f6b6-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/88c16e8ac449f6b6-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/04-03-2026/20260304_153859.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/b2766baecfc1076c-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/b2766baecfc1076c-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/b2766baecfc1076c-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/19-02-2026/20260219_120321.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/406a034745e3e99a-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/406a034745e3e99a-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/406a034745e3e99a-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/19-02-2026/20260219_120323.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/9f25c630c92c5ddf-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/9f25c630c92c5ddf-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/9f25c630c92c5ddf-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/19-02-2026/20260219_120344.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/f12ddb498baa8b61-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/f12ddb498baa8b61-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/f12ddb498baa8b61-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/19-02-2026/20260219_120345.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/8a36de75a4782261-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/8a36de75a4782261-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/8a36de75a4782261-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/19-02-2026/20260219_120416.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/3c08d3de04bb0f8b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/3c08d3de04bb0f8b-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/3c08d3de04bb0f8b-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/19-02-2026/20260219_120418.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/091d46fc5d12645f-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/091d46fc5d12645f-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/091d46fc5d12645f-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/10-02-2026/20260210_190813.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/e5d3dd95523fa9ae-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/e5d3dd95523fa9ae-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/e5d3dd95523fa9ae-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/10-02-2026/20260210_190921.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/9138cc33db92cb33-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/9138cc33db92cb33-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/9138cc33db92cb33-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/10-02-2026/20260210_191046.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/a85aa0c4ddf72c1d-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/a85aa0c4ddf72c1d-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/a85aa0c4ddf72c1d-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/10-02-2026/20260210_191237.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/01d29a781fabe086-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/01d29a781fabe086-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/01d29a781fabe086-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/10-02-2026/20260210_192151.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/3c7a3bdf9dcd79fd-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/3c7a3bdf9dcd79fd-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/3c7a3bdf9dcd79fd-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/g/now/20260321_121233.jpg": {
+    "width": 2048,
+    "height": 1693,
+    "variants": [
+      {
+        "path": "images/responsive/4cfdd5ff21484d20-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4cfdd5ff21484d20-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/4cfdd5ff21484d20-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/masa/Snimka zaslona 2026-06-25 170239.webp": {
+    "width": 947,
+    "height": 750
+  },
+  "images/dogs/tomo/20250916_123611.jpg": {
+    "width": 590,
+    "height": 443
+  },
+  "images/litters/h/27-06-2026/honey1.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/667b2ea0b3fcc3b6-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/667b2ea0b3fcc3b6-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/667b2ea0b3fcc3b6-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/27-06-2026/hailey1.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/7273a6f098260fd7-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/7273a6f098260fd7-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/7273a6f098260fd7-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/27-06-2026/hope1.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/66641032db2764f0-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/66641032db2764f0-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/66641032db2764f0-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/27-06-2026/heidi1.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/e36309bfaad6d9a2-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/e36309bfaad6d9a2-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/e36309bfaad6d9a2-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/20-10-2026/svi.jpg": {
+    "width": 2304,
+    "height": 1728,
+    "variants": [
+      {
+        "path": "images/responsive/59cafe6deb271fd2-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/59cafe6deb271fd2-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/59cafe6deb271fd2-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/20-10-2026/heidi1.jpg": {
+    "width": 2304,
+    "height": 1728,
+    "variants": [
+      {
+        "path": "images/responsive/c6c4128755d99486-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/c6c4128755d99486-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/c6c4128755d99486-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/20-10-2026/heidi2.jpg": {
+    "width": 2304,
+    "height": 1728,
+    "variants": [
+      {
+        "path": "images/responsive/add195c205677db2-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/add195c205677db2-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/add195c205677db2-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/20-10-2026/heidi3.jpg": {
+    "width": 2304,
+    "height": 1728,
+    "variants": [
+      {
+        "path": "images/responsive/8bd2ab4739937243-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/8bd2ab4739937243-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/8bd2ab4739937243-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/20-10-2026/heidi4.jpg": {
+    "width": 2304,
+    "height": 1728,
+    "variants": [
+      {
+        "path": "images/responsive/fbc646de32295e6d-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/fbc646de32295e6d-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/fbc646de32295e6d-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/20-10-2026/heidi5.jpg": {
+    "width": 2304,
+    "height": 1728,
+    "variants": [
+      {
+        "path": "images/responsive/71f53a0b8ec0a3c3-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/71f53a0b8ec0a3c3-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/71f53a0b8ec0a3c3-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/20-10-2026/honey1.jpg": {
+    "width": 2304,
+    "height": 1728,
+    "variants": [
+      {
+        "path": "images/responsive/f9d3ebb2b20c4d8c-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/f9d3ebb2b20c4d8c-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/f9d3ebb2b20c4d8c-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/20-10-2026/honey2.jpg": {
+    "width": 2304,
+    "height": 1728,
+    "variants": [
+      {
+        "path": "images/responsive/6d4f808f2a8dbaa4-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6d4f808f2a8dbaa4-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/6d4f808f2a8dbaa4-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/20-10-2026/honey3.jpg": {
+    "width": 2304,
+    "height": 1728,
+    "variants": [
+      {
+        "path": "images/responsive/4d4cc6f153907837-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4d4cc6f153907837-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/4d4cc6f153907837-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/20-10-2026/honey4.jpg": {
+    "width": 2304,
+    "height": 1728,
+    "variants": [
+      {
+        "path": "images/responsive/3d6f51d4f47740bd-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/3d6f51d4f47740bd-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/3d6f51d4f47740bd-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/20-10-2026/honey5.jpg": {
+    "width": 2304,
+    "height": 1728,
+    "variants": [
+      {
+        "path": "images/responsive/f176580570b08cb8-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/f176580570b08cb8-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/f176580570b08cb8-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/20-10-2026/hope1.jpg": {
+    "width": 2304,
+    "height": 1728,
+    "variants": [
+      {
+        "path": "images/responsive/807714986a98bea6-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/807714986a98bea6-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/807714986a98bea6-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/20-10-2026/hope2.jpg": {
+    "width": 2304,
+    "height": 1728,
+    "variants": [
+      {
+        "path": "images/responsive/5a52c0cd1df8568f-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/5a52c0cd1df8568f-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/5a52c0cd1df8568f-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/20-10-2026/hope3.jpg": {
+    "width": 2304,
+    "height": 1728,
+    "variants": [
+      {
+        "path": "images/responsive/0b0c329a662191b3-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/0b0c329a662191b3-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/0b0c329a662191b3-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/20-10-2026/hope4.jpg": {
+    "width": 2304,
+    "height": 1728,
+    "variants": [
+      {
+        "path": "images/responsive/074e7ea55d56ce31-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/074e7ea55d56ce31-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/074e7ea55d56ce31-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/20-10-2026/hope5.jpg": {
+    "width": 2304,
+    "height": 1728,
+    "variants": [
+      {
+        "path": "images/responsive/1f22f8ab2d1dade7-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/1f22f8ab2d1dade7-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/1f22f8ab2d1dade7-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/25-08-2026/heidi1.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/dc465c9e85010c7b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/dc465c9e85010c7b-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/dc465c9e85010c7b-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/25-08-2026/heidi2.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/c4fd3f3369dbf281-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/c4fd3f3369dbf281-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/c4fd3f3369dbf281-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/25-08-2026/heidi3.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/020230802bf3e6ef-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/020230802bf3e6ef-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/020230802bf3e6ef-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/25-08-2026/heidi4.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/385a134f53d15b3a-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/385a134f53d15b3a-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/385a134f53d15b3a-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/25-08-2026/honey1.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/d86ba20e83db25c1-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/d86ba20e83db25c1-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/d86ba20e83db25c1-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/25-08-2026/honey2.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/b169350ca7b8b7f2-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/b169350ca7b8b7f2-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/b169350ca7b8b7f2-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/25-08-2026/honey3.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/a9f1a6bd28b8777f-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/a9f1a6bd28b8777f-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/a9f1a6bd28b8777f-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/25-08-2026/honey4.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/14978fdfd8f1fa11-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/14978fdfd8f1fa11-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/14978fdfd8f1fa11-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/25-08-2026/hope1.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/4fd58741e3221d89-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4fd58741e3221d89-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/4fd58741e3221d89-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/25-08-2026/hope2.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/af14940122858b30-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/af14940122858b30-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/af14940122858b30-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/25-08-2026/hope3.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/6b43edd30d02aa36-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6b43edd30d02aa36-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/6b43edd30d02aa36-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/25-08-2026/hope4.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/7aebad17662451ab-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/7aebad17662451ab-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/7aebad17662451ab-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/08-07-2026/hailey.webp": {
+    "width": 864,
+    "height": 1152
+  },
+  "images/litters/h/08-07-2026/heidi.webp": {
+    "width": 864,
+    "height": 1152
+  },
+  "images/litters/h/08-07-2026/honey.webp": {
+    "width": 864,
+    "height": 1152
+  },
+  "images/litters/h/08-07-2026/hope.webp": {
+    "width": 864,
+    "height": 1152
+  },
+  "images/litters/h/27-06-2026/hailey2.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/d40c21ae65efaca1-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/d40c21ae65efaca1-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/d40c21ae65efaca1-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/27-06-2026/hailey3.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/a059bb049b543c98-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/a059bb049b543c98-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/a059bb049b543c98-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/27-06-2026/hailey4.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/15dfd1c8b2fef320-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/15dfd1c8b2fef320-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/15dfd1c8b2fef320-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/27-06-2026/heidi2.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/c7fff3af7c7d018c-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/c7fff3af7c7d018c-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/c7fff3af7c7d018c-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/27-06-2026/heidi3.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/b1269746a348bc00-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/b1269746a348bc00-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/b1269746a348bc00-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/27-06-2026/heidi4.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/70fc4188ce01c847-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/70fc4188ce01c847-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/70fc4188ce01c847-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/27-06-2026/honey2.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/0ab5146fdeebf829-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/0ab5146fdeebf829-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/0ab5146fdeebf829-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/27-06-2026/honey3.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/47af3ab66b445c94-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/47af3ab66b445c94-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/47af3ab66b445c94-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/27-06-2026/honey4.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/7ea65349eed0ff75-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/7ea65349eed0ff75-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/7ea65349eed0ff75-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/27-06-2026/hope2.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/6205488911d21fd7-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6205488911d21fd7-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/6205488911d21fd7-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/27-06-2026/hope3.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/04cbf55fd57da805-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/04cbf55fd57da805-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/04cbf55fd57da805-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/27-06-2026/hope4.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/fedb3c150e756e9f-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/fedb3c150e756e9f-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/fedb3c150e756e9f-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/27-06-2026/zajedno.jpg": {
+    "width": 1521,
+    "height": 1140,
+    "variants": [
+      {
+        "path": "images/responsive/1ee132233d02e563-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/1ee132233d02e563-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/1ee132233d02e563-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/02-06-2026/20260602_182706.jpg": {
+    "width": 2048,
+    "height": 1537,
+    "variants": [
+      {
+        "path": "images/responsive/e58327b01fb51c89-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/e58327b01fb51c89-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/e58327b01fb51c89-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/02-06-2026/20260602_182855.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/6a2cd4ff26dbfa55-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6a2cd4ff26dbfa55-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/6a2cd4ff26dbfa55-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/02-06-2026/20260602_183215.jpg": {
+    "width": 2048,
+    "height": 1535,
+    "variants": [
+      {
+        "path": "images/responsive/93466fc77937a36c-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/93466fc77937a36c-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/93466fc77937a36c-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/litters/h/02-06-2026/20260602_183824.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/0c095ab07badba35-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/0c095ab07badba35-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/0c095ab07badba35-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/blog/472699736_614494237782032_7024269589484391094_n.jpg": {
+    "width": 1500,
+    "height": 2000,
+    "variants": [
+      {
+        "path": "images/responsive/5bf647e11a2ee93b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/5bf647e11a2ee93b-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/5bf647e11a2ee93b-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/blog/809978843_28655591724066496_3774484229651053108_n.jpg": {
+    "width": 720,
+    "height": 540
+  },
+  "images/blog/711630936_1018621790731927_1721537755342497291_n.jpg": {
+    "width": 1948,
+    "height": 1462,
+    "variants": [
+      {
+        "path": "images/responsive/d772725c510cedad-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/d772725c510cedad-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/d772725c510cedad-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/blog/541968018_800323869228388_7525155176270395437_n.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/e097585c2e4aa93b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/e097585c2e4aa93b-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/e097585c2e4aa93b-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/blog/552364154_814636251130483_1637232436615693887_n.jpg": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/2d6f570b6533973f-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/2d6f570b6533973f-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/2d6f570b6533973f-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/aria/20220826_204829.webp": {
+    "width": 642,
+    "height": 856
+  },
+  "images/dogs/dali/image.png": {
+    "width": 623,
+    "height": 634
+  },
+  "images/dogs/verduras/20250917_181915.jpg": {
+    "width": 1704,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/a15ce65e0c9b615d-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/a15ce65e0c9b615d-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/a15ce65e0c9b615d-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/pegas/IMG_20200216_181739.jpg": {
+    "width": 957,
+    "height": 1276,
+    "variants": [
+      {
+        "path": "images/responsive/7e039ae4e837796c-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "images/dogs/lexa/IMG_20200404_190549.webp": {
+    "width": 912,
+    "height": 684
+  },
+  "images/dogs/quara/IMG_20200404_194222.webp": {
+    "width": 912,
+    "height": 684
+  },
+  "images/dogs/cashmir/IMG_20190725_132531.jpg": {
+    "width": 957,
+    "height": 1276,
+    "variants": [
+      {
+        "path": "images/responsive/aa22f0b66b1747d8-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "images/dogs/mo/1.jpg": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/73041429d09b060e-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/73041429d09b060e-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/73041429d09b060e-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/masa/712903684_1018621730731933_5193496065879464628_n.jpg": {
+    "width": 590,
+    "height": 590
+  },
+  "images/dogs/kimmy/20251016_085440.jpg": {
+    "width": 1948,
+    "height": 1462,
+    "variants": [
+      {
+        "path": "images/responsive/6407e147d14e69fa-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/6407e147d14e69fa-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/6407e147d14e69fa-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/zywoo/Zywoo_in_2022_(cropped).jpg": {
+    "width": 1280,
+    "height": 1530,
+    "variants": [
+      {
+        "path": "images/responsive/49288d7e2f9e7dcd-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/49288d7e2f9e7dcd-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/dogs/archie/472521087_614494251115364_4613945140692047558_n.jpg": {
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "images/responsive/f4fa20b11b83690f-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/f4fa20b11b83690f-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/f4fa20b11b83690f-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/archie/472887062_614494114448711_8543668604357161880_n.jpg": {
+    "width": 443,
+    "height": 590
+  },
+  "images/dogs/archie/472917427_614494241115365_7347439982269963339_n.jpg": {
+    "width": 443,
+    "height": 590
+  },
+  "images/dogs/aria/469532470_592869193277870_522923434711645313_n.jpg": {
+    "width": 590,
+    "height": 340
+  },
+  "images/dogs/aria/469639765_592869386611184_5287157553323521728_n.jpg": {
+    "width": 590,
+    "height": 332
+  },
+  "images/dogs/aria/20211125_125341.jpg": {
+    "width": 957,
+    "height": 1276,
+    "variants": [
+      {
+        "path": "images/responsive/a40b5106f1af624f-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "images/dogs/aria/20230909_095212.jpg": {
+    "width": 1704,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/5bd82e8805f8a74b-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/5bd82e8805f8a74b-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/5bd82e8805f8a74b-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/aria/20250311_103416.jpg": {
+    "width": 1704,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/7c76609588d28876-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/7c76609588d28876-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/7c76609588d28876-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/cashmir/IMG_20190402_161907.webp": {
+    "width": 856,
+    "height": 856
+  },
+  "images/dogs/dali/Snimka zaslona 2026-06-25 170219.png": {
+    "width": 425,
+    "height": 464
+  },
+  "images/dogs/dali/20240920_174803.jpg": {
+    "width": 1704,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/9e823ccb22da9864-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/9e823ccb22da9864-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/9e823ccb22da9864-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/dali/20240925_114632.jpg": {
+    "width": 1704,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/4e8f4ba08c0a4e14-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/4e8f4ba08c0a4e14-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/4e8f4ba08c0a4e14-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/dali/20250627_183852.jpg": {
+    "width": 1704,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/06dce0565a48c161-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/06dce0565a48c161-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/06dce0565a48c161-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/hella/469403971_592869313277858_4056591220167039358_n.jpg": {
+    "width": 590,
+    "height": 395
+  },
+  "images/dogs/hella/hella2.jpeg": {
+    "width": 216,
+    "height": 274
+  },
+  "images/dogs/kimmy/20251016_085331.jpg": {
+    "width": 2048,
+    "height": 1537,
+    "variants": [
+      {
+        "path": "images/responsive/d89c5854f3bc1692-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/d89c5854f3bc1692-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/d89c5854f3bc1692-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/kimmy/20251016_085415.jpg": {
+    "width": 1951,
+    "height": 1464,
+    "variants": [
+      {
+        "path": "images/responsive/2e22a636c8a5121e-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/2e22a636c8a5121e-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/2e22a636c8a5121e-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/kimmy/20260111_082210.jpg": {
+    "width": 959,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/933bd2afda5d3bcf-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "images/dogs/mo/Screenshot_20260910_190756_Drive.jpg": {
+    "width": 1333,
+    "height": 961,
+    "variants": [
+      {
+        "path": "images/responsive/dfa4d1d488bd8af3-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/dfa4d1d488bd8af3-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/dogs/lexa/469396066_592869306611192_4185367880282937309_n.jpg": {
+    "width": 590,
+    "height": 440
+  },
+  "images/dogs/lexa/469601312_592869263277863_129661463862799291_n.jpg": {
+    "width": 590,
+    "height": 313
+  },
+  "images/dogs/lexa/471319852_604106432154146_8574018479609236648_n.jpg": {
+    "width": 720,
+    "height": 501
+  },
+  "images/dogs/lexa/473029678_614483437783112_3047780463102726867_n.jpg": {
+    "width": 2048,
+    "height": 1538
+  },
+  "images/dogs/lexa/20220220_141040.jpg": {
+    "width": 957,
+    "height": 1276
+  },
+  "images/dogs/pegas/20220109_140912.jpg": {
+    "width": 1278,
+    "height": 959
+  },
+  "images/dogs/pegas/20230627_140118.jpg": {
+    "width": 1278,
+    "height": 959,
+    "variants": [
+      {
+        "path": "images/responsive/0c58d1c9605e7ed4-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/0c58d1c9605e7ed4-960.webp",
+        "width": 960
+      }
+    ]
+  },
+  "images/dogs/pegas/IMG_20190924_163237.jpg": {
+    "width": 957,
+    "height": 1276,
+    "variants": [
+      {
+        "path": "images/responsive/fb156e022e8b0886-480.webp",
+        "width": 480
+      }
+    ]
+  },
+  "images/dogs/quara/IMG_20190307_164054.webp": {
+    "width": 642,
+    "height": 856
+  },
+  "images/dogs/tomo/20250916_124556.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/fc42ee2ba83e853d-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/fc42ee2ba83e853d-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/fc42ee2ba83e853d-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/tomo/20250916_124611.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/81ca766c20e43120-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/81ca766c20e43120-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/81ca766c20e43120-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/tomo/20250916_125018.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/ce178f6bbb10c09a-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/ce178f6bbb10c09a-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/ce178f6bbb10c09a-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/tomo/20250916_125543.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/ad23a3350482f18c-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/ad23a3350482f18c-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/ad23a3350482f18c-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/dogs/verduras/1.webp": {
+    "width": 840,
+    "height": 861
+  }
+}

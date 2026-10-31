@@ -223,20 +223,13 @@ const siteLabel = (hr, en) => siteIsCroatian ? hr : en;
   document.querySelectorAll('.gallery-item').forEach(el => {
     const img = el.querySelector('img');
     if (!img) return;
-    const sourcePath = img.getAttribute('src');
-    const optimizedPath = sourcePath && sourcePath.match(/^(.*images\/)(litters|gallery)\/(.+)\.(?:jpe?g|png|webp)$/i);
-    if (optimizedPath) {
-      const basePath = `${optimizedPath[1]}optimized/${optimizedPath[2]}/${optimizedPath[3]}`;
-      img.srcset = `${basePath}-480.jpg 480w, ${basePath}-960.jpg 960w`;
-      img.sizes = '(max-width: 640px) 50vw, (max-width: 1200px) 33vw, 290px';
-    }
     const index = items.length;
     items.push({
       src: img.src,
       alt: img.alt,
       caption: el.dataset.caption || img.alt
     });
-    el.addEventListener('click', () => { el.focus({ preventScroll: true }); open(index); });
+    el.addEventListener('click', event => { event.preventDefault(); el.focus({ preventScroll: true }); open(index); });
     el.setAttribute('role', 'button');
     el.setAttribute('aria-label', `${siteLabel('Otvori fotografiju', 'Open image')}: ${img.alt || siteLabel('fotografija iz galerije', 'gallery image')}`);
     el.setAttribute('tabindex', '0');
@@ -406,38 +399,6 @@ function setupPedHint(el) {
       el.classList.add('anim-pending');
     }
     observer.observe(el);
-  });
-})();
-
-/* ---- CONTACT FORM (basic client-side validation) ---- */
-(function () {
-  const form = document.getElementById('contact-form');
-  if (!form) return;
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const name    = form.querySelector('[name="name"]');
-    const email   = form.querySelector('[name="email"]');
-    const message = form.querySelector('[name="message"]');
-    let valid = true;
-
-    [name, email, message].forEach(f => {
-      if (f && !f.value.trim()) {
-        f.style.borderColor = '#f44336';
-        valid = false;
-      } else if (f) {
-        f.style.borderColor = '';
-      }
-    });
-
-    if (valid) {
-      const btn = form.querySelector('button[type="submit"]');
-      if (btn) {
-        btn.textContent = siteLabel('Poruka je poslana!', 'Message sent!');
-        btn.disabled = true;
-        setTimeout(() => { btn.textContent = siteLabel('Pošalji poruku', 'Send Message'); btn.disabled = false; }, 3000);
-      }
-    }
   });
 })();
 
