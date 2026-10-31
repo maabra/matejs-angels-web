@@ -129,6 +129,7 @@ figcaption { font-size: 0.78rem; line-height: 1.65; color: var(--text-muted); ma
   .home-intro-copy { margin: 0 auto; width: 100%; grid-column: 1; }
   .home-intro-copy h1 { max-width: 22ch; }
   .home-pack { grid-column: 1; margin: 0 auto; max-width: 620px; }
+  .home-pack .home-photo { transform-origin: 50% 100%; }
   .editorial-split, .email-section { grid-template-columns: minmax(0,1fr); }
   .editorial-reverse .editorial-copy, .editorial-reverse figure { grid-column: auto; grid-row: auto; }
   .editorial-split figure img { max-height: 520px; }
