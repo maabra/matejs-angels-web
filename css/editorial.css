@@ -217,7 +217,7 @@ html { scrollbar-gutter: stable; }
   .contact-person-actions { flex-wrap: nowrap; }
 }
 /* Apply the same drift on painted sections, rather than hiding it underneath. */
-:root { --kennel-pattern-image: url('../images/index/kennel-pattern.svg'); }
+:root { --kennel-pattern-image: url('../images/index/kennel-pattern.svg?v=solid1'); }
 .bg-kennel-pattern { opacity: 1; }
 .section { background-image: var(--kennel-pattern-image); background-size: 720px 640px; animation: bgKennelDrift 100s linear infinite; }
 @media (prefers-reduced-motion: reduce) { .section, .hero, .bg-kennel-pattern { animation: none; } }
@@ -242,3 +242,5 @@ html { scrollbar-gutter: stable; }
 .hero, .home-welcome { background-image: none; animation: none; }
 
 .contact-kennel-logo { display: block; width: min(100%,200px); height: auto; margin: auto auto 0; padding-top: 2rem; }
+
+.section-ivory { --kennel-pattern-image: url('../images/index/kennel-pattern-ivory.svg'); }
