@@ -2451,7 +2451,10 @@ a.where-now-card[href]:hover {
 .hero { background: var(--navy); min-height: 0; }
 .hero-overlay { background: rgba(13, 27, 42, 0.45); }
 .hero-content, .hero-content:has(.hero-logo) { padding: 2rem 1.5rem 2.5rem; }
-.hero-logo { width: 112px; height: 112px; margin-bottom: 1rem; }
+.hero-logo { width: min(100%, clamp(480px, 80vw, 800px)); height: auto; margin-bottom: 1rem; }
+@media (min-width: 861px) {
+  .hero-logo { width: 480px; height: 480px; }
+}
 .hero-content h1, .hero-content:has(.hero-logo) h1 { font-size: clamp(1.85rem, 3.5vw, 2.4rem); margin-bottom: 0.75rem; }
 .hero-content p { font-size: 1rem; max-width: 540px; }
 .hero-content .hero-eyebrow { margin-bottom: 0.65rem; }
