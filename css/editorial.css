@@ -32,7 +32,7 @@ p { text-wrap: pretty; }
 .home-paths a:hover { border-color: var(--gold-light); }
 .home-paths a:first-child:hover { background: var(--gold-light); }
 .home-paths a:last-child:hover { color: var(--gold-light); border-color: transparent; text-decoration: underline; text-underline-offset: 4px; }
-.home-pack { grid-column: 2; width: 100%; margin: -2.5rem auto 0; position: relative; transform: translateY(calc(9.24% + 2.25rem)); }
+.home-pack { grid-column: 2; width: 100%; margin: -2.5rem auto 0; position: relative; transform: translateY(calc(9.24% + 2.25rem + 10px)); }
 .home-pack .home-photo { display: block; width: 100%; max-height: none; height: auto; object-fit: contain; border-radius: 0; transform: scale(1.32); transform-origin: 65% 100%; }
 .home-photograph { padding-top: 0; }
 .home-photograph figure { margin: 0; }
