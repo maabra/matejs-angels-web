@@ -265,3 +265,5 @@ html { scrollbar-gutter: stable; }
 .yt-grid > * { min-width: 0; }
 .yt-grid > :only-child { grid-column: 1 / -1; }
 @media (max-width: 760px) { .yt-grid { grid-template-columns: minmax(0,1fr); } }
+
+.section-mid { --kennel-pattern-image: url('../images/index/kennel-pattern-mid.svg'); }
