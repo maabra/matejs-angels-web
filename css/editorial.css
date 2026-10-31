@@ -172,3 +172,8 @@ html { scrollbar-gutter: stable; }
 @media (max-width: 900px) { .editorial-split:not(.editorial-reverse) > .home-carousel { grid-column: auto; grid-row: auto; } }
 
 .home-carousel-slides:focus-visible { outline: 3px solid var(--gold); outline-offset: 5px; }
+
+/* Keep photo controls readable on the light welcome section. */
+.section-ivory .home-carousel-controls button { color: var(--ink); border-color: #9d917a; background: #e8e0d2; }
+.section-ivory .home-carousel-controls button:hover { color: var(--ink); border-color: #71581c; background: #dbcfb9; }
+.section-ivory .home-carousel-count { color: var(--paper-muted); }
