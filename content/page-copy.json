@@ -1,10 +1,10 @@
 {
   "en-about": {
     "en": {
-      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <img src=\"../images/index/logo%20transparent2.png\" alt=\"Matej's Angels\" class=\"hero-logo\">\n        <h1>About <em>Matej's Angels</em></h1>\n        <p>Cavalier King Charles Spaniels and Pomeranians from our family kennel in Premantura, Croatia.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>About <em>Matej's Angels</em></h1>\n        <p>Cavalier King Charles Spaniels and Pomeranians from our family kennel in Premantura, Croatia.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
     },
     "hr": {
-      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <img src=\"../images/index/logo%20transparent2.png\" alt=\"Matej's Angels\" class=\"hero-logo\">\n        <h1>O <em>Matej's Angels</em></h1>\n        <p>Cavalier King Charles španijeli i pomeranci iz naše obiteljske uzgajivačnice u Premanturi.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>O <em>Matej's Angels</em></h1>\n        <p>Cavalier King Charles španijeli i pomeranci iz naše obiteljske uzgajivačnice u Premanturi.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
     }
   },
   "en-care": {
