@@ -57,42 +57,42 @@
   },
   "en-news-archie-grand-prvak-hrvatske": {
     "en": {
-      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Archie is a Croatian grand champion</h1>\n      <p>Congratulations to owner Alina Te and Archie from all of us at Matej’s Angels.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Archie is a Croatian grand champion</h1>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
     },
     "hr": {
-      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Archie je grand prvak Hrvatske</h1>\n        <p>Čestitke vlasnici Alini Te i Archieju od svih nas iz Matej’s Angelsa.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Archie je grand prvak Hrvatske</h1>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
     }
   },
   "en-news-kimmy-breeding-evaluation": {
     "en": {
-      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Kimmy has received her breeding approval</h1>\n        <p>Kimmy passed her breeding evaluation with a “Very good” rating and received her breeding approval.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Kimmy has received her breeding approval</h1>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
     },
     "hr": {
-      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Kimmy je dobila uzgojnu dozvolu</h1>\n        <p>Kimmy je uspješno prošla uzgojni pregled s ocjenom „vrlo dobar” i dobila uzgojnu dozvolu.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Kimmy je dobila uzgojnu dozvolu</h1>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
     }
   },
   "en-news-litter-h": {
     "en": {
-      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Litter H has arrived!</h1>\n        <p>Four Pomeranian girls, three orange sable and one black and tan, born on 30 May 2026 at Matej’s Angels.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Litter H has arrived!</h1>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
     },
     "hr": {
-      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Stiglo je leglo H!</h1>\n        <p>Četiri ženke pomeranca, tri orange sable i jedna crna s paležom, rođene 30. svibnja 2026. u Matej’s Angelsu.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Stiglo je leglo H!</h1>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
     }
   },
   "en-news-pomeranians": {
     "en": {
-      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Pomeranians added to our breeding program</h1>\n        <p>Pomeranians have joined our breeding programme. We will share their news here.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Pomeranians added to our breeding program</h1>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
     },
     "hr": {
-      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>U uzgoj uključeni pomeranci</h1>\n        <p>U uzgoj su nam se pridružili pomeranci. Njihove ćemo novosti dijeliti ovdje.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>U uzgoj uključeni pomeranci</h1>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
     }
   },
   "en-news-wendy": {
     "en": {
-      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Wendy received a top mark at her breeding evaluation in Rovinj</h1>\n        <p>Our Wendy, Verduras Malcriado de la Casa, received a top mark at the breeding evaluation show in Rovinj.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Wendy received a top mark at her breeding evaluation in Rovinj</h1>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
     },
     "hr": {
-      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Wendy je dobila peticu na uzgojnom pregledu u Rovinju</h1>\n        <p>Naša Wendy, Verduras Malcriado de la Casa, dobila je peticu na uzgojnom pregledu u Rovinju.</p>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
+      "hero": "<section class=\"hero\">\n      <div class=\"hero-overlay\"></div>\n      <div class=\"hero-content\">\n        <h1>Wendy je dobila peticu na uzgojnom pregledu u Rovinju</h1>\n      </div>\n      <div class=\"hero-bar\"></div>\n    </section>"
     }
   },
   "en-news": {
