@@ -32,7 +32,7 @@ p { text-wrap: pretty; }
 .home-paths a:hover { border-color: var(--gold-light); }
 .home-paths a:first-child:hover { background: var(--gold-light); }
 .home-paths a:last-child:hover { color: var(--gold-light); border-color: transparent; text-decoration: underline; text-underline-offset: 4px; }
-.home-pack { grid-column: 2; width: 100%; margin: -2.5rem auto 0; position: relative; transform: translateY(calc(9.24% + 2.25rem + 30px)); }
+.home-pack { grid-column: 2; width: 100%; margin: 2rem auto 0; position: relative; transform: translateY(calc(9.24% + 2.25rem + 30px)); }
 .home-pack .home-photo { position: relative; display: block; width: 100%; max-height: none; height: auto; object-fit: contain; border-radius: 0; transform: scale(1.584); transform-origin: 65% 100%; }
 .home-photograph { padding-top: 0; }
 .home-photograph figure { margin: 0; }
@@ -127,7 +127,7 @@ figcaption { font-size: 0.78rem; line-height: 1.65; color: var(--text-muted); ma
   .home-intro .hero-logo { grid-column: 1; grid-row: auto; }
   .home-intro-copy { margin: 0 auto; width: 100%; grid-column: 1; }
   .home-intro-copy h1 { max-width: 22ch; }
-  .home-pack { grid-column: 1; margin: 0 auto; max-width: 620px; }
+  .home-pack { grid-column: 1; margin: 1.25rem auto 0; max-width: 620px; }
   .home-pack .home-photo { transform-origin: 50% 100%; }
   .editorial-split, .email-section { grid-template-columns: minmax(0,1fr); }
   .editorial-reverse .editorial-copy, .editorial-reverse figure { grid-column: auto; grid-row: auto; }
