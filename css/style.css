@@ -1884,26 +1884,21 @@ html:has(.privacy-consent[open]) { overflow: hidden; }
 .litter-meta-item strong { color: var(--gold); display: block; font-size: 0.7rem; letter-spacing: 1px; text-transform: uppercase; font-weight: 700; margin-bottom: 0.2rem; }
 
 /* ---- ANIMATED KENNEL BACKGROUND PATTERN ---- */
-/*
-   Diagonal scrolling pattern with paw prints and bones.
-  Icons are the same gold accent at very low opacity, barely visible and elegant.
-   Tile size: 220px. Animation moves diagonally (right + up) for a seamless loop.
-*/
+/* Slowly drifting paws and bones on a larger, irregularly spaced tile. */
 .bg-kennel-pattern {
   position: fixed;
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  /* SVG tile: one symmetric paw (top-left, tilted), two bones (randomly tilted) */
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cg fill='rgb(212,175,55)'%3E%3Cg transform='translate(58,68) rotate(-15)'%3E%3Cellipse cx='0' cy='10' rx='17' ry='13'/%3E%3Ccircle cx='-14' cy='-8' r='6.5'/%3E%3Ccircle cx='-5' cy='-15' r='6.5'/%3E%3Ccircle cx='5' cy='-15' r='6.5'/%3E%3Ccircle cx='14' cy='-8' r='6.5'/%3E%3C/g%3E%3Cg transform='translate(162,92) rotate(35)'%3E%3Ccircle cx='-22' cy='-6' r='7'/%3E%3Ccircle cx='-22' cy='6' r='7'/%3E%3Ccircle cx='22' cy='-6' r='7'/%3E%3Ccircle cx='22' cy='6' r='7'/%3E%3Crect x='-22' y='-6' width='44' height='12' rx='3'/%3E%3C/g%3E%3Cg transform='translate(72,172) rotate(-22)'%3E%3Ccircle cx='-22' cy='-6' r='7'/%3E%3Ccircle cx='-22' cy='6' r='7'/%3E%3Ccircle cx='22' cy='-6' r='7'/%3E%3Ccircle cx='22' cy='6' r='7'/%3E%3Crect x='-22' y='-6' width='44' height='12' rx='3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  background-size: 220px 220px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27720%27%20height%3D%27640%27%3E%3Cg%20fill%3D%27rgb%28212%2C175%2C55%29%27%3E%3Cg%20transform%3D%27translate%2863%2C72%29%20rotate%28-19%29%20scale%280.77%29%27%3E%3Cellipse%20cx%3D%270%27%20cy%3D%2710%27%20rx%3D%2717%27%20ry%3D%2713%27%2F%3E%3Ccircle%20cx%3D%27-14%27%20cy%3D%27-8%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%27-5%27%20cy%3D%27-15%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%275%27%20cy%3D%27-15%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%2714%27%20cy%3D%27-8%27%20r%3D%276.5%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28306%2C48%29%20rotate%2837%29%20scale%280.64%29%27%3E%3Ccircle%20cx%3D%27-22%27%20cy%3D%27-6%27%20r%3D%277%27%2F%3E%3Ccircle%20cx%3D%27-22%27%20cy%3D%276%27%20r%3D%277%27%2F%3E%3Ccircle%20cx%3D%2722%27%20cy%3D%27-6%27%20r%3D%277%27%2F%3E%3Ccircle%20cx%3D%2722%27%20cy%3D%276%27%20r%3D%277%27%2F%3E%3Crect%20x%3D%27-22%27%20y%3D%27-6%27%20width%3D%2744%27%20height%3D%2712%27%20rx%3D%273%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28591%2C117%29%20rotate%2812%29%20scale%280.96%29%27%3E%3Cellipse%20cx%3D%270%27%20cy%3D%2710%27%20rx%3D%2717%27%20ry%3D%2713%27%2F%3E%3Ccircle%20cx%3D%27-14%27%20cy%3D%27-8%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%27-5%27%20cy%3D%27-15%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%275%27%20cy%3D%27-15%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%2714%27%20cy%3D%27-8%27%20r%3D%276.5%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28174%2C241%29%20rotate%28-42%29%20scale%280.82%29%27%3E%3Ccircle%20cx%3D%27-22%27%20cy%3D%27-6%27%20r%3D%277%27%2F%3E%3Ccircle%20cx%3D%27-22%27%20cy%3D%276%27%20r%3D%277%27%2F%3E%3Ccircle%20cx%3D%2722%27%20cy%3D%27-6%27%20r%3D%277%27%2F%3E%3Ccircle%20cx%3D%2722%27%20cy%3D%276%27%20r%3D%277%27%2F%3E%3Crect%20x%3D%27-22%27%20y%3D%27-6%27%20width%3D%2744%27%20height%3D%2712%27%20rx%3D%273%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28433%2C212%29%20rotate%2826%29%20scale%280.68%29%27%3E%3Cellipse%20cx%3D%270%27%20cy%3D%2710%27%20rx%3D%2717%27%20ry%3D%2713%27%2F%3E%3Ccircle%20cx%3D%27-14%27%20cy%3D%27-8%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%27-5%27%20cy%3D%27-15%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%275%27%20cy%3D%27-15%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%2714%27%20cy%3D%27-8%27%20r%3D%276.5%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28674%2C309%29%20rotate%28-28%29%20scale%280.73%29%27%3E%3Ccircle%20cx%3D%27-22%27%20cy%3D%27-6%27%20r%3D%277%27%2F%3E%3Ccircle%20cx%3D%27-22%27%20cy%3D%276%27%20r%3D%277%27%2F%3E%3Ccircle%20cx%3D%2722%27%20cy%3D%27-6%27%20r%3D%277%27%2F%3E%3Ccircle%20cx%3D%2722%27%20cy%3D%276%27%20r%3D%277%27%2F%3E%3Crect%20x%3D%27-22%27%20y%3D%27-6%27%20width%3D%2744%27%20height%3D%2712%27%20rx%3D%273%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%2871%2C441%29%20rotate%2818%29%20scale%280.91%29%27%3E%3Cellipse%20cx%3D%270%27%20cy%3D%2710%27%20rx%3D%2717%27%20ry%3D%2713%27%2F%3E%3Ccircle%20cx%3D%27-14%27%20cy%3D%27-8%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%27-5%27%20cy%3D%27-15%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%275%27%20cy%3D%27-15%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%2714%27%20cy%3D%27-8%27%20r%3D%276.5%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28342%2C389%29%20rotate%28-12%29%20scale%280.87%29%27%3E%3Ccircle%20cx%3D%27-22%27%20cy%3D%27-6%27%20r%3D%277%27%2F%3E%3Ccircle%20cx%3D%27-22%27%20cy%3D%276%27%20r%3D%277%27%2F%3E%3Ccircle%20cx%3D%2722%27%20cy%3D%27-6%27%20r%3D%277%27%2F%3E%3Ccircle%20cx%3D%2722%27%20cy%3D%276%27%20r%3D%277%27%2F%3E%3Crect%20x%3D%27-22%27%20y%3D%27-6%27%20width%3D%2744%27%20height%3D%2712%27%20rx%3D%273%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28540%2C493%29%20rotate%28-34%29%20scale%280.78%29%27%3E%3Cellipse%20cx%3D%270%27%20cy%3D%2710%27%20rx%3D%2717%27%20ry%3D%2713%27%2F%3E%3Ccircle%20cx%3D%27-14%27%20cy%3D%27-8%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%27-5%27%20cy%3D%27-15%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%275%27%20cy%3D%27-15%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%2714%27%20cy%3D%27-8%27%20r%3D%276.5%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28236%2C579%29%20rotate%2842%29%20scale%280.65%29%27%3E%3Cellipse%20cx%3D%270%27%20cy%3D%2710%27%20rx%3D%2717%27%20ry%3D%2713%27%2F%3E%3Ccircle%20cx%3D%27-14%27%20cy%3D%27-8%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%27-5%27%20cy%3D%27-15%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%275%27%20cy%3D%27-15%27%20r%3D%276.5%27%2F%3E%3Ccircle%20cx%3D%2714%27%20cy%3D%27-8%27%20r%3D%276.5%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28661%2C601%29%20rotate%2811%29%20scale%280.6%29%27%3E%3Ccircle%20cx%3D%27-22%27%20cy%3D%27-6%27%20r%3D%277%27%2F%3E%3Ccircle%20cx%3D%27-22%27%20cy%3D%276%27%20r%3D%277%27%2F%3E%3Ccircle%20cx%3D%2722%27%20cy%3D%27-6%27%20r%3D%277%27%2F%3E%3Ccircle%20cx%3D%2722%27%20cy%3D%276%27%20r%3D%277%27%2F%3E%3Crect%20x%3D%27-22%27%20y%3D%27-6%27%20width%3D%2744%27%20height%3D%2712%27%20rx%3D%273%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  background-size: 720px 640px;
   opacity: 0.052;
-  animation: bgKennelDrift 38s linear infinite;
+  animation: bgKennelDrift 100s linear infinite;
 }
 
 @keyframes bgKennelDrift {
   from { background-position: 0 0; }
-  to   { background-position: 220px -220px; }
+  to   { background-position: 720px -640px; }
 }
 
 /* Ensure page content stays above the background pattern */
@@ -2459,10 +2454,15 @@ a.where-now-card[href]:hover {
 .hero-content h1 { text-shadow: none; font-weight: 500; }
 .hero-logo, .index-logo-wrap img { filter: none; }
 .hero-bar { height: 1px; background: var(--gold-muted); }
-.bg-kennel-pattern { opacity: 0.022; animation: none; }
-.section-header { margin-bottom: 3rem; }
-.section-header h2, .breed-heading h3 { font-weight: 500; }
+.bg-kennel-pattern { opacity: 0.032; }
+.section-header { text-align: left; margin-bottom: 2rem; max-width: 44rem; }
+.section-header h2 { font-size: clamp(1.65rem, 2.8vw, 2.25rem); font-weight: 500; line-height: 1.2; margin-bottom: 0.65rem; }
+.section-header .subtitle { font-family: var(--font-sans); font-style: normal; font-size: 0.92rem; line-height: 1.65; text-wrap: pretty; }
+.section-header .gold-divider { display: none; }
+.breed-heading h3 { font-weight: 500; }
 .gold-divider { max-width: 100px; }
+.gold-divider:has(span:empty) { gap: 0; max-width: 48px; }
+.gold-divider span:empty { display: none; }
 .gold-divider::before, .gold-divider::after { background: var(--gold); opacity: 0.45; }
 .nav-links a { border-radius: var(--radius-xs); }
 .nav-links a:hover, .nav-links a.active { background: transparent; }
