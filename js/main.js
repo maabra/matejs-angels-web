@@ -590,7 +590,7 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
 (function () {
   const storageKey = 'matejs-angels-privacy-consent-v2';
   const consentDuration = 183 * 24 * 60 * 60 * 1000;
-  const privacyUrl = siteIsCroatian ? '/hr/privatnost' : '/en/privacy';
+  const privacyUrl = document.querySelector('.footer-bottom a')?.getAttribute('href') || (siteIsCroatian ? '/hr/privatnost' : '/en/privacy');
   const text = siteIsCroatian ? {
     title: 'Postavke privatnosti',
     intro: 'Koristimo samo nužnu pohranu za pamćenje vaših odabira. Uz vašu suglasnost možemo učitati brojač posjeta Flag Counter (analitika) te Google karte, Google Fonts i YouTube videozapise (vanjski sadržaj).',
@@ -843,9 +843,9 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
   languageSwitch.className = 'privacy-language-switch';
   languageSwitch.setAttribute('aria-label', siteLabel('Jezik stranice', 'Site language'));
   [
-    { lang: 'en', label: 'English', href: '/en/about', active: !siteIsCroatian,
+    { lang: 'en', label: 'English', href: document.querySelector('.lang-switch a[lang="en"]')?.getAttribute('href') || '/en/about', active: !siteIsCroatian,
       flag: '<svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg"><path fill="#153575" d="M0 0h60v40H0z"/><path stroke="#fff" stroke-width="9" d="m0 0 60 40M60 0 0 40"/><path stroke="#cf2035" stroke-width="4" d="m0 0 60 40M60 0 0 40"/><path stroke="#fff" stroke-width="13" d="M30 0v40M0 20h60"/><path stroke="#cf2035" stroke-width="7" d="M30 0v40M0 20h60"/></svg>' },
-    { lang: 'hr', label: 'Hrvatski', href: '/', active: siteIsCroatian,
+    { lang: 'hr', label: 'Hrvatski', href: document.querySelector('.lang-switch a[lang="hr"]')?.getAttribute('href') || '/', active: siteIsCroatian,
       flag: '<svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg"><path fill="#ef3340" d="M0 0h60v14H0z"/><path fill="#fff" d="M0 13h60v14H0z"/><path fill="#17449b" d="M0 26h60v14H0z"/><path fill="#fff" stroke="#ef3340" d="M22 12h16v13q0 7-8 10-8-3-8-10z"/><path fill="#ef3340" d="M22 12h3v4h-3zm6 0h4v4h-4zm7 0h3v4h-3zm-10 4h3v4h-3zm7 0h3v4h-3zm-10 4h3v4h-3zm6 0h4v4h-4zm7 0h3v4h-3zm-10 4h3v4h-3zm7 0h3v4h-3zm-5 4h6v4h-6z"/><path fill="#4ca8d8" stroke="#17449b" d="m22 11 1-5 4 1 3-2 3 2 4-1 1 5z"/></svg>' }
   ].forEach(language => {
     const link = document.createElement('a');

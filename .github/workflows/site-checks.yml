@@ -19,6 +19,7 @@ jobs:
       # Fonts differ by OS. Linux captures are uploaded for review; Windows
       # pixel comparisons run locally against the reviewed Windows baseline.
       - run: python tools/check_browser.py --screenshots-only
+      - run: python tools/check_browser.py --screenshots-only --visual-only --mount /matejs-angels-web
       - uses: actions/upload-artifact@v4
         if: always()
         with:

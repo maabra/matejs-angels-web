@@ -40,6 +40,9 @@ review `tests/artifacts/` and explicitly run
 `python tools/check_browser.py --update-baselines` to accept the new appearance.
 Baselines are platform-specific. GitHub Actions runs structural/browser checks
 on Linux and uploads screenshots; local Windows runs also compare pixel baselines.
+The workflow also tests the `/matejs-angels-web` subdirectory used by GitHub
+Pages, including language switching inside the privacy dialog. Run that check
+locally with `python tools/check_browser.py --visual-only --mount /matejs-angels-web`.
 
 ## Contact and privacy
 

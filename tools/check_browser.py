@@ -3,14 +3,16 @@ from pathlib import Path
 from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler
 from threading import Thread
 from urllib.parse import urlsplit,unquote
-import argparse,json,platform
+import argparse,json,platform,re
 from playwright.sync_api import sync_playwright,expect
 from PIL import Image,ImageChops
 
 ROOT=Path(__file__).resolve().parent.parent
 class Handler(SimpleHTTPRequestHandler):
+    mount_prefix=''
     def __init__(self,*a,**kw):super().__init__(*a,directory=str(ROOT),**kw)
     def translate_path(self,path):
+        if self.mount_prefix and path.startswith(self.mount_prefix):path=path[len(self.mount_prefix):] or '/'
         p=super().translate_path(path)
         return p+'.html' if not Path(p).exists() and Path(p+'.html').is_file() else p
     def log_message(self,*args):pass
@@ -18,9 +20,10 @@ class Handler(SimpleHTTPRequestHandler):
         try:super().handle()
         except (ConnectionAbortedError,ConnectionResetError,BrokenPipeError):pass
 
-def run(update=False,screenshots_only=False,visual_only=False):
+def run(update=False,screenshots_only=False,visual_only=False,mount=''):
+    Handler.mount_prefix=mount.rstrip('/')
     server=ThreadingHTTPServer(('127.0.0.1',0),Handler);Thread(target=server.serve_forever,daemon=True).start()
-    base=f'http://127.0.0.1:{server.server_port}';artifacts=ROOT/'tests/artifacts';artifacts.mkdir(parents=True,exist_ok=True)
+    base=f'http://127.0.0.1:{server.server_port}'+Handler.mount_prefix;artifacts=ROOT/'tests/artifacts';artifacts.mkdir(parents=True,exist_ok=True)
     baselines=ROOT/'tests/visual'/platform.system().lower();baselines.mkdir(parents=True,exist_ok=True)
     routes=json.loads((ROOT/'content/routes.json').read_text('utf-8'))
     shots={'index.html':'home','en/about.html':'about','en/our-dogs.html':'dogs','en/dogs/archie.html':'profile','en/news.html':'news','en/contact.html':'contact','en/chronology.html':'history','en/litter-h.html':'litter','en/gallery.html':'gallery'}
@@ -70,6 +73,14 @@ def run(update=False,screenshots_only=False,visual_only=False):
             expect(page.locator('#lb-status')).to_contain_text('could not be loaded')
             page.keyboard.press('Escape');expect(image).to_be_focused()
             page.goto(base+'/en/about',wait_until='load');page.locator('.lang-switch a[lang=hr]').click();assert page.url.endswith('/hr/o-nama')
+            fresh=browser.new_page()
+            fresh.route('**/*',lambda r:r.continue_() if urlsplit(r.request.url).netloc==urlsplit(base).netloc else r.abort())
+            fresh.goto(base+'/en/contact',wait_until='load')
+            expect(fresh.locator('.privacy-consent')).to_be_visible()
+            fresh.locator('.privacy-language-option[lang=hr]').click()
+            expect(fresh).to_have_url(base+'/hr/kontakt')
+            expect(fresh.locator('.privacy-consent > a')).to_have_attribute('href',re.compile('privatnost$'))
+            fresh.close()
             assert not errors,errors
             browser.close()
         assert not missing,'Missing visual baselines; review screenshots then run --update-baselines: '+str(missing)
@@ -77,4 +88,4 @@ def run(update=False,screenshots_only=False,visual_only=False):
     finally:server.shutdown();server.server_close()
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--update-baselines',action='store_true');p.add_argument('--screenshots-only',action='store_true');p.add_argument('--visual-only',action='store_true');args=p.parse_args();run(args.update_baselines,args.screenshots_only,args.visual_only)
+    p=argparse.ArgumentParser();p.add_argument('--update-baselines',action='store_true');p.add_argument('--screenshots-only',action='store_true');p.add_argument('--visual-only',action='store_true');p.add_argument('--mount',default='');args=p.parse_args();run(args.update_baselines,args.screenshots_only,args.visual_only,args.mount)
