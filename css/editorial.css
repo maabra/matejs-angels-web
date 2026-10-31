@@ -86,7 +86,7 @@ figcaption { font-size: 0.78rem; line-height: 1.65; color: var(--text-muted); ma
 .tabs-nav { gap: 0.25rem; }
 .tab-btn { padding: 0.85rem 1rem; border-bottom-width: 2px; }
 .tab-btn:focus-visible { outline-offset: -3px; }
-.ped-outer { max-height: 34rem; overflow: auto; overscroll-behavior: contain; }
+.ped-outer, .pedigree-wrapper { max-height: none; overflow-x: auto; overscroll-behavior-x: contain; overscroll-behavior-y: auto; }
 .email-section { display: grid; grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); gap: clamp(2rem,5vw,4rem); }
 .section-ivory .form-group :is(input,textarea) { background: #fffaf3; border-color: #b6b4a8; color: var(--ink); }
 .section-ivory .form-group :is(input,textarea):focus { border-color: var(--ink); box-shadow: 0 0 0 3px rgba(24,42,54,.1); }
