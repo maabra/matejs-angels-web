@@ -298,3 +298,6 @@ a.facebook-link, a.whatsapp-link, a.viber-link,
 .footer a.social-link { display: inline-flex; align-items: center; column-gap: .5rem; }
 
 .editorial-copy a.quiet-link.facebook-link { column-gap: 5px; }
+
+/* A crisp warm edge lifts the transparent landing logo from the navy. */
+.home-intro .hero-logo { filter: drop-shadow(.65px 0 0 #f0d878) drop-shadow(-.65px 0 0 #f0d878) drop-shadow(0 .65px 0 #f0d878) drop-shadow(0 -.65px 0 #f0d878); }
