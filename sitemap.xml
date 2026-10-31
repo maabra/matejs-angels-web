@@ -4,6 +4,9 @@
     <loc>https://matejsangels.com/</loc>
   </url>
   <url>
+    <loc>https://matejsangels.com/en/</loc>
+  </url>
+  <url>
     <loc>https://matejsangels.com/en/about</loc>
   </url>
   <url>
@@ -100,6 +103,9 @@
     <loc>https://matejsangels.com/en/news-archie-grand-prvak-hrvatske</loc>
   </url>
   <url>
+    <loc>https://matejsangels.com/en/news-kimmy-breeding-evaluation</loc>
+  </url>
+  <url>
     <loc>https://matejsangels.com/en/news-litter-h</loc>
   </url>
   <url>
@@ -110,6 +116,9 @@
   </url>
   <url>
     <loc>https://matejsangels.com/en/our-dogs</loc>
+  </url>
+  <url>
+    <loc>https://matejsangels.com/en/privacy</loc>
   </url>
   <url>
     <loc>https://matejsangels.com/hr/briga</loc>
@@ -155,6 +164,12 @@
   </url>
   <url>
     <loc>https://matejsangels.com/hr/nasi-psi</loc>
+  </url>
+  <url>
+    <loc>https://matejsangels.com/hr/o-nama</loc>
+  </url>
+  <url>
+    <loc>https://matejsangels.com/hr/privatnost</loc>
   </url>
   <url>
     <loc>https://matejsangels.com/hr/psi/archie</loc>
@@ -208,6 +223,9 @@
     <loc>https://matejsangels.com/hr/vijesti-archie-grand-prvak-hrvatske</loc>
   </url>
   <url>
+    <loc>https://matejsangels.com/hr/vijesti-kimmy-uzgojni-pregled</loc>
+  </url>
+  <url>
     <loc>https://matejsangels.com/hr/vijesti-leglo-h</loc>
   </url>
   <url>
@@ -216,6 +234,4 @@
   <url>
     <loc>https://matejsangels.com/hr/vijesti-wendy</loc>
   </url>
-  <url><loc>https://matejsangels.com/hr/vijesti-kimmy-uzgojni-pregled</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://matejsangels.com/en/news-kimmy-breeding-evaluation</loc><lastmod>2026-09-19</lastmod></url>
 </urlset>

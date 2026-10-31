@@ -212,7 +212,8 @@
     "path": "hr/blog.html",
     "lang": "hr",
     "pair": "en/news.html",
-    "copy_key": "en-news"
+    "copy_key": "en-news",
+    "canonical_path": "hr/vijesti.html"
   },
   {
     "path": "hr/briga.html",

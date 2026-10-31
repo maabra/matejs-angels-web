@@ -3,6 +3,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit,unquote
 import json,re,subprocess,sys
+import xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parent.parent
 
 class Scan(HTMLParser):
@@ -55,5 +56,16 @@ def main():
             dest,fragment=result
             assert dest.is_file(),('missing local target',path,ref)
             if fragment and dest in pages:assert fragment in pages[dest].ids,('missing anchor',path,ref)
+    sitemap={item.text for item in ET.parse(ROOT/'sitemap.xml').getroot().iter() if item.tag.endswith('}loc')}
+    canonical_urls=set()
+    for route in routes:
+        source=(ROOT/route['path']).read_text('utf-8')
+        canonical=re.search(r'<link rel="canonical" href="([^"]+)"',source)[1]
+        assert canonical.startswith('https://matejsangels.com/'),('canonical host',route)
+        assert len(re.findall('rel="canonical"',source))==1,('duplicate canonicals',route)
+        for language in ['en','hr','x-default']:
+            assert f'hreflang="{language}"' in source,('missing hreflang',route,language)
+        if route.get('canonical_path',route['path'])==route['path'] and not re.search(r'<meta name="robots" content="[^"]*noindex',source):canonical_urls.add(canonical)
+    assert sitemap==canonical_urls,('sitemap and canonical routes differ',sitemap^canonical_urls)
     print(f'Validated {len(pages)} pages: links, anchors, media, IDs, shells and paired translations.')
 if __name__=='__main__':main()

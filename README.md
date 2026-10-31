@@ -58,3 +58,21 @@ personal claims or unrelated coastal photographs were introduced.
 Litter album structure, dates, dog identities and recorded results are retained.
 Publishing in this workflow is GitHub-only; no external hosting upload is performed.
 
+## Canonical URLs and Google indexing
+
+The build regenerates `sitemap.xml` from the same route definitions used for
+canonical tags. The Croatian About page and English homepage are included.
+The historical `hr/blog` alias points canonically to `hr/vijesti` and is excluded.
+Both language versions remain separate canonical pages with reciprocal hreflang.
+
+`deploy/apache.htaccess` is the deployment-ready Apache configuration for the
+custom domain. Install it as `.htaccess` in that host's document root when deploying
+the current generated pages, assets and sitemap. It consolidates HTTP/www URLs onto
+`https://matejsangels.com/`. Confirm the host's HTTPS/proxy configuration and test
+redirects before making that configuration live. GitHub Pages ignores Apache rules.
+
+After the custom domain is updated, submit `https://matejsangels.com/sitemap.xml`
+in Search Console and inspect the canonical homepage/About URLs. Expected www/HTTP
+duplicates do not need independent indexing. Discovery and indexing remain Google's
+decision; a sitemap or validation request does not guarantee inclusion.
+

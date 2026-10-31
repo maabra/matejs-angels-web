@@ -6,6 +6,7 @@ import html
 import json
 import posixpath
 import re
+import xml.etree.ElementTree as ET
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -61,11 +62,13 @@ def build(check=False):
         source = source.replace('{{header}}', render(partials['header'], values)).replace('{{footer}}', render(partials['footer'], values))
         source = render(source, {key: html.escape(value) for key,value in c.get('home_copy',{}).items()})
         # Keep canonical and language alternates paired with the actual generated route.
-        canonical = 'https://matejsangels.com/' + url_for(path)
+        canonical = 'https://matejsangels.com/' + url_for(page.get('canonical_path',path))
         pair_url = 'https://matejsangels.com/' + url_for(page['pair'])
         source = re.sub(r'(<link rel="canonical" href=")[^"]+', lambda m:m[1]+canonical, source)
         for code, url in [(lang,canonical),(other,pair_url),('x-default',canonical if lang=='en' else pair_url)]:
-            source = re.sub(r'(<link rel="alternate" hreflang="'+code+r'" href=")[^"]+', lambda m:m[1]+url, source)
+            pattern=r'(<link rel="alternate" hreflang="'+code+r'" href=")[^"]+'
+            if re.search(pattern,source):source=re.sub(pattern,lambda m:m[1]+url,source)
+            else:source=source.replace('</head>',f'<link rel="alternate" hreflang="{code}" href="{url}">\n</head>')
         source = re.sub(r'(<meta property="og:url" content=")[^"]+',lambda m:m[1]+canonical,source)
         def schema(m):
             data = json.loads(m[2])
@@ -114,6 +117,22 @@ def build(check=False):
         if not dest.exists() or dest.read_text('utf-8') != source:
             changed.append(path)
             if not check: dest.write_text(source,'utf-8',newline='\n')
+    # Sitemap entries follow the same canonical route definitions as the pages.
+    namespace='http://www.sitemaps.org/schemas/sitemap/0.9'
+    ET.register_namespace('',namespace)
+    sitemap=ET.Element('{'+namespace+'}urlset')
+    for page in sorted(routes,key=lambda r:url_for(r['path'])):
+        if page.get('canonical_path',page['path'])!=page['path']:continue
+        text=(ROOT/'templates/pages'/page['path']).read_text('utf-8')
+        if re.search(r'<meta name="robots" content="[^"]*noindex',text):continue
+        entry=ET.SubElement(sitemap,'{'+namespace+'}url')
+        ET.SubElement(entry,'{'+namespace+'}loc').text='https://matejsangels.com/'+url_for(page['path'])
+    ET.indent(sitemap,space='  ')
+    sitemap_text=ET.tostring(sitemap,encoding='unicode',xml_declaration=True)+'\n'
+    sitemap_path=ROOT/'sitemap.xml'
+    if not sitemap_path.exists() or sitemap_path.read_text('utf-8')!=sitemap_text:
+        changed.append('sitemap.xml')
+        if not check:sitemap_path.write_text(sitemap_text,'utf-8',newline='\n')
     if check and changed: raise SystemExit('Generated pages out of date: '+', '.join(changed))
     print(f'{len(routes)} pages checked; {len(changed)} '+('need rebuilding.' if check else 'rendered.'))
 
