@@ -237,10 +237,15 @@ html { scrollbar-gutter: stable; }
 .contact-email > span:last-child { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
 .contact-email:hover { background: #e4dbcc; color: var(--ink); }
 .contact-person-actions { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); }
-.contact-person-actions a:last-child { grid-column: 1 / -1; }
+.contact-person-actions a { grid-column: auto; }
 
 .hero, .home-welcome { background-image: none; animation: none; }
 
 .contact-kennel-logo { display: block; width: min(100%,200px); height: auto; margin: auto auto 0; padding-top: 2rem; }
 
 .section-ivory { --kennel-pattern-image: url('../images/index/kennel-pattern-ivory.svg?v=warm3'); }
+
+.viber-icon { display: inline-block; width: 15px; height: 15px; flex: 0 0 15px; background-color: currentColor; -webkit-mask: url('../images/index/viber.svg') center / contain no-repeat; mask: url('../images/index/viber.svg') center / contain no-repeat; }
+.viber-link { display: inline-flex; align-items: center; gap: .4rem; }
+.wa-link.viber-link { color: #b5a4ef; }
+.footer-col:last-child .viber-link { margin-left: 0; display: flex; width: fit-content; }

@@ -1035,5 +1035,10 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
     wa.innerHTML = waSvg + ' WhatsApp';
     const parent = a.closest('.contact-info-text') || a.parentElement;
     parent.appendChild(wa);
+    const viber = document.createElement('a');
+    viber.href = 'viber://chat?number=' + encodeURIComponent(num);
+    viber.className = 'wa-link viber-link';
+    viber.innerHTML = '<span class="viber-icon" aria-hidden="true"></span>Viber';
+    parent.appendChild(viber);
   });
 })();
