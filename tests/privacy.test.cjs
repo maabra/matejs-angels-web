@@ -64,6 +64,17 @@ test('accept and withdraw remove third-party content', () => {
   assert.equal(p.frame.src, undefined);
   assert.equal(p.frame.attrs['aria-hidden'], 'true'); assert.equal(p.frame.attrs.tabindex, '-1');
 });
+
+test('YouTube receives an origin referrer only after media consent', () => {
+  const p = page();
+  assert.equal(p.frame.src, undefined);
+  p.click('Accept all');
+  assert.equal(p.frame.referrerPolicy, 'strict-origin-when-cross-origin');
+  assert.equal(p.frame.src, 'https://www.youtube.com/embed/test');
+  p.click('Cookie and privacy settings');
+  p.click('Reject optional');
+  assert.equal(p.frame.src, undefined);
+});
 test('valid saved choices load only the selected category', () => {
   const p = page(JSON.stringify({ analytics: true, media: false, expiresAt: 1000000001000 })); assert.ok(p.loaded()); assert.equal(p.frame.src, undefined);
 });

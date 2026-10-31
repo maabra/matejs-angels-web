@@ -1,19 +1,19 @@
 [
   {
     "letter": "A",
-    "cover": "images/litters/a/03-10-2021/aria_profil.webp",
+    "cover": "images/litters/a/21-09-2021/svi tijelo.webp",
     "copy": {
       "en": {
         "date": "August 2021.",
         "breed": "Cavalier King Charles Spaniel",
         "count": "7 puppies",
-        "alt": "Aria from litter A"
+        "alt": "Puppies from litter A"
       },
       "hr": {
         "date": "Kolovoz 2021.",
         "breed": "Cavalier King Charles španijel",
         "count": "7 štenaca",
-        "alt": "Aria iz legla A"
+        "alt": "Štenci iz legla A"
       }
     },
     "names": "Adam, Atila, Axel David, Astra, Aria, Anemona, Azalea"
@@ -58,19 +58,19 @@
   },
   {
     "letter": "D",
-    "cover": "images/litters/d/02-05-2023/dante1.webp",
+    "cover": "images/litters/d/image.png",
     "copy": {
       "en": {
         "date": "March 2023.",
         "breed": "Cavalier King Charles Spaniel",
         "count": "5 puppies",
-        "alt": "Dante from litter D"
+        "alt": "Puppies from litter D"
       },
       "hr": {
         "date": "Ožujak 2023.",
         "breed": "Cavalier King Charles španijel",
         "count": "5 štenaca",
-        "alt": "Dante iz legla D"
+        "alt": "Štenci iz legla D"
       }
     },
     "names": "Dali, Dante, David, Doc, Daisy"
@@ -96,7 +96,7 @@
   },
   {
     "letter": "F",
-    "cover": "images/litters/f/08-09-2024/svi1.jpg",
+    "cover": "images/litters/f/24-08-2024/20240824_194748.jpg",
     "copy": {
       "en": {
         "date": "July 2024.",

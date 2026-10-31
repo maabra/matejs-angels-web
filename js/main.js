@@ -5,14 +5,6 @@
 const siteIsCroatian = document.documentElement.lang.toLowerCase().startsWith('hr');
 const siteLabel = (hr, en) => siteIsCroatian ? hr : en;
 
-/* ---- DIAGONAL BACKGROUND PATTERN ---- */
-(function () {
-  const el = document.createElement('div');
-  el.className = 'bg-kennel-pattern';
-  el.setAttribute('aria-hidden', 'true');
-  document.body.insertBefore(el, document.body.firstChild);
-})();
-
 /* ---- NAVBAR: scroll effect + mobile toggle ---- */
 (function () {
   const navbar = document.getElementById('navbar');
@@ -767,7 +759,7 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
       let placeholder = wrapper.querySelector('.privacy-video-placeholder');
       if (consent.media) {
         if (!frame.hasAttribute('src')) {
-          frame.referrerPolicy = 'no-referrer';
+          frame.referrerPolicy = 'strict-origin-when-cross-origin';
           frame.src = frame.dataset.optionalSrc;
         }
         frame.removeAttribute('aria-hidden');

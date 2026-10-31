@@ -3,38 +3,24 @@
     "width": 2000,
     "height": 1500
   },
-  "images/gallery/20260405_204945.jpg": {
-    "width": 2048,
-    "height": 1536,
-    "variants": [
-      {
-        "path": "images/responsive/45f26e565afe0bf4-480.webp",
-        "width": 480
-      },
-      {
-        "path": "images/responsive/45f26e565afe0bf4-960.webp",
-        "width": 960
-      },
-      {
-        "path": "images/responsive/45f26e565afe0bf4-1440.webp",
-        "width": 1440
-      }
-    ]
+  "images/gallery/20260405_204945_preview_rev_2.png": {
+    "width": 577,
+    "height": 433
   },
-  "images/gallery/20250908_204550.jpg": {
-    "width": 1704,
-    "height": 1278,
+  "images/gallery/20250315_141136~2.jpg": {
+    "width": 1635,
+    "height": 1226,
     "variants": [
       {
-        "path": "images/responsive/0a27e669207ae6a2-480.webp",
+        "path": "images/responsive/a48b54d263dd61e7-480.webp",
         "width": 480
       },
       {
-        "path": "images/responsive/0a27e669207ae6a2-960.webp",
+        "path": "images/responsive/a48b54d263dd61e7-960.webp",
         "width": 960
       },
       {
-        "path": "images/responsive/0a27e669207ae6a2-1440.webp",
+        "path": "images/responsive/a48b54d263dd61e7-1440.webp",
         "width": 1440
       }
     ]
@@ -57,6 +43,24 @@
       }
     ]
   },
+  "images/gallery/20250908_204550.jpg": {
+    "width": 1704,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/0a27e669207ae6a2-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/0a27e669207ae6a2-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/0a27e669207ae6a2-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
   "images/gallery/20260405_204948.jpg": {
     "width": 2048,
     "height": 1536,
@@ -72,6 +76,38 @@
       {
         "path": "images/responsive/94bff6eacf76ca7c-1440.webp",
         "width": 1440
+      }
+    ]
+  },
+  "images/gallery/20260607_182428.jpg": {
+    "width": 1704,
+    "height": 1278,
+    "variants": [
+      {
+        "path": "images/responsive/73c0edeb0042ed3c-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/73c0edeb0042ed3c-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/73c0edeb0042ed3c-1440.webp",
+        "width": 1440
+      }
+    ]
+  },
+  "images/gallery/Screenshot_20250320_220241_Photos.jpg": {
+    "width": 1437,
+    "height": 1078,
+    "variants": [
+      {
+        "path": "images/responsive/0e025c15a1e149bf-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/0e025c15a1e149bf-960.webp",
+        "width": 960
       }
     ]
   },
@@ -143,20 +179,6 @@
     "width": 1000,
     "height": 1000
   },
-  "images/gallery/Screenshot_20250320_220241_Photos.jpg": {
-    "width": 1437,
-    "height": 1078,
-    "variants": [
-      {
-        "path": "images/responsive/0e025c15a1e149bf-480.webp",
-        "width": 480
-      },
-      {
-        "path": "images/responsive/0e025c15a1e149bf-960.webp",
-        "width": 960
-      }
-    ]
-  },
   "images/gallery/IMG_20211008_135535.jpg": {
     "width": 2448,
     "height": 3264,
@@ -196,6 +218,24 @@
   "images/gallery/FB_IMG_1694803197069.jpg": {
     "width": 788,
     "height": 768
+  },
+  "images/gallery/20260405_204945.jpg": {
+    "width": 2048,
+    "height": 1536,
+    "variants": [
+      {
+        "path": "images/responsive/45f26e565afe0bf4-480.webp",
+        "width": 480
+      },
+      {
+        "path": "images/responsive/45f26e565afe0bf4-960.webp",
+        "width": 960
+      },
+      {
+        "path": "images/responsive/45f26e565afe0bf4-1440.webp",
+        "width": 1440
+      }
+    ]
   },
   "images/gallery/20250827_143607.jpg": {
     "width": 2048,
@@ -247,24 +287,6 @@
       },
       {
         "path": "images/responsive/7d73d8f51ac7ae0a-1440.webp",
-        "width": 1440
-      }
-    ]
-  },
-  "images/gallery/20250315_141136~2.jpg": {
-    "width": 1635,
-    "height": 1226,
-    "variants": [
-      {
-        "path": "images/responsive/a48b54d263dd61e7-480.webp",
-        "width": 480
-      },
-      {
-        "path": "images/responsive/a48b54d263dd61e7-960.webp",
-        "width": 960
-      },
-      {
-        "path": "images/responsive/a48b54d263dd61e7-1440.webp",
         "width": 1440
       }
     ]
@@ -470,24 +492,6 @@
       {
         "path": "images/responsive/d511ed175fa48579-480.webp",
         "width": 480
-      }
-    ]
-  },
-  "images/gallery/20260607_182428.jpg": {
-    "width": 1704,
-    "height": 1278,
-    "variants": [
-      {
-        "path": "images/responsive/73c0edeb0042ed3c-480.webp",
-        "width": 480
-      },
-      {
-        "path": "images/responsive/73c0edeb0042ed3c-960.webp",
-        "width": 960
-      },
-      {
-        "path": "images/responsive/73c0edeb0042ed3c-1440.webp",
-        "width": 1440
       }
     ]
   },
@@ -5725,6 +5729,10 @@
       }
     ]
   },
+  "images/litters/d/image.png": {
+    "width": 1567,
+    "height": 992
+  },
   "images/blog/472699736_614494237782032_7024269589484391094_n.jpg": {
     "width": 1500,
     "height": 2000,
@@ -6246,9 +6254,5 @@
   "images/dogs/verduras/1.webp": {
     "width": 840,
     "height": 861
-  },
-  "images/gallery/20260405_204945_preview_rev_2.png": {
-    "width": 577,
-    "height": 433
   }
 }

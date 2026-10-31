@@ -217,9 +217,9 @@ html { scrollbar-gutter: stable; }
 }
 /* Apply the same drift on painted sections, rather than hiding it underneath. */
 :root { --kennel-pattern-image: url('../images/index/kennel-pattern.svg?v=warm3'); }
-.bg-kennel-pattern { opacity: 1; }
-.section { background-image: var(--kennel-pattern-image); background-size: 720px 640px; animation: bgKennelDrift 100s linear infinite; }
-@media (prefers-reduced-motion: reduce) { .section, .hero, .bg-kennel-pattern { animation: none; } }
+.bg-kennel-pattern { display: none; }
+.section, .section-sm { background-image: var(--kennel-pattern-image); background-size: 720px 640px; animation: bgKennelDrift 100s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .section, .section-sm, .hero { animation: none; } }
 
 .footer { background-image: none; animation: none; }
 
@@ -252,3 +252,8 @@ html { scrollbar-gutter: stable; }
 @media (min-width: 901px) { .home-intro .hero-logo { aspect-ratio: auto; margin-top: -.75rem; } }
 
 .page-content:has(.lightbox.active) { z-index: 1001; }
+
+/* The letter is the visual heading; retain the full heading for screen readers. */
+.litter-header-info h1 { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.litter-badge-large .big-letter { font-size: clamp(5rem,8vw,7rem); font-weight: 500; }
+.litter-badge-large .big-word { font-size: .75rem; opacity: 1; }
