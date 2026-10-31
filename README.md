@@ -10,6 +10,7 @@ There is no server framework or production dependency installation.
 - `templates/pages/`: page-specific source; edit these instead of generated HTML.
 - `content/strings.json`: paired English/Croatian navigation, homepage and shared copy.
 - `content/page-copy.json`: paired hero content for each translated page type.
+- `content/litter-albums.json` and `templates/litter-album.html`: shared album index cards and bilingual labels; individual litter pages remain independent.
 - `content/routes.json`: exact language partners; homepage and About are distinct.
 - `css/editorial.css`: warm editorial styling; `css/style.css`: base components.
 - `js/refinements.js`: keyboard profile tabs and the email composer.
@@ -34,7 +35,7 @@ python tools/check_browser.py
 
 Browser checks require `pip install -r requirements-dev.txt` and
 `python -m playwright install chromium`. They inspect every page at desktop/mobile
-widths, test keyboard tabs and contact validation, and compare nine representative
+widths, test keyboard tabs and contact validation, and compare ten representative
 page types against reviewed screenshots. After an intentional design change,
 review `tests/artifacts/` and explicitly run
 `python tools/check_browser.py --update-baselines` to accept the new appearance.

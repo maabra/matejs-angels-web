@@ -1,0 +1,154 @@
+[
+  {
+    "letter": "A",
+    "cover": "images/litters/a/03-10-2021/aria_profil.webp",
+    "copy": {
+      "en": {
+        "date": "August 2021.",
+        "breed": "Cavalier King Charles Spaniel",
+        "count": "7 puppies",
+        "alt": "Aria from litter A"
+      },
+      "hr": {
+        "date": "Kolovoz 2021.",
+        "breed": "Cavalier King Charles španijel",
+        "count": "7 štenaca",
+        "alt": "Aria iz legla A"
+      }
+    },
+    "names": "Adam, Atila, Axel David, Astra, Aria, Anemona, Azalea"
+  },
+  {
+    "letter": "B",
+    "cover": "images/litters/b/07-01-2022/svi.webp",
+    "copy": {
+      "en": {
+        "date": "January 2022.",
+        "breed": "Cavalier King Charles Spaniel",
+        "count": "4 puppies",
+        "alt": "Puppies from litter B"
+      },
+      "hr": {
+        "date": "Siječanj 2022.",
+        "breed": "Cavalier King Charles španijel",
+        "count": "4 štenca",
+        "alt": "Štenci iz legla B"
+      }
+    },
+    "names": "Barry, Bettany, Bowie, Brinn"
+  },
+  {
+    "letter": "C",
+    "cover": "images/litters/c/30-03-2022/svinarucniku.jpg",
+    "copy": {
+      "en": {
+        "date": "March 2022.",
+        "breed": "Cavalier King Charles Spaniel",
+        "count": "3 puppies",
+        "alt": "Puppies from litter C"
+      },
+      "hr": {
+        "date": "Ožujak 2022.",
+        "breed": "Cavalier King Charles španijel",
+        "count": "3 štenca",
+        "alt": "Štenci iz legla C"
+      }
+    },
+    "names": "Caleb, Cameron, Clooney"
+  },
+  {
+    "letter": "D",
+    "cover": "images/litters/d/02-05-2023/dante1.webp",
+    "copy": {
+      "en": {
+        "date": "March 2023.",
+        "breed": "Cavalier King Charles Spaniel",
+        "count": "5 puppies",
+        "alt": "Dante from litter D"
+      },
+      "hr": {
+        "date": "Ožujak 2023.",
+        "breed": "Cavalier King Charles španijel",
+        "count": "5 štenaca",
+        "alt": "Dante iz legla D"
+      }
+    },
+    "names": "Dali, Dante, David, Doc, Daisy"
+  },
+  {
+    "letter": "E",
+    "cover": "images/litters/e/20-02-2024/svi1-min.webp",
+    "copy": {
+      "en": {
+        "date": "February 2024.",
+        "breed": "Cavalier King Charles Spaniel",
+        "count": "4 puppies",
+        "alt": "Puppies from litter E"
+      },
+      "hr": {
+        "date": "Veljača 2024.",
+        "breed": "Cavalier King Charles španijel",
+        "count": "4 štenca",
+        "alt": "Štenci iz legla E"
+      }
+    },
+    "names": "Edo, Elise, Elton, Eros"
+  },
+  {
+    "letter": "F",
+    "cover": "images/litters/f/08-09-2024/svi1.jpg",
+    "copy": {
+      "en": {
+        "date": "July 2024.",
+        "breed": "Cavalier King Charles Spaniel",
+        "count": "8 puppies",
+        "alt": "Puppies from litter F"
+      },
+      "hr": {
+        "date": "Srpanj 2024.",
+        "breed": "Cavalier King Charles španijel",
+        "count": "8 štenaca",
+        "alt": "Štenci iz legla F"
+      }
+    },
+    "names": "Finn, Fiorino, Freddy, Faye, Fiona, Filotea, Felicie, Freya"
+  },
+  {
+    "letter": "G",
+    "cover": "images/litters/g/04-03-2026/20260304_153647.jpg",
+    "copy": {
+      "en": {
+        "date": "January 2026.",
+        "breed": "Cavalier King Charles Spaniel",
+        "count": "1 puppy",
+        "alt": "Gita from litter G"
+      },
+      "hr": {
+        "date": "Siječanj 2026.",
+        "breed": "Cavalier King Charles španijel",
+        "count": "1 štene",
+        "alt": "Gita iz legla G"
+      }
+    },
+    "names": "Gita"
+  },
+  {
+    "letter": "H",
+    "cover": "images/litters/h/20-10-2026/svi.jpg",
+    "copy": {
+      "en": {
+        "date": "May 2026.",
+        "breed": "Pomeranian",
+        "count": "4 puppies",
+        "alt": "Puppies from litter H"
+      },
+      "hr": {
+        "date": "Svibanj 2026.",
+        "breed": "Pomeranski špic (Pomeranian)",
+        "count": "4 štenca",
+        "alt": "Štenci iz legla H"
+      }
+    },
+    "names": "Honey, Hailey, Hope, Heidi"
+  }
+]

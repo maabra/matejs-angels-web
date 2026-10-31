@@ -26,7 +26,7 @@ def run(update=False,screenshots_only=False,visual_only=False,mount=''):
     base=f'http://127.0.0.1:{server.server_port}'+Handler.mount_prefix;artifacts=ROOT/'tests/artifacts';artifacts.mkdir(parents=True,exist_ok=True)
     baselines=ROOT/'tests/visual'/platform.system().lower();baselines.mkdir(parents=True,exist_ok=True)
     routes=json.loads((ROOT/'content/routes.json').read_text('utf-8'))
-    shots={'index.html':'home','en/about.html':'about','en/our-dogs.html':'dogs','en/dogs/archie.html':'profile','en/news.html':'news','en/contact.html':'contact','en/chronology.html':'history','en/litter-h.html':'litter','en/gallery.html':'gallery'}
+    shots={'index.html':'home','en/about.html':'about','en/our-dogs.html':'dogs','en/dogs/archie.html':'profile','en/news.html':'news','en/contact.html':'contact','en/chronology.html':'history','en/litter-h.html':'litter','en/gallery.html':'gallery','en/litters.html':'litters'}
     if visual_only:routes=[r for r in routes if r['path'] in shots]
     missing=[];errors=[];count=0
     try:

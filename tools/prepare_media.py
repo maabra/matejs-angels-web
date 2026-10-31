@@ -17,6 +17,9 @@ def main():
         route=routes.get(page_path,{})
         if route.get('copy_key'):
             source=source.replace('{{page_hero}}',copy[route['copy_key']][route['lang']]['hero'])
+        if '{{litter_albums}}' in source:
+            albums=json.loads((ROOT/'content/litter-albums.json').read_text('utf-8'))
+            source=source.replace('{{litter_albums}}',''.join('<img src="'+posixpath.relpath(a['cover'],posixpath.dirname(page_path))+'">' for a in albums))
         for src in re.findall(r'<img\b[^>]*\bsrc="([^"]+)"',source):
             url=urlsplit(src)
             if url.scheme or url.netloc:continue

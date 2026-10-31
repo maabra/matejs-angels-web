@@ -58,6 +58,19 @@ def build(check=False):
         source = (ROOT / 'templates/pages' / path).read_text('utf-8')
         if page.get('copy_key'):
             source = source.replace('{{page_hero}}',paired_copy[page['copy_key']][lang]['hero'])
+        if '{{litter_albums}}' in source:
+            albums=[]
+            for album in read_json('litter-albums.json'):
+                copy=album['copy'][lang]
+                album_values={
+                    'album_url':relative(path,prefix+('litter-' if lang=='en' else 'leglo-')+album['letter'].lower()+'.html'),
+                    'album_photo':posixpath.relpath(album['cover'],posixpath.dirname(path)),
+                    'album_alt':copy['alt'], 'album_title':('Litter ' if lang=='en' else 'Leglo ')+album['letter'],
+                    'album_breed':copy['breed'],'album_date':copy['date'],'album_count':copy['count'],
+                    'album_names':album['names'],'album_action':c['album_action'],
+                }
+                albums.append(render(partials['litter-album'],{k:html.escape(v,quote=True) for k,v in album_values.items()}))
+            source=source.replace('{{litter_albums}}','\n'.join(albums))
         source = source.replace('{{header}}', render(partials['header'], values)).replace('{{footer}}', render(partials['footer'], values))
         source = render(source, {key: html.escape(value) for key,value in c.get('home_copy',{}).items()})
         # Keep canonical and language alternates paired with the actual generated route.
@@ -94,7 +107,9 @@ def build(check=False):
                 tag = tag[:-1]+' loading="lazy">'
             if info.get('variants') and 'srcset=' not in tag:
                 variants = ', '.join(posixpath.relpath(v['path'],posixpath.dirname(path) or '.')+f' {v["width"]}w' for v in info['variants'])
-                tag = tag[:-1]+f' srcset="{variants}" sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 800px">'
+                sizes='(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 800px'
+                if 'litter-album-photo' in source[max(0,m.start()-100):m.start()]:sizes='(max-width: 560px) 100vw, (max-width: 1100px) 50vw, 300px'
+                tag = tag[:-1]+f' srcset="{variants}" sizes="{sizes}">'
             return tag
         source = re.sub(r'<img\b[^>]*>', image_tag, source)
         title=re.search(r'<title>(.*?)</title>',source,re.S)
