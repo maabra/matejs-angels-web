@@ -250,3 +250,5 @@ html { scrollbar-gutter: stable; }
 .footer-col:last-child .viber-link { margin-left: 0; display: flex; width: fit-content; }
 
 @media (min-width: 901px) { .home-intro .hero-logo { aspect-ratio: auto; margin-top: -.75rem; } }
+
+.page-content:has(.lightbox.active) { z-index: 1001; }

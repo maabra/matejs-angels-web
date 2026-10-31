@@ -170,12 +170,21 @@ const siteLabel = (hr, en) => siteIsCroatian ? hr : en;
   let current = 0;
   let returnFocus;
   let previousOverflow = '';
+  const viewerMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  let slideDirection = 0;
+  let leavingAnimation;
 
   lbImg.addEventListener('load', () => {
     if (!lb.classList.contains('active')) return;
     lbImg.style.visibility = '';
     status.textContent = '';
     lb.removeAttribute('aria-busy');
+    if (!viewerMotion.matches) {
+      lbImg.animate([
+        { opacity: 0, transform: `translateX(${-slideDirection * 40}px) scale(.985)` },
+        { opacity: 1, transform: 'translateX(0) scale(1)' }
+      ], { duration: 300, easing: 'cubic-bezier(.22,.68,.2,1)' });
+    }
   });
   lbImg.addEventListener('error', () => {
     if (!lb.classList.contains('active')) return;
@@ -184,8 +193,11 @@ const siteLabel = (hr, en) => siteIsCroatian ? hr : en;
     lb.removeAttribute('aria-busy');
   });
 
-  function open(index) {
+  function open(index, direction = 0) {
     if (!items[index]) return;
+    lbImg.getAnimations().forEach(animation => animation.cancel());
+    leavingAnimation = null;
+    slideDirection = direction;
     if (!lb.classList.contains('active')) {
       returnFocus = document.activeElement;
       previousOverflow = document.body.style.overflow;
@@ -205,6 +217,8 @@ const siteLabel = (hr, en) => siteIsCroatian ? hr : en;
 
   function close() {
     if (!lb.classList.contains('active')) return;
+    lbImg.getAnimations().forEach(animation => animation.cancel());
+    leavingAnimation = null;
     lb.classList.remove('active');
     document.body.style.overflow = previousOverflow;
     lbImg.removeAttribute('src');
@@ -215,8 +229,18 @@ const siteLabel = (hr, en) => siteIsCroatian ? hr : en;
 
   function navigate(dir) {
     if (!items.length || !lb.classList.contains('active')) return;
-    current = (current + dir + items.length) % items.length;
-    open(current);
+    if (leavingAnimation) return;
+    const target = (current + dir + items.length) % items.length;
+    if (viewerMotion.matches || lbImg.style.visibility === 'hidden') {
+      open(target, dir);
+      return;
+    }
+    lbImg.getAnimations().forEach(animation => animation.cancel());
+    leavingAnimation = lbImg.animate([
+      { opacity: 1, transform: 'translateX(0)' },
+      { opacity: 0, transform: `translateX(${dir * 40}px)` }
+    ], { duration: 160, easing: 'ease-in', fill: 'forwards' });
+    leavingAnimation.finished.then(() => open(target, dir)).catch(() => {});
   }
 
   // Collect all gallery items
