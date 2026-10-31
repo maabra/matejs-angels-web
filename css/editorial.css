@@ -291,3 +291,8 @@ a.btn.whatsapp-link:hover, a.btn.viber-link:hover { background: rgba(250,246,240
 .home-page > .section { --kennel-pattern-image: url('../images/index/kennel-pattern-home.svg'); }
 .home-page > .section-mid { --kennel-pattern-image: url('../images/index/kennel-pattern-home-mid.svg'); }
 .home-page > .section-ivory { --kennel-pattern-image: url('../images/index/kennel-pattern-home-ivory.svg'); }
+
+/* Preserve icon spacing even when editorial links otherwise use inline-block. */
+a.facebook-link, a.whatsapp-link, a.viber-link,
+.editorial-copy a.quiet-link.facebook-link,
+.footer a.social-link { display: inline-flex; align-items: center; column-gap: .5rem; }
