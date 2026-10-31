@@ -2554,6 +2554,35 @@ a.dog-card:hover .dog-card-name { color: var(--gold); }
 .breed-feature-title { background: transparent; border: 0; min-height: 0; padding: 0 0 1.25rem; text-align: left; justify-content: flex-start; }
 .breed-feature-title h3 { font-size: 1.65rem; font-weight: 500; }
 .breed-feature-body { padding: 0; }
+.feature-section, .section:has(.breed-features) { padding-block: clamp(3rem, 7vw, 6rem); }
+.feature-section .section-header, .section:has(.breed-features) .section-header { margin-bottom: clamp(2rem, 4vw, 3rem); }
+.values-grid { gap: 1.5rem; align-items: stretch; }
+.values-grid .value-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  background: var(--navy);
+  border-radius: var(--radius-sm);
+}
+.value-item h3 { font-size: 1.25rem; font-weight: 500; line-height: 1.35; }
+.value-item p { font-size: 0.94rem; line-height: 1.8; }
+.section-link { margin-top: auto; padding-top: 0.75rem; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; color: var(--gold); font-size: 0.8rem; font-weight: 500; }
+.section-link:hover { color: var(--gold-light); text-decoration: underline; text-underline-offset: 4px; }
+.breed-features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--content-gap); align-items: stretch; }
+.breed-features .breed-feature { display: flex; flex-direction: column; padding: clamp(1.75rem, 4vw, 3rem); background: var(--navy-mid); border-radius: var(--radius-sm); }
+.breed-feature-title { padding-bottom: 1.5rem; }
+.breed-feature-body { display: flex; flex-direction: column; align-items: flex-start; flex: 1; gap: 1rem; }
+.breed-feature-body > p { margin: 0 !important; }
+.breed-feature-body > .btn { margin-top: auto; align-self: flex-start; }
+.breed-feature-body > p:last-of-type { padding-bottom: 1rem; }
+.breed-section[id] { scroll-margin-top: 100px; }
+@media (max-width: 1000px) {
+  .values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .values-grid, .breed-features { grid-template-columns: minmax(0, 1fr); }
+}
 .kennel-note { text-align: center; padding: 2.5rem 0; border-top: 1px solid var(--gold-muted); }
 .page-content .care-tip-card { background: transparent; border: 0; border-top: 1px solid var(--gold-muted); border-radius: 0; padding: 1.25rem 0; }
 .page-content .prod-card { background: transparent; border: 0; border-radius: var(--radius-sm); }
@@ -2561,7 +2590,7 @@ a.dog-card:hover .dog-card-name { color: var(--gold); }
 .page-content .prod-card .prod-name { padding-top: 0.75rem; }
 @media (max-width: 760px) {
   .about-story { grid-template-columns: minmax(0, 1fr); }
-  .values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--content-gap); }
+
   .cards-grid-2, .blog-grid, .yt-grid { grid-template-columns: minmax(0, 1fr); }
   .breed-heading { gap: 0.75rem; }
   .breed-heading h3 { white-space: normal; text-align: center; }
