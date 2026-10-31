@@ -72,7 +72,15 @@ def build(check=False):
                 albums.append(render(partials['litter-album'],{k:html.escape(v,quote=True) for k,v in album_values.items()}))
             source=source.replace('{{litter_albums}}','\n'.join(albums))
         source = source.replace('{{header}}', render(partials['header'], values)).replace('{{footer}}', render(partials['footer'], values))
-        source = render(source, {key: html.escape(value) for key,value in c.get('home_copy',{}).items()})
+        copy_values = {key: html.escape(value) for key,value in c.get('home_copy',{}).items()}
+        # Dog cards use the recorded profile dates, rather than separate copies.
+        for slug in re.findall(r'\{\{birthdate_(\w+)\}\}', source):
+            folder = 'dogs' if lang == 'en' else 'psi'
+            profile = (ROOT / 'templates/pages' / lang / folder / (slug + '.html')).read_text('utf-8')
+            rows = re.findall(r'<span class="stat-key">(.*?)</span>\s*<span class="stat-val">(.*?)</span>', profile, re.S)
+            date = next(value for key,value in rows if 'birth' in key.lower() or key.startswith('Datum'))
+            copy_values['birthdate_' + slug] = html.escape(html.unescape(date))
+        source = render(source, copy_values)
         # Keep canonical and language alternates paired with the actual generated route.
         canonical = 'https://matejsangels.com/' + url_for(page.get('canonical_path',path))
         pair_url = 'https://matejsangels.com/' + url_for(page['pair'])

@@ -2,7 +2,7 @@
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit,unquote
-import json,re,subprocess,sys
+import html,json,re,subprocess,sys
 import xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parent.parent
 
@@ -56,6 +56,16 @@ def main():
             dest,fragment=result
             assert dest.is_file(),('missing local target',path,ref)
             if fragment and dest in pages:assert fragment in pages[dest].ids,('missing anchor',path,ref)
+    for lang,listing,folder in [('en','our-dogs','dogs'),('hr','nasi-psi','psi')]:
+        source=(ROOT/lang/(listing+'.html')).read_text('utf-8')
+        cards=re.findall(r'<a href="(?:dogs|psi)/([^\"]+)" class="dog-card"[^>]*>(.*?)</a>',source,re.S)
+        assert len(cards)==15,('missing dog cards',lang)
+        for slug,card in cards:
+            profile=(ROOT/lang/folder/(slug+'.html')).read_text('utf-8')
+            rows=re.findall(r'<span class="stat-key">(.*?)</span>\s*<span class="stat-val">(.*?)</span>',profile,re.S)
+            expected=next(value for key,value in rows if 'birth' in key.lower() or key.startswith('Datum'))
+            date=re.search(r'class="dog-card-born">[br]\. ([^<]+)</span>',card)
+            assert date and html.unescape(date[1])==html.unescape(expected),('card/profile birthdate mismatch',lang,slug)
     sitemap={item.text for item in ET.parse(ROOT/'sitemap.xml').getroot().iter() if item.tag.endswith('}loc')}
     canonical_urls=set()
     for route in routes:
