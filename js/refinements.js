@@ -66,7 +66,7 @@
     let firstSwap = true;
     const firstDelay = position === 0 ? 2000 : 3000;
     const interval = position === 0 ? 5500 : 7200;
-    const show = next => {
+    const show = (next, direction = 1) => {
       if (transitioning) return;
       const target = (next + slides.length) % slides.length;
       if (target === index) return;
@@ -85,8 +85,8 @@
       transitioning = true;
       const timing = { duration: position === 0 ? 600 : 800, easing: 'cubic-bezier(.22,.68,.2,1)' };
       const animations = [
-        outgoing.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(100%)' }], timing),
-        incoming.animate([{ transform: 'translateX(-100%)' }, { transform: 'translateX(0)' }], timing)
+        outgoing.animate([{ transform: 'translateX(0)' }, { transform: `translateX(${direction * 100}%)` }], timing),
+        incoming.animate([{ transform: `translateX(${-direction * 100}%)` }, { transform: 'translateX(0)' }], timing)
       ];
       Promise.all(animations.map(animation => animation.finished.catch(() => {}))).then(() => {
         outgoing.hidden = true;
@@ -105,7 +105,8 @@
       }
     };
     carousel.querySelectorAll('[data-slide]').forEach(button => button.addEventListener('click', () => {
-      show(index + Number(button.dataset.slide));
+      const direction = Number(button.dataset.slide);
+      show(index + direction, direction);
       sync();
     }));
     toggle.addEventListener('click', () => { paused = !paused; sync(); });
