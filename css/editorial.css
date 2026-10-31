@@ -27,7 +27,7 @@ p { text-wrap: pretty; }
 .home-paths { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin-top: 1.75rem; }
 .home-paths a { display: inline-flex; align-items: center; justify-content: center; gap: .75rem; padding: .8rem 1rem; border: 1px solid rgba(250,246,240,.22); border-radius: 4px; color: var(--cream); font-size: .84rem; font-weight: 500; min-height: 46px; }
 .home-paths a:first-child { background: var(--gold); border-color: var(--gold); color: var(--navy); }
-.home-paths a:last-child { border-color: transparent; padding-inline: .5rem; }
+.home-paths a:last-child { flex-basis: 100%; justify-content: flex-start; border-color: transparent; padding-inline: .5rem; }
 .home-paths a span:last-child { color: currentColor; }
 .home-paths a:hover { border-color: var(--gold-light); }
 .home-paths a:first-child:hover { background: var(--gold-light); }
