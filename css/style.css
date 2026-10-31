@@ -1587,7 +1587,7 @@ a.health-card[href]:hover { border-color: var(--gold); }
 .blog-card-read { font-size: 0.8rem; color: var(--gold); font-weight: 600; display: flex; align-items: center; gap: 0.4rem; }
 
 /* ---- CONTACT ---- */
-.contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: start; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: var(--content-gap); align-items: start; }
 .contact-info-item { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.75rem; }
 .contact-icon {
   width: 42px; height: 42px;
@@ -2384,6 +2384,34 @@ a.where-now-card[href]:hover {
 .hero-content:has(.hero-logo) h1 { margin-bottom: 20px; }
 
 /* Kennel editorial style: quiet surfaces, fine rules and unframed photographs. */
+/* Shared spacing scale for both languages and every page template. */
+:root {
+  --page-gutter: clamp(1rem, 3vw, 2rem);
+  --section-space: clamp(2.5rem, 5vw, 4rem);
+  --section-space-small: clamp(2rem, 4vw, 3rem);
+  --content-gap: clamp(1.5rem, 3vw, 2rem);
+}
+.container { padding-inline: var(--page-gutter); }
+.navbar { padding-inline: var(--page-gutter); }
+.section { padding-block: var(--section-space); }
+.section-sm { padding-block: var(--section-space-small); }
+.litter-header { padding-block: var(--section-space-small); }
+.dog-profile-grid { padding-block: var(--section-space-small); gap: var(--content-gap); }
+.section-header { margin-bottom: var(--content-gap); }
+.about-story > .story-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
+.story-copy > .hero-eyebrow, .story-copy > h2, .story-copy > p { margin: 0; }
+.story-copy > .btn { margin-top: 0.5rem; }
+.page-content .zigzag-row { gap: var(--content-gap); margin-bottom: var(--section-space-small); }
+.page-content .prod-section { margin-bottom: var(--section-space-small); }
+.page-content .care-tip-grid { gap: var(--content-gap); }
+.page-content .breed-divider { margin: 0; }
+.breed-section { margin-bottom: var(--section-space-small); }
+.breed-section:last-child { margin-bottom: 0; }
+.parents-row { margin-block: var(--content-gap); }
+.news-article { gap: var(--content-gap); }
+.tabs-nav { margin-bottom: var(--content-gap); }
+.privacy-page { padding-block: var(--section-space); }
+
 /* Footer proportions and utility rows share the same alignment at every size. */
 .footer { padding: clamp(2.5rem, 5vw, 4rem) 0 1.75rem; }
 .footer-grid {
@@ -2450,7 +2478,7 @@ a.where-now-card[href]:hover {
 }
 .hero { background: var(--navy); min-height: 0; }
 .hero-overlay { background: rgba(13, 27, 42, 0.45); }
-.hero-content, .hero-content:has(.hero-logo) { padding: 2rem 1.5rem 2.5rem; }
+.hero-content, .hero-content:has(.hero-logo) { padding: var(--section-space-small) var(--page-gutter); }
 .hero-logo { width: min(100%, clamp(480px, 80vw, 800px)); height: auto; margin-bottom: 1rem; }
 @media (min-width: 861px) {
   .hero-logo { width: 480px; height: 480px; }
@@ -2463,7 +2491,7 @@ a.where-now-card[href]:hover {
 .hero-logo, .index-logo-wrap img { filter: none; }
 .hero-bar { height: 1px; background: var(--gold-muted); }
 .bg-kennel-pattern { opacity: 0.032; }
-.section-header { text-align: left; margin-bottom: 2rem; max-width: 44rem; }
+.section-header { text-align: left; margin-bottom: var(--content-gap); max-width: 44rem; }
 .section-header h2 { font-size: clamp(1.65rem, 2.8vw, 2.25rem); font-weight: 500; line-height: 1.2; margin-bottom: 0.65rem; }
 .section-header .subtitle { font-family: var(--font-sans); font-style: normal; font-size: 0.92rem; line-height: 1.65; text-wrap: pretty; }
 .section-header .gold-divider { display: none; }
@@ -2479,7 +2507,7 @@ a.where-now-card[href]:hover {
 .btn { border-radius: var(--radius-xs); border-width: 1px; white-space: normal; text-align: center; justify-content: center; }
 .btn:hover { transform: none; box-shadow: none; }
 .btn-outline { border-color: var(--gold-muted); }
-.cards-grid, .cards-grid-2, .cards-grid-4 { gap: 2.5rem 2rem; }
+.cards-grid, .cards-grid-2, .cards-grid-4 { gap: var(--content-gap); }
 .dog-card, .litter-card, .puppy-card, .blog-card, .where-now-card {
   background: transparent;
   border: 0;
@@ -2503,7 +2531,7 @@ a.dog-card:hover .dog-card-name { color: var(--gold); }
 .news-photo img { aspect-ratio: auto; height: auto; object-fit: contain; }
 .gallery-grid { gap: 1rem; }
 .gallery-item:hover img { transform: scale(1.025); }
-.parents-row { background: transparent; border: 0; border-block: 1px solid var(--gold-muted); border-radius: 0; padding: 2.5rem 0; }
+.parents-row { background: transparent; border: 0; border-block: 1px solid var(--gold-muted); border-radius: 0; margin-block: var(--content-gap); padding: var(--content-gap) 0; }
 .parent-img-wrap { width: min(100%, 220px); height: auto; aspect-ratio: 4/3; border: 0; border-radius: var(--radius-sm); }
 .litter-card-badge, .litter-badge-large { background: var(--navy-mid); color: var(--gold); border-radius: var(--radius-sm); }
 .litter-card-badge { text-align: left; padding: 1.5rem; border-top: 1px solid var(--gold-muted); }
@@ -2516,10 +2544,10 @@ a.dog-card:hover .dog-card-name { color: var(--gold); }
 .contact-icon { background: transparent; border-radius: 0; width: 28px; }
 .pedigree-table { box-shadow: none; }
 .dog-breed-tag, .blog-card-tag { background: transparent; color: var(--gold); padding-inline: 0; border-radius: 0; }
-.about-story { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.about-story { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--content-gap); align-items: center; }
 .story-photo { overflow: hidden; border-radius: var(--radius-sm); }
 .story-photo img { width: 100%; height: auto; }
-.values-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; }
+.values-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--content-gap); }
 .value-item { padding-top: 0; }
 .value-item h4 { margin-bottom: 0.75rem; }
 .breed-feature { padding-top: 0; }
@@ -2533,7 +2561,7 @@ a.dog-card:hover .dog-card-name { color: var(--gold); }
 .page-content .prod-card .prod-name { padding-top: 0.75rem; }
 @media (max-width: 760px) {
   .about-story { grid-template-columns: minmax(0, 1fr); }
-  .values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75rem; }
+  .values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--content-gap); }
   .cards-grid-2, .blog-grid, .yt-grid { grid-template-columns: minmax(0, 1fr); }
   .breed-heading { gap: 0.75rem; }
   .breed-heading h3 { white-space: normal; text-align: center; }
