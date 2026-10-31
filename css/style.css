@@ -2387,3 +2387,99 @@ a.where-now-card[href]:hover {
 
 /* Heading-to-description spacing on the landing and About pages. */
 .hero-content:has(.hero-logo) h1 { margin-bottom: 20px; }
+
+/* Kennel editorial style: quiet surfaces, fine rules and unframed photographs. */
+:root {
+  --radius-xs: 3px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 8px;
+  --border: rgba(212, 175, 55, 0.22);
+  --shadow-gold: none;
+}
+.hero { background: var(--navy); }
+.hero-overlay { background: rgba(13, 27, 42, 0.45); }
+.hero-content { padding-bottom: 3rem; }
+.hero-content h1 { text-shadow: none; font-weight: 500; }
+.hero-logo, .index-logo-wrap img { filter: none; }
+.hero-bar { height: 1px; background: var(--gold-muted); }
+.bg-kennel-pattern { opacity: 0.022; animation: none; }
+.section-header { margin-bottom: 3rem; }
+.section-header h2, .breed-heading h3 { font-weight: 500; }
+.gold-divider { max-width: 100px; }
+.gold-divider::before, .gold-divider::after { background: var(--gold); opacity: 0.45; }
+.nav-links a { border-radius: var(--radius-xs); }
+.nav-links a:hover, .nav-links a.active { background: transparent; }
+.lang-switch { border: 0; background: transparent; border-radius: 0; }
+.lang-switch a { border-radius: var(--radius-xs); }
+.btn { border-radius: var(--radius-xs); border-width: 1px; white-space: normal; text-align: center; justify-content: center; }
+.btn:hover { transform: none; box-shadow: none; }
+.btn-outline { border-color: var(--gold-muted); }
+.cards-grid, .cards-grid-2, .cards-grid-4 { gap: 2.5rem 2rem; }
+.dog-card, .litter-card, .puppy-card, .blog-card, .where-now-card {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+a.dog-card[href]:hover, .litter-card:hover, a.puppy-card[href]:hover,
+.blog-card:hover, a.where-now-card[href]:hover { transform: none; box-shadow: none; }
+.dog-card-body, .litter-card-body, .puppy-card-body, .blog-card-body, .where-now-card-body {
+  padding: 1.15rem 0 1.5rem;
+  border-bottom: 1px solid var(--gold-muted);
+}
+.dog-card-name, .blog-card-title { transition: color 0.2s; }
+a.dog-card:hover .dog-card-name { color: var(--gold); }
+.dog-card-img, .puppy-card-img, .blog-card-img, .where-now-card img,
+.gallery-item, .dog-img-frame, .news-photo, .chron-card-img { border-radius: var(--radius-sm); }
+.dog-card-img, .puppy-card-img, .where-now-card img { object-position: center 35%; }
+.dog-img-frame { border: 0; aspect-ratio: auto; background: transparent; }
+.dog-img-frame img { height: auto; object-fit: contain; }
+.news-photo { border: 0; background: transparent; }
+.news-photo img { aspect-ratio: auto; height: auto; object-fit: contain; }
+.gallery-grid { gap: 1rem; }
+.gallery-item:hover img { transform: scale(1.025); }
+.parents-row { background: transparent; border: 0; border-block: 1px solid var(--gold-muted); border-radius: 0; padding: 2.5rem 0; }
+.parent-img-wrap { width: min(100%, 220px); height: auto; aspect-ratio: 4/3; border: 0; border-radius: var(--radius-sm); }
+.litter-card-badge, .litter-badge-large { background: var(--navy-mid); color: var(--gold); border-radius: var(--radius-sm); }
+.litter-card-badge { text-align: left; padding: 1.5rem; border-top: 1px solid var(--gold-muted); }
+.litter-card-badge::after { display: none; }
+.litter-letter { font-weight: 500; text-shadow: none; }
+.litter-word { margin-left: 0; }
+.chron-card, .health-card { background: transparent; border: 0; border-bottom: 1px solid var(--gold-muted); border-radius: 0; box-shadow: none; }
+.gallery-note { background: transparent; border: 0; border-bottom: 1px solid var(--gold-muted); border-radius: 0; padding-inline: 0; }
+.contact-form-box { background: transparent; border: 0; border-top: 1px solid var(--gold-muted); border-radius: 0; padding: 2rem 0 0; }
+.contact-icon { background: transparent; border-radius: 0; width: 28px; }
+.pedigree-table { box-shadow: none; }
+.dog-breed-tag, .blog-card-tag { background: transparent; color: var(--gold); padding-inline: 0; border-radius: 0; }
+.about-story { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.story-photo { overflow: hidden; border-radius: var(--radius-sm); }
+.story-photo img { width: 100%; height: auto; }
+.values-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; }
+.value-item { padding-top: 1.25rem; border-top: 1px solid var(--gold-muted); }
+.value-item h4 { margin-bottom: 0.75rem; }
+.breed-feature { border-top: 1px solid var(--gold-muted); padding-top: 1.5rem; }
+.breed-feature-title { background: transparent; border: 0; min-height: 0; padding: 0 0 1.25rem; text-align: left; justify-content: flex-start; }
+.breed-feature-title h3 { font-size: 1.65rem; font-weight: 500; }
+.breed-feature-body { padding: 0; }
+.kennel-note { text-align: center; padding: 2.5rem 0; border-top: 1px solid var(--gold-muted); }
+.page-content .care-tip-card { background: transparent; border: 0; border-top: 1px solid var(--gold-muted); border-radius: 0; padding: 1.25rem 0; }
+.page-content .prod-card { background: transparent; border: 0; border-radius: var(--radius-sm); }
+.page-content .photo-strip figure img, .page-content .zz-figure img { border-radius: var(--radius-sm); border: 0; }
+.page-content .prod-card .prod-name { padding-top: 0.75rem; }
+@media (max-width: 760px) {
+  .about-story { grid-template-columns: minmax(0, 1fr); }
+  .values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75rem; }
+  .cards-grid-2, .blog-grid, .yt-grid { grid-template-columns: minmax(0, 1fr); }
+  .breed-heading { gap: 0.75rem; }
+  .breed-heading h3 { white-space: normal; text-align: center; }
+}
+@media (max-width: 480px) {
+  .values-grid { grid-template-columns: minmax(0, 1fr); }
+  .gallery-grid { gap: 0.6rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+}
