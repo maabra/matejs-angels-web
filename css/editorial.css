@@ -269,7 +269,7 @@ html { scrollbar-gutter: stable; }
 .section-mid { --kennel-pattern-image: url('../images/index/kennel-pattern-mid.svg'); }
 
 /* Social services use recognizable icons and readable brand colours. */
-:root { --facebook-link: #8ab8ff; --whatsapp-link: #6dd99a; --viber-link: #b5a4ef; }
+:root { --facebook-link: #8ab8ff; --whatsapp-link: #25d366; --viber-link: #b5a4ef; }
 .section-ivory { --facebook-link: #0866cc; --whatsapp-link: #187044; --viber-link: #6b4ab5; }
 a.facebook-link { color: var(--facebook-link); }
 a.whatsapp-link { color: var(--whatsapp-link); }
@@ -301,3 +301,5 @@ a.facebook-link, a.whatsapp-link, a.viber-link,
 
 /* A crisp warm edge lifts the transparent landing logo from the navy. */
 .home-intro .hero-logo { filter: drop-shadow(.65px 0 0 #f0d878) drop-shadow(-.65px 0 0 #f0d878) drop-shadow(0 .65px 0 #f0d878) drop-shadow(0 -.65px 0 #f0d878); }
+
+.footer a.whatsapp-link, .contact-info-text a.whatsapp-link { color: var(--whatsapp-link); }
