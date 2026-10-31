@@ -259,3 +259,9 @@ html { scrollbar-gutter: stable; }
 .litter-badge-large .big-word { font-size: .75rem; opacity: 1; }
 
 .dog-card-meta .dog-card-born { flex-basis: 100%; }
+
+/* Two roomy video players fill each litter album's content width. */
+.yt-grid { grid-template-columns: repeat(2,minmax(0,1fr)); width: 100%; gap: 1.5rem; }
+.yt-grid > * { min-width: 0; }
+.yt-grid > :only-child { grid-column: 1 / -1; }
+@media (max-width: 760px) { .yt-grid { grid-template-columns: minmax(0,1fr); } }
