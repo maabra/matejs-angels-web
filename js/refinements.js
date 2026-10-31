@@ -62,10 +62,32 @@
     let index = 0;
     let paused = motion.matches;
     let timer;
+    let transitioning = false;
     const show = next => {
-      index = (next + slides.length) % slides.length;
-      slides.forEach((slide, i) => { slide.hidden = i !== index; });
+      if (transitioning) return;
+      const target = (next + slides.length) % slides.length;
+      if (target === index) return;
+      const outgoing = slides[index];
+      const incoming = slides[target];
+      index = target;
+      incoming.hidden = false;
+      outgoing.setAttribute('aria-hidden', 'true');
+      incoming.removeAttribute('aria-hidden');
       count.textContent = `${index + 1} / ${slides.length}`;
+      if (motion.matches) {
+        outgoing.hidden = true;
+        return;
+      }
+      transitioning = true;
+      const timing = { duration: 650, easing: 'cubic-bezier(.22,.68,.2,1)' };
+      const animations = [
+        outgoing.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(100%)' }], timing),
+        incoming.animate([{ transform: 'translateX(-100%)' }, { transform: 'translateX(0)' }], timing)
+      ];
+      Promise.all(animations.map(animation => animation.finished.catch(() => {}))).then(() => {
+        outgoing.hidden = true;
+        transitioning = false;
+      });
     };
     const sync = () => {
       clearInterval(timer);
