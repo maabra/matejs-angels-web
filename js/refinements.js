@@ -54,7 +54,7 @@
       }
     });
   }
-  document.querySelectorAll('.home-carousel').forEach(carousel => {
+  document.querySelectorAll('.home-carousel').forEach((carousel, position) => {
     const slides = [...carousel.querySelectorAll('.home-carousel-slides img')];
     const count = carousel.querySelector('.home-carousel-count');
     const toggle = carousel.querySelector('[data-carousel-pause]');
@@ -63,6 +63,9 @@
     let paused = motion.matches;
     let timer;
     let transitioning = false;
+    let firstSwap = true;
+    const firstDelay = position === 0 ? 2000 : 3000;
+    const interval = position === 0 ? 5500 : 7200;
     const show = next => {
       if (transitioning) return;
       const target = (next + slides.length) % slides.length;
@@ -70,6 +73,7 @@
       const outgoing = slides[index];
       const incoming = slides[target];
       index = target;
+      firstSwap = false;
       incoming.hidden = false;
       outgoing.setAttribute('aria-hidden', 'true');
       incoming.removeAttribute('aria-hidden');
@@ -79,7 +83,7 @@
         return;
       }
       transitioning = true;
-      const timing = { duration: 650, easing: 'cubic-bezier(.22,.68,.2,1)' };
+      const timing = { duration: position === 0 ? 600 : 800, easing: 'cubic-bezier(.22,.68,.2,1)' };
       const animations = [
         outgoing.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(100%)' }], timing),
         incoming.animate([{ transform: 'translateX(-100%)' }, { transform: 'translateX(0)' }], timing)
@@ -90,11 +94,14 @@
       });
     };
     const sync = () => {
-      clearInterval(timer);
+      clearTimeout(timer);
       toggle.setAttribute('aria-label', paused ? toggle.dataset.play : toggle.dataset.pause);
       toggle.textContent = paused ? '▶' : 'Ⅱ';
       if (!paused && !document.hidden && !carousel.matches(':hover') && !carousel.contains(document.activeElement)) {
-        timer = setInterval(() => show(index + 1), 6000);
+        timer = setTimeout(() => {
+          show(index + 1);
+          sync();
+        }, firstSwap ? firstDelay : interval);
       }
     };
     carousel.querySelectorAll('[data-slide]').forEach(button => button.addEventListener('click', () => {
