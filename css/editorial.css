@@ -225,3 +225,10 @@ html { scrollbar-gutter: stable; }
 @media (prefers-reduced-motion: reduce) { .section, .hero, .bg-kennel-pattern { animation: none; } }
 
 .footer { background-image: none; animation: none; }
+
+/* Leave breathing room between hero copy and its section links. */
+.hero-actions { margin-top: 1.75rem; gap: .85rem 1rem; }
+@media (max-width: 640px) {
+  .hero-actions { margin-top: 1.5rem; width: 100%; }
+  .hero-actions .btn { width: 100%; max-width: 22rem; white-space: normal; padding: .9rem 1.25rem; }
+}
