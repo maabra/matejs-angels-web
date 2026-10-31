@@ -2448,9 +2448,14 @@ a.where-now-card[href]:hover {
   --border: rgba(212, 175, 55, 0.22);
   --shadow-gold: none;
 }
-.hero { background: var(--navy); }
+.hero { background: var(--navy); min-height: 0; }
 .hero-overlay { background: rgba(13, 27, 42, 0.45); }
-.hero-content { padding-bottom: 3rem; }
+.hero-content, .hero-content:has(.hero-logo) { padding: 2rem 1.5rem 2.5rem; }
+.hero-logo { width: 112px; height: 112px; margin-bottom: 1rem; }
+.hero-content h1, .hero-content:has(.hero-logo) h1 { font-size: clamp(1.85rem, 3.5vw, 2.4rem); margin-bottom: 0.75rem; }
+.hero-content p { font-size: 1rem; max-width: 540px; }
+.hero-content .hero-eyebrow { margin-bottom: 0.65rem; }
+.hero-eyebrow { border-bottom: 0; padding-bottom: 0; }
 .hero-content h1 { text-shadow: none; font-weight: 500; }
 .hero-logo, .index-logo-wrap img { filter: none; }
 .hero-bar { height: 1px; background: var(--gold-muted); }
@@ -2460,7 +2465,7 @@ a.where-now-card[href]:hover {
 .section-header .subtitle { font-family: var(--font-sans); font-style: normal; font-size: 0.92rem; line-height: 1.65; text-wrap: pretty; }
 .section-header .gold-divider { display: none; }
 .breed-heading h3 { font-weight: 500; }
-.gold-divider { max-width: 100px; }
+.gold-divider, .breed-heading-line { display: none; }
 .gold-divider:has(span:empty) { gap: 0; max-width: 48px; }
 .gold-divider span:empty { display: none; }
 .gold-divider::before, .gold-divider::after { background: var(--gold); opacity: 0.45; }
@@ -2512,9 +2517,9 @@ a.dog-card:hover .dog-card-name { color: var(--gold); }
 .story-photo { overflow: hidden; border-radius: var(--radius-sm); }
 .story-photo img { width: 100%; height: auto; }
 .values-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; }
-.value-item { padding-top: 1.25rem; border-top: 1px solid var(--gold-muted); }
+.value-item { padding-top: 0; }
 .value-item h4 { margin-bottom: 0.75rem; }
-.breed-feature { border-top: 1px solid var(--gold-muted); padding-top: 1.5rem; }
+.breed-feature { padding-top: 0; }
 .breed-feature-title { background: transparent; border: 0; min-height: 0; padding: 0 0 1.25rem; text-align: left; justify-content: flex-start; }
 .breed-feature-title h3 { font-size: 1.65rem; font-weight: 500; }
 .breed-feature-body { padding: 0; }
