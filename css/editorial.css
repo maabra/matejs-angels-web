@@ -296,3 +296,5 @@ a.btn.whatsapp-link:hover, a.btn.viber-link:hover { background: rgba(250,246,240
 a.facebook-link, a.whatsapp-link, a.viber-link,
 .editorial-copy a.quiet-link.facebook-link,
 .footer a.social-link { display: inline-flex; align-items: center; column-gap: .5rem; }
+
+.editorial-copy a.quiet-link.facebook-link { column-gap: 5px; }
