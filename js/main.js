@@ -1047,7 +1047,7 @@ document.querySelectorAll('.nav-logo img, .index-logo-wrap img').forEach(img => 
     wa.href = 'https://wa.me/' + num.replace('+', '');
     wa.target = '_blank';
     wa.rel = 'noopener noreferrer';
-    wa.className = 'wa-link';
+    wa.className = 'wa-link whatsapp-link';
     wa.innerHTML = waSvg + ' WhatsApp';
     const parent = a.closest('.contact-info-text') || a.parentElement;
     parent.appendChild(wa);

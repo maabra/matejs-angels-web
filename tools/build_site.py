@@ -81,6 +81,19 @@ def build(check=False):
             date = next(value for key,value in rows if 'birth' in key.lower() or key.startswith('Datum'))
             copy_values['birthdate_' + slug] = html.escape(html.unescape(date))
         source = render(source, copy_values)
+        # Keep messaging and social links consistent in every generated page.
+        def social_link(match):
+            attrs,body = match[1],match[2]
+            href = re.search(r'\bhref="([^"]+)"', attrs)
+            if not href: return match[0]
+            brand = 'facebook' if 'facebook.com/' in href[1] else 'whatsapp' if href[1].startswith('https://wa.me/') else None
+            if not brand: return match[0]
+            class_name = brand + '-link'
+            if 'class="' in attrs:
+                attrs = re.sub(r'class="([^"]*)"',lambda m:'class="'+m[1]+' '+class_name+'"',attrs,count=1)
+            else: attrs += ' class="'+class_name+'"'
+            return '<a'+attrs+'><span class="'+brand+'-icon" aria-hidden="true"></span>'+body+'</a>'
+        source = re.sub(r'<a(\s[^>]*?)>(.*?)</a>',social_link,source,flags=re.S)
         # Keep canonical and language alternates paired with the actual generated route.
         canonical = 'https://matejsangels.com/' + url_for(page.get('canonical_path',path))
         pair_url = 'https://matejsangels.com/' + url_for(page['pair'])

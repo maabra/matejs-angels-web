@@ -267,3 +267,15 @@ html { scrollbar-gutter: stable; }
 @media (max-width: 760px) { .yt-grid { grid-template-columns: minmax(0,1fr); } }
 
 .section-mid { --kennel-pattern-image: url('../images/index/kennel-pattern-mid.svg'); }
+
+/* Social services use recognizable icons and readable brand colours. */
+:root { --facebook-link: #8ab8ff; --whatsapp-link: #6dd99a; --viber-link: #b5a4ef; }
+.section-ivory { --facebook-link: #0866cc; --whatsapp-link: #187044; --viber-link: #6b4ab5; }
+a.facebook-link { color: var(--facebook-link); }
+a.whatsapp-link { color: var(--whatsapp-link); }
+a.viber-link, .wa-link.viber-link { color: var(--viber-link); }
+a.facebook-link, a.whatsapp-link { display: inline-flex; align-items: center; gap: .4rem; }
+.facebook-icon, .whatsapp-icon { display: inline-block; width: 15px; height: 15px; flex: 0 0 15px; background-color: currentColor; }
+.facebook-icon { -webkit-mask: url('../images/index/facebook.svg') center / contain no-repeat; mask: url('../images/index/facebook.svg') center / contain no-repeat; }
+.whatsapp-icon { -webkit-mask: url('../images/index/whatsapp.svg') center / contain no-repeat; mask: url('../images/index/whatsapp.svg') center / contain no-repeat; }
+a.btn.whatsapp-link:hover, a.btn.viber-link:hover { background: rgba(250,246,240,.06); border-color: currentColor; }
